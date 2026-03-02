@@ -1,0 +1,41 @@
+# Web scraping
+playwright
+
+# AI/ML
+sentence-transformers
+faiss-cpu
+together
+
+# Agent framework
+crewai
+crewai-tools
+
+# LLM/RAG
+langchain
+langchain-community
+
+# Notifications
+python-telegram-bot
+
+# Scheduling
+apscheduler
+
+# Web frameworks
+streamlit
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy
+
+# PDF processing
+pypdf
+
+# Testing
+pytest
+pytest-asyncio
+
+# Utilities
+python-dotenv
+httpx
