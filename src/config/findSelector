@@ -1,0 +1,159 @@
+amazon：
+=== Finding Best Description Selector ===
+
+VM8312:72 ✅ 找到以下 selectors:
+
+VM8312:74 1. [ID] #job-detail
+VM8312:75    长度: 7500 字符
+VM8312:76    预览: Software Development Engineer
+
+Job ID: 3146660 | Amazon.com Services LLC
+
+Apply now
+Description
+
+Amazon Web Services (AWS) is building a central pipel...
+VM8312:77 
+VM8312:74 2. [ID] #job-detail-body
+VM8312:75    长度: 7416 字符
+VM8312:76    预览: Description
+
+Amazon Web Services (AWS) is building a central pipeline of Software Development Engineer (SDE) talent for anticipated roles in 2026. Thi...
+VM8312:77 
+VM8312:80 🎯 推荐使用: #job-detail
+VM8312:81    (最稳定且内容完整)
+VM8312:86 
+=== 完成 ===
+
+Microsoft：
+=== Finding Best Description Selector ===
+
+bundle.tracing.min.js:2 ✅ 找到以下 selectors:
+
+bundle.tracing.min.js:2 1. [ID] #job-description-container
+bundle.tracing.min.js:2    长度: 7336 字符
+bundle.tracing.min.js:2    预览: Overview
+
+
+Security represents the most critical priorities for our customers in a world awash in digital threats, regulatory scrutiny, and estate com...
+bundle.tracing.min.js:2 
+bundle.tracing.min.js:2 🎯 推荐使用: #job-description-container
+bundle.tracing.min.js:2    (最稳定且内容完整)
+bundle.tracing.min.js:2 
+=== 完成 ===
+
+salesforce：
+=== Finding Best Description Selector ===
+
+VM3010:72 ✅ 找到以下 selectors:
+
+VM3010:74 1. [ID] #js-job-detail
+VM3010:75    长度: 3486 字符
+VM3010:76    预览: Apply Now
+Save 
+Open sharing options
+
+Applications will be accepted until 03/27/2026.
+
+Description
+
+This Lead Engineer role will lead Trailblazer Iden...
+VM3010:77 
+VM3010:74 2. [Class] div[class*="job-detail"]
+VM3010:75    长度: 3486 字符
+VM3010:76    预览: Apply Now
+Save 
+Open sharing options
+
+Applications will be accepted until 03/27/2026.
+
+Description
+
+This Lead Engineer role will lead Trailblazer Iden...
+VM3010:77 
+VM3010:74 3. [Semantic] article
+VM3010:75    长度: 3448 字符
+VM3010:76    预览: Applications will be accepted until 03/27/2026.
+
+Description
+
+This Lead Engineer role will lead Trailblazer Identity, a B2C identity platform within S...
+VM3010:77 
+VM3010:74 4. [Semantic] main article
+VM3010:75    长度: 3448 字符
+VM3010:76    预览: Applications will be accepted until 03/27/2026.
+
+Description
+
+This Lead Engineer role will lead Trailblazer Identity, a B2C identity platform within S...
+VM3010:77 
+VM3010:80 🎯 推荐使用: #js-job-detail
+VM3010:81    (最稳定且内容完整)
+VM3010:86 
+=== 完成 ===
+
+Expedia：
+
+=== Finding Best Description Selector ===
+
+VM3834:72 ✅ 找到以下 selectors:
+
+VM3834:74 1. [Class] section.Desc
+VM3834:75    长度: 8423 字符
+VM3834:76    预览: Back to results
+Front-end Software Development Engineer III
+
+United States - Washington - Seattle
+
+Technology
+
+Full-Time Regular
+
+03/02/2026
+
+ID # R-1...
+VM3834:77 
+VM3834:74 2. [Class] div.Desc__copy
+VM3834:75    长度: 8239 字符
+VM3834:76    预览: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we crea...
+VM3834:77 
+VM3834:80 🎯 推荐使用: section.Desc
+VM3834:81    (最稳定且内容完整)
+VM3834:86 
+=== 完成 ===
+
+Oracle：
+=== Finding Best Description Selector ===
+
+VM4529:72 ✅ 找到以下 selectors:
+
+VM4529:74 1. [Class] div[class*="job-detail"]
+VM4529:75    长度: 8980 字符
+VM4529:76    预览: View More Jobs
+Principal Software Developer(hybrid)
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA...
+VM4529:77 
+VM4529:74 2. [Semantic] article
+VM4529:75    长度: 8965 字符
+VM4529:76    预览: Principal Software Developer(hybrid)
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States...
+VM4529:77 
+VM4529:74 3. [Semantic] main article
+VM4529:75    长度: 8965 字符
+VM4529:76    预览: Principal Software Developer(hybrid)
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States...
+VM4529:77 
+VM4529:80 🎯 推荐使用: div[class*="job-detail"]
+VM4529:81    (最稳定且内容完整)
+VM4529:86 
+=== 完成 ===
+

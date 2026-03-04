@@ -1,0 +1,1379 @@
+2026-03-03 14:16:32,985 - ============================================================
+2026-03-03 14:16:32,985 - Testing Job Details Scraper
+2026-03-03 14:16:32,985 - ============================================================
+2026-03-03 14:16:32,985 - ⚠️  TEST MODE:
+2026-03-03 14:16:32,985 -    - dry_run=True (won't save to database)
+2026-03-03 14:16:32,985 -    - limit=None (process all new jobs)
+2026-03-03 14:16:32,985 -    - Safe for testing!
+2026-03-03 14:16:32,985 -    - Results saved to: details_scraper_test.log
+2026-03-03 14:16:32,985 - ============================================================
+2026-03-03 14:16:32,985 - 
+2026-03-03 14:35:19,146 - 
+2026-03-03 14:35:19,147 - ============================================================
+2026-03-03 14:35:19,147 - Test completed: 129 jobs enriched
+2026-03-03 14:35:19,147 - Duration: 1126.2 seconds
+2026-03-03 14:35:19,147 - ============================================================
+2026-03-03 14:35:19,147 - 
+📋 All 129 enriched jobs:
+
+2026-03-03 14:35:19,147 - 1. NVIDIA: Director, Technical Program Management - Software
+2026-03-03 14:35:19,147 -    Job ID: nvidia_893379343086
+2026-03-03 14:35:19,147 -    URL: https://jobs.nvidia.com/careers/job/893379343086
+2026-03-03 14:35:19,147 -    Description: 4972 characters
+2026-03-03 14:35:19,147 -    Preview: We are seeking a Director of Technical Program Management in software organization with outstanding abilities to lead all aspects of the development and execution of program management strategies, ens...
+2026-03-03 14:35:19,147 -    Salary: None
+2026-03-03 14:35:19,147 -    Posted: None
+2026-03-03 14:35:19,147 - 
+2026-03-03 14:35:19,147 - 2. NVIDIA: Senior Software Engineer, Fabric Networking - GPU
+2026-03-03 14:35:19,147 -    Job ID: nvidia_893379161082
+2026-03-03 14:35:19,147 -    URL: https://jobs.nvidia.com/careers/job/893379161082
+2026-03-03 14:35:19,147 -    Description: 3747 characters
+2026-03-03 14:35:19,147 -    Preview: NVIDIA is leading the way in groundbreaking developments in Artificial Intelligence, High-Performance Computing and Visualization. The GPU, our invention, serves as the visual cortex of modern compute...
+2026-03-03 14:35:19,148 -    Salary: None
+2026-03-03 14:35:19,148 -    Posted: None
+2026-03-03 14:35:19,148 - 
+2026-03-03 14:35:19,148 - 3. NVIDIA: Verification Engineer - Compilers C++
+2026-03-03 14:35:19,148 -    Job ID: nvidia_893390979750
+2026-03-03 14:35:19,148 -    URL: https://jobs.nvidia.com/careers/job/893390979750
+2026-03-03 14:35:19,148 -    Description: 4140 characters
+2026-03-03 14:35:19,148 -    Preview: NVIDIA has been transforming Artificial Intelligence, computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technolo...
+2026-03-03 14:35:19,148 -    Salary: None
+2026-03-03 14:35:19,148 -    Posted: None
+2026-03-03 14:35:19,148 - 
+2026-03-03 14:35:19,148 - 4. NVIDIA: Senior Scientific Machine Learning Engineer – Earth-2
+2026-03-03 14:35:19,148 -    Job ID: nvidia_893393277889
+2026-03-03 14:35:19,149 -    URL: https://jobs.nvidia.com/careers/job/893393277889
+2026-03-03 14:35:19,149 -    Description: 4432 characters
+2026-03-03 14:35:19,149 -    Preview: NVIDIA’s deep learning and HPC platforms have made a huge impact in various fields and are broadly used across leading academic institutions, start-ups, and industry, including the world’s largest Int...
+2026-03-03 14:35:19,149 -    Salary: None
+2026-03-03 14:35:19,149 -    Posted: None
+2026-03-03 14:35:19,149 - 
+2026-03-03 14:35:19,149 - 5. NVIDIA: Senior System Software Engineer, NCCL - Partner Enablement
+2026-03-03 14:35:19,149 -    Job ID: nvidia_893392819277
+2026-03-03 14:35:19,149 -    URL: https://jobs.nvidia.com/careers/job/893392819277
+2026-03-03 14:35:19,149 -    Description: 3985 characters
+2026-03-03 14:35:19,149 -    Preview: NVIDIA is leading the way in groundbreaking developments in Artificial Intelligence, High Performance Computing and Visualization. The GPU, our invention, serves as the visual cortex of modern compute...
+2026-03-03 14:35:19,149 -    Salary: None
+2026-03-03 14:35:19,150 -    Posted: None
+2026-03-03 14:35:19,150 - 
+2026-03-03 14:35:19,150 - 6. NVIDIA: Principal Platform Software Engineer - RAS
+2026-03-03 14:35:19,150 -    Job ID: nvidia_893392936970
+2026-03-03 14:35:19,150 -    URL: https://jobs.nvidia.com/careers/job/893392936970
+2026-03-03 14:35:19,150 -    Description: 4954 characters
+2026-03-03 14:35:19,150 -    Preview: NVIDIA’s invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited mo...
+2026-03-03 14:35:19,150 -    Salary: None
+2026-03-03 14:35:19,150 -    Posted: None
+2026-03-03 14:35:19,150 - 
+2026-03-03 14:35:19,150 - 7. NVIDIA: Senior Machine Learning Engineer - Chemistry and Materials Science
+2026-03-03 14:35:19,150 -    Job ID: nvidia_893393263962
+2026-03-03 14:35:19,150 -    URL: https://jobs.nvidia.com/careers/job/893393263962
+2026-03-03 14:35:19,150 -    Description: 4736 characters
+2026-03-03 14:35:19,150 -    Preview: NVIDIA’s deep learning and HPC platforms have made a huge impact in various fields and are broadly used across leading academic institutions, start-ups, and industry, including the world’s largest Int...
+2026-03-03 14:35:19,150 -    Salary: None
+2026-03-03 14:35:19,150 -    Posted: None
+2026-03-03 14:35:19,150 - 
+2026-03-03 14:35:19,150 - 8. NVIDIA: Software Development Engineer in Test
+2026-03-03 14:35:19,150 -    Job ID: nvidia_893393843009
+2026-03-03 14:35:19,151 -    URL: https://jobs.nvidia.com/careers/job/893393843009
+2026-03-03 14:35:19,151 -    Description: 3590 characters
+2026-03-03 14:35:19,151 -    Preview: NVIDIA's Silicon Co-Design Group – Efficiency (SCGE) team is seeking a Software Development Engineer in Test (SDET) to design and implement robust automated testing and verification frameworks for our...
+2026-03-03 14:35:19,151 -    Salary: None
+2026-03-03 14:35:19,151 -    Posted: None
+2026-03-03 14:35:19,151 - 
+2026-03-03 14:35:19,151 - 9. NVIDIA: Senior Agentic AI Engineer
+2026-03-03 14:35:19,151 -    Job ID: nvidia_893393843015
+2026-03-03 14:35:19,151 -    URL: https://jobs.nvidia.com/careers/job/893393843015
+2026-03-03 14:35:19,151 -    Description: 3488 characters
+2026-03-03 14:35:19,151 -    Preview: NVIDIA's invention of the GPU 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited moder...
+2026-03-03 14:35:19,151 -    Salary: None
+2026-03-03 14:35:19,151 -    Posted: None
+2026-03-03 14:35:19,151 - 
+2026-03-03 14:35:19,151 - 10. NVIDIA: Senior Agentic Systems Engineer, Neural Graphics
+2026-03-03 14:35:19,151 -    Job ID: nvidia_893393843075
+2026-03-03 14:35:19,151 -    URL: https://jobs.nvidia.com/careers/job/893393843075
+2026-03-03 14:35:19,151 -    Description: 4178 characters
+2026-03-03 14:35:19,151 -    Preview: NVIDIA’s platform and innovations help developers bring artificial intelligence to the physical world. Our technologies accelerate the development of self-driving cars, humanoid robots, smart cities, ...
+2026-03-03 14:35:19,151 -    Salary: None
+2026-03-03 14:35:19,151 -    Posted: None
+2026-03-03 14:35:19,151 - 
+2026-03-03 14:35:19,151 - 11. NVIDIA: Senior Performance Software Engineer, Deep Learning Libraries
+2026-03-03 14:35:19,151 -    Job ID: nvidia_893391764682
+2026-03-03 14:35:19,151 -    URL: https://jobs.nvidia.com/careers/job/893391764682
+2026-03-03 14:35:19,152 -    Description: 3777 characters
+2026-03-03 14:35:19,152 -    Preview: We are now looking for a Senior Performance Software Engineer for Deep Learning Libraries! Do you enjoy tuning parallel algorithms and analyzing their performance? If so, we want to hear from you! As ...
+2026-03-03 14:35:19,152 -    Salary: None
+2026-03-03 14:35:19,152 -    Posted: None
+2026-03-03 14:35:19,152 - 
+2026-03-03 14:35:19,152 - 12. NVIDIA: Senior Deep Learning Systems Engineer, Datacenters
+2026-03-03 14:35:19,152 -    Job ID: nvidia_893383597427
+2026-03-03 14:35:19,152 -    URL: https://jobs.nvidia.com/careers/job/893383597427
+2026-03-03 14:35:19,152 -    Description: 4221 characters
+2026-03-03 14:35:19,152 -    Preview: As NVIDIA makes inroads into the Datacenter business, our team plays a central role in getting the most out of our exponentially growing datacenter deployments as well as establishing a data-driven ap...
+2026-03-03 14:35:19,152 -    Salary: None
+2026-03-03 14:35:19,152 -    Posted: None
+2026-03-03 14:35:19,152 - 
+2026-03-03 14:35:19,152 - 13. NVIDIA: Senior Deep Learning Software Engineer
+2026-03-03 14:35:19,152 -    Job ID: nvidia_893392993047
+2026-03-03 14:35:19,152 -    URL: https://jobs.nvidia.com/careers/job/893392993047
+2026-03-03 14:35:19,153 -    Description: 4039 characters
+2026-03-03 14:35:19,153 -    Preview: We are looking for a Senior Deep Learning Software Engineer to design and build our automated inference and deployment solution. As part of the team, you will be instrumental in defining a scalable ar...
+2026-03-03 14:35:19,153 -    Salary: None
+2026-03-03 14:35:19,153 -    Posted: None
+2026-03-03 14:35:19,153 - 
+2026-03-03 14:35:19,153 - 14. NVIDIA: Senior Deep Learning Software Engineer, Inference and Model Optimization
+2026-03-03 14:35:19,153 -    Job ID: nvidia_893391733053
+2026-03-03 14:35:19,153 -    URL: https://jobs.nvidia.com/careers/job/893391733053
+2026-03-03 14:35:19,154 -    Description: 4992 characters
+2026-03-03 14:35:19,154 -    Preview: NVIDIA is at the forefront of the generative AI revolution! The Algorithmic Model Optimization Team specifically focuses on optimizing generative AI models such as large language models (LLM) and diff...
+2026-03-03 14:35:19,154 -    Salary: None
+2026-03-03 14:35:19,154 -    Posted: None
+2026-03-03 14:35:19,154 - 
+2026-03-03 14:35:19,154 - 15. NVIDIA: Senior Deep Learning Software Engineer, Inference
+2026-03-03 14:35:19,154 -    Job ID: nvidia_893391006400
+2026-03-03 14:35:19,154 -    URL: https://jobs.nvidia.com/careers/job/893391006400
+2026-03-03 14:35:19,154 -    Description: 3616 characters
+2026-03-03 14:35:19,154 -    Preview: NVIDIA seeks a Senior Software Engineer specializing in Deep Learning Inference for our growing team. As a key contributor, you will help design, build, and optimize the GPU-accelerated software that ...
+2026-03-03 14:35:19,154 -    Salary: None
+2026-03-03 14:35:19,155 -    Posted: None
+2026-03-03 14:35:19,155 - 
+2026-03-03 14:35:19,155 - 16. NVIDIA: Senior Deep Learning Software Engineer, PyTorch - TensorRT Performance
+2026-03-03 14:35:19,155 -    Job ID: nvidia_893392468600
+2026-03-03 14:35:19,155 -    URL: https://jobs.nvidia.com/careers/job/893392468600
+2026-03-03 14:35:19,155 -    Description: 4761 characters
+2026-03-03 14:35:19,155 -    Preview: We are now looking for a Senior Deep Learning Software Engineer, PyTorch-TensorRT Performance! NVIDIA is seeking an experienced Deep Learning Engineer passionate about analyzing and improving the perf...
+2026-03-03 14:35:19,155 -    Salary: None
+2026-03-03 14:35:19,155 -    Posted: None
+2026-03-03 14:35:19,155 - 
+2026-03-03 14:35:19,156 - 17. NVIDIA: Senior Deep Learning AI Software Engineer
+2026-03-03 14:35:19,156 -    Job ID: nvidia_893392882491
+2026-03-03 14:35:19,156 -    URL: https://jobs.nvidia.com/careers/job/893392882491
+2026-03-03 14:35:19,156 -    Description: 4116 characters
+2026-03-03 14:35:19,156 -    Preview: NVIDIA is searching for a Senior Deep Leaning AI Engineer to develop artificial intelligence, computer vision algorithms, and foundation model applications for our Metropolis for Factories and Manufac...
+2026-03-03 14:35:19,156 -    Salary: None
+2026-03-03 14:35:19,156 -    Posted: None
+2026-03-03 14:35:19,156 - 
+2026-03-03 14:35:19,156 - 18. NVIDIA: Senior Software Engineer, Deep Learning - Torch-TRT
+2026-03-03 14:35:19,156 -    Job ID: nvidia_893392478768
+2026-03-03 14:35:19,156 -    URL: https://jobs.nvidia.com/careers/job/893392478768
+2026-03-03 14:35:19,156 -    Description: 4738 characters
+2026-03-03 14:35:19,156 -    Preview: NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. To...
+2026-03-03 14:35:19,156 -    Salary: None
+2026-03-03 14:35:19,156 -    Posted: None
+2026-03-03 14:35:19,156 - 
+2026-03-03 14:35:19,156 - 19. NVIDIA: Senior Software Engineer, Deep Learning - MLIR TRT
+2026-03-03 14:35:19,156 -    Job ID: nvidia_893392493845
+2026-03-03 14:35:19,156 -    URL: https://jobs.nvidia.com/careers/job/893392493845
+2026-03-03 14:35:19,156 -    Description: 4496 characters
+2026-03-03 14:35:19,156 -    Preview: NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. To...
+2026-03-03 14:35:19,156 -    Salary: None
+2026-03-03 14:35:19,156 -    Posted: None
+2026-03-03 14:35:19,156 - 
+2026-03-03 14:35:19,156 - 20. NVIDIA: Senior Deep Learning Algorithm Engineer
+2026-03-03 14:35:19,156 -    Job ID: nvidia_893392800815
+2026-03-03 14:35:19,157 -    URL: https://jobs.nvidia.com/careers/job/893392800815
+2026-03-03 14:35:19,157 -    Description: 3433 characters
+2026-03-03 14:35:19,157 -    Preview: We are now looking for a Senior DL Algorithms Engineer! We are seeking a highly skilled Deep Learning Algorithms Engineer with hands-on experience optimizing and deploying Large Language Models (LLMs)...
+2026-03-03 14:35:19,157 -    Salary: None
+2026-03-03 14:35:19,157 -    Posted: None
+2026-03-03 14:35:19,157 - 
+2026-03-03 14:35:19,157 - 21. GOOGLE: Software Engineer, BigQuery AI Developer Experience
+2026-03-03 14:35:19,157 -    Job ID: google_85809587231302342
+2026-03-03 14:35:19,157 -    URL: https://www.google.com/about/careers/applications/jobs/results/85809587231302342-software-engineer-bigquery-ai-developer-experience?q=Software+Engineer&location=Kirkland,+WA,+USA&hl=en
+2026-03-03 14:35:19,157 -    Description: 1837 characters
+2026-03-03 14:35:19,157 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,157 -    Salary: None
+2026-03-03 14:35:19,157 -    Posted: None
+2026-03-03 14:35:19,157 - 
+2026-03-03 14:35:19,157 - 22. GOOGLE: Software Engineer, Mobile, Android, Platforms and Devices
+2026-03-03 14:35:19,157 -    Job ID: google_91257434344956614
+2026-03-03 14:35:19,157 -    URL: https://www.google.com/about/careers/applications/jobs/results/91257434344956614-software-engineer-mobile-android-platforms-and-devices?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,157 -    Description: 1288 characters
+2026-03-03 14:35:19,157 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,157 -    Salary: None
+2026-03-03 14:35:19,157 -    Posted: None
+2026-03-03 14:35:19,157 - 
+2026-03-03 14:35:19,157 - 23. GOOGLE: Software Engineer III, Full Stack, Platform and Devices
+2026-03-03 14:35:19,157 -    Job ID: google_136976683411350214
+2026-03-03 14:35:19,157 -    URL: https://www.google.com/about/careers/applications/jobs/results/136976683411350214-software-engineer-iii-full-stack-platform-and-devices?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,158 -    Description: 1267 characters
+2026-03-03 14:35:19,158 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,158 -    Salary: None
+2026-03-03 14:35:19,158 -    Posted: None
+2026-03-03 14:35:19,158 - 
+2026-03-03 14:35:19,158 - 24. GOOGLE: Software Engineer, BigQuery Agentic AI
+2026-03-03 14:35:19,158 -    Job ID: google_101667663050089158
+2026-03-03 14:35:19,159 -    URL: https://www.google.com/about/careers/applications/jobs/results/101667663050089158-software-engineer-bigquery-agentic-ai?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,159 -    Description: 1943 characters
+2026-03-03 14:35:19,159 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,159 -    Salary: None
+2026-03-03 14:35:19,159 -    Posted: None
+2026-03-03 14:35:19,159 - 
+2026-03-03 14:35:19,159 - 25. GOOGLE: Staff Software Engineer, Front End, Google Cloud
+2026-03-03 14:35:19,159 -    Job ID: google_120008837703836358
+2026-03-03 14:35:19,159 -    URL: https://www.google.com/about/careers/applications/jobs/results/120008837703836358-staff-software-engineer-front-end-google-cloud?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,159 -    Description: 1773 characters
+2026-03-03 14:35:19,159 -    Preview: info_outline
+X
+Applicants in San Francisco: Qualified applications with arrest or conviction records will be considered for employment in accordance with the San Francisco Fair Chance Ordinance for Em...
+2026-03-03 14:35:19,160 -    Salary: None
+2026-03-03 14:35:19,160 -    Posted: None
+2026-03-03 14:35:19,160 - 
+2026-03-03 14:35:19,160 - 26. GOOGLE: Staff Software Engineer, AI/ML
+2026-03-03 14:35:19,160 -    Job ID: google_74301174848594630
+2026-03-03 14:35:19,160 -    URL: https://www.google.com/about/careers/applications/jobs/results/74301174848594630-staff-software-engineer-aiml?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,160 -    Description: 1706 characters
+2026-03-03 14:35:19,160 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,160 -    Salary: None
+2026-03-03 14:35:19,160 -    Posted: None
+2026-03-03 14:35:19,160 - 
+2026-03-03 14:35:19,160 - 27. GOOGLE: Staff Software Engineer, Infrastructure, Google Cloud Security and Privacy
+2026-03-03 14:35:19,161 -    Job ID: google_108916003001246406
+2026-03-03 14:35:19,161 -    URL: https://www.google.com/about/careers/applications/jobs/results/108916003001246406-staff-software-engineer-infrastructure-google-cloud-security-and-privacy?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,161 -    Description: 1934 characters
+2026-03-03 14:35:19,161 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+H...
+2026-03-03 14:35:19,161 -    Salary: None
+2026-03-03 14:35:19,161 -    Posted: None
+2026-03-03 14:35:19,161 - 
+2026-03-03 14:35:19,161 - 28. GOOGLE: Senior Software Engineer, High Performance Computing
+2026-03-03 14:35:19,161 -    Job ID: google_104315045189427910
+2026-03-03 14:35:19,161 -    URL: https://www.google.com/about/careers/applications/jobs/results/104315045189427910-senior-software-engineer-high-performance-computing?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,161 -    Description: 1582 characters
+2026-03-03 14:35:19,161 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,161 -    Salary: None
+2026-03-03 14:35:19,161 -    Posted: None
+2026-03-03 14:35:19,161 - 
+2026-03-03 14:35:19,161 - 29. GOOGLE: Software Engineer, PhD, Early Career, AI/Machine Learning, 2026 Start
+2026-03-03 14:35:19,161 -    Job ID: google_122258040807137990
+2026-03-03 14:35:19,161 -    URL: https://www.google.com/about/careers/applications/jobs/results/122258040807137990-software-engineer-phd-early-career-aimachine-learning-2026-start?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,161 -    Description: 1893 characters
+2026-03-03 14:35:19,161 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,161 -    Salary: None
+2026-03-03 14:35:19,161 -    Posted: None
+2026-03-03 14:35:19,161 - 
+2026-03-03 14:35:19,161 - 30. GOOGLE: Software Engineer, GPU Performance
+2026-03-03 14:35:19,161 -    Job ID: google_91233894434513606
+2026-03-03 14:35:19,161 -    URL: https://www.google.com/about/careers/applications/jobs/results/91233894434513606-software-engineer-gpu-performance?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,161 -    Description: 1683 characters
+2026-03-03 14:35:19,161 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,161 -    Salary: None
+2026-03-03 14:35:19,161 -    Posted: None
+2026-03-03 14:35:19,162 - 
+2026-03-03 14:35:19,162 - 31. GOOGLE: Staff Software Engineer, Infrastructure, Google Cloud
+2026-03-03 14:35:19,162 -    Job ID: google_116616913185841862
+2026-03-03 14:35:19,162 -    URL: https://www.google.com/about/careers/applications/jobs/results/116616913185841862-staff-software-engineer-infrastructure-google-cloud?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,162 -    Description: 1697 characters
+2026-03-03 14:35:19,162 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+H...
+2026-03-03 14:35:19,162 -    Salary: None
+2026-03-03 14:35:19,162 -    Posted: None
+2026-03-03 14:35:19,162 - 
+2026-03-03 14:35:19,162 - 32. GOOGLE: Senior Software Engineer, Infrastructure
+2026-03-03 14:35:19,162 -    Job ID: google_120057749596709574
+2026-03-03 14:35:19,162 -    URL: https://www.google.com/about/careers/applications/jobs/results/120057749596709574-senior-software-engineer-infrastructure?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,162 -    Description: 1524 characters
+2026-03-03 14:35:19,162 -    Preview: info_outline
+X
+
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+...
+2026-03-03 14:35:19,162 -    Salary: None
+2026-03-03 14:35:19,162 -    Posted: None
+2026-03-03 14:35:19,162 - 
+2026-03-03 14:35:19,162 - 33. GOOGLE: Senior Software Engineer, GenAI, Foundation Model Quality
+2026-03-03 14:35:19,162 -    Job ID: google_95958353091404486
+2026-03-03 14:35:19,162 -    URL: https://www.google.com/about/careers/applications/jobs/results/95958353091404486-senior-software-engineer-genai-foundation-model-quality?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,162 -    Description: 1890 characters
+2026-03-03 14:35:19,162 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,162 -    Salary: None
+2026-03-03 14:35:19,162 -    Posted: None
+2026-03-03 14:35:19,162 - 
+2026-03-03 14:35:19,162 - 34. GOOGLE: Senior Staff Software Engineer, Performance Co-Design Simulator Architect
+2026-03-03 14:35:19,162 -    Job ID: google_125264046675894982
+2026-03-03 14:35:19,162 -    URL: https://www.google.com/about/careers/applications/jobs/results/125264046675894982-senior-staff-software-engineer-performance-codesign-simulator-architect?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,163 -    Description: 1690 characters
+2026-03-03 14:35:19,163 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,163 -    Salary: None
+2026-03-03 14:35:19,163 -    Posted: None
+2026-03-03 14:35:19,163 - 
+2026-03-03 14:35:19,163 - 35. GOOGLE: Staff Software Engineer, Infrastructure, Google Cloud Compute
+2026-03-03 14:35:19,163 -    Job ID: google_109451955192898246
+2026-03-03 14:35:19,163 -    URL: https://www.google.com/about/careers/applications/jobs/results/109451955192898246-staff-software-engineer-infrastructure-google-cloud-compute?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,163 -    Description: 1644 characters
+2026-03-03 14:35:19,163 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,163 -    Salary: None
+2026-03-03 14:35:19,163 -    Posted: None
+2026-03-03 14:35:19,164 - 
+2026-03-03 14:35:19,164 - 36. GOOGLE: Software Engineer, PhD, Early Career, Infrastructure, 2026 Start
+2026-03-03 14:35:19,164 -    Job ID: google_88714689822761670
+2026-03-03 14:35:19,164 -    URL: https://www.google.com/about/careers/applications/jobs/results/88714689822761670-software-engineer-phd-early-career-infrastructure-2026-start?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,164 -    Description: 2093 characters
+2026-03-03 14:35:19,164 -    Preview: info_outline
+X
+Applicants in the County of Los Angeles: Qualified applications with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance...
+2026-03-03 14:35:19,165 -    Salary: None
+2026-03-03 14:35:19,165 -    Posted: None
+2026-03-03 14:35:19,165 - 
+2026-03-03 14:35:19,165 - 37. GOOGLE: Software Engineer, PhD, Early Career, Embedded Systems and Firmware, 2026 Start
+2026-03-03 14:35:19,165 -    Job ID: google_96957711316329158
+2026-03-03 14:35:19,165 -    URL: https://www.google.com/about/careers/applications/jobs/results/96957711316329158-software-engineer-phd-early-career-embedded-systems-and-firmware-2026-start?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,165 -    Description: 1764 characters
+2026-03-03 14:35:19,165 -    Preview: info_outline
+X
+Applicants in the County of Los Angeles: Qualified applications with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance...
+2026-03-03 14:35:19,165 -    Salary: None
+2026-03-03 14:35:19,165 -    Posted: None
+2026-03-03 14:35:19,165 - 
+2026-03-03 14:35:19,165 - 38. GOOGLE: Staff Software Engineer, Infrastructure, Google Cloud AI
+2026-03-03 14:35:19,165 -    Job ID: google_105919883341898438
+2026-03-03 14:35:19,165 -    URL: https://www.google.com/about/careers/applications/jobs/results/105919883341898438-staff-software-engineer-infrastructure-google-cloud-ai?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,165 -    Description: 1642 characters
+2026-03-03 14:35:19,165 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,165 -    Salary: None
+2026-03-03 14:35:19,165 -    Posted: None
+2026-03-03 14:35:19,165 - 
+2026-03-03 14:35:19,165 - 39. GOOGLE: Software Engineer III, Platforms Infrastructure Engineering
+2026-03-03 14:35:19,165 -    Job ID: google_129037268860969670
+2026-03-03 14:35:19,165 -    URL: https://www.google.com/about/careers/applications/jobs/results/129037268860969670-software-engineer-iii-platforms-infrastructure-engineering?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,165 -    Description: 1448 characters
+2026-03-03 14:35:19,165 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,165 -    Salary: None
+2026-03-03 14:35:19,165 -    Posted: None
+2026-03-03 14:35:19,165 - 
+2026-03-03 14:35:19,165 - 40. GOOGLE: Staff Software Engineer, Google Cloud Storage API
+2026-03-03 14:35:19,165 -    Job ID: google_103699848032592582
+2026-03-03 14:35:19,165 -    URL: https://www.google.com/about/careers/applications/jobs/results/103699848032592582-staff-software-engineer-google-cloud-storage-api?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-03 14:35:19,165 -    Description: 1779 characters
+2026-03-03 14:35:19,165 -    Preview: info_outline
+X
+In accordance with Washington state law, we are highlighting our comprehensive benefits package, which is available to all eligible US based employees. Benefits for this role include:
+
+...
+2026-03-03 14:35:19,165 -    Salary: None
+2026-03-03 14:35:19,165 -    Posted: None
+2026-03-03 14:35:19,166 - 
+2026-03-03 14:35:19,166 - 41. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,166 -    Job ID: amazon_3146660
+2026-03-03 14:35:19,166 -    URL: https://www.amazon.jobs/en/jobs/3146660/software-development-engineer
+2026-03-03 14:35:19,166 -    Description: 7365 characters
+2026-03-03 14:35:19,166 -    Preview: Description
+
+Amazon Web Services (AWS) is building a central pipeline of Software Development Engineer (SDE) talent for anticipated roles in 2026. This requisition supports hiring across all AWS SDE p...
+2026-03-03 14:35:19,166 -    Salary: None
+2026-03-03 14:35:19,166 -    Posted: None
+2026-03-03 14:35:19,166 - 
+2026-03-03 14:35:19,166 - 42. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,166 -    Job ID: amazon_3146620
+2026-03-03 14:35:19,166 -    URL: https://www.amazon.jobs/en/jobs/3146620/software-development-engineer
+2026-03-03 14:35:19,166 -    Description: 7365 characters
+2026-03-03 14:35:19,166 -    Preview: Description
+
+Amazon Web Services (AWS) is building a central pipeline of Software Development Engineer (SDE) talent for anticipated roles in 2026. This requisition supports hiring across all AWS SDE p...
+2026-03-03 14:35:19,166 -    Salary: None
+2026-03-03 14:35:19,166 -    Posted: None
+2026-03-03 14:35:19,166 - 
+2026-03-03 14:35:19,166 - 43. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,166 -    Job ID: amazon_3146656
+2026-03-03 14:35:19,166 -    URL: https://www.amazon.jobs/en/jobs/3146656/software-development-engineer
+2026-03-03 14:35:19,166 -    Description: 7073 characters
+2026-03-03 14:35:19,166 -    Preview: Description
+
+Amazon Web Services (AWS) is building a central pipeline of Software Development Engineer (SDE) talent for anticipated roles in 2026. This requisition supports hiring across all AWS SDE p...
+2026-03-03 14:35:19,167 -    Salary: None
+2026-03-03 14:35:19,167 -    Posted: None
+2026-03-03 14:35:19,167 - 
+2026-03-03 14:35:19,167 - 44. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,167 -    Job ID: amazon_3191114
+2026-03-03 14:35:19,167 -    URL: https://www.amazon.jobs/en/jobs/3191114/software-development-engineer
+2026-03-03 14:35:19,167 -    Description: 6386 characters
+2026-03-03 14:35:19,167 -    Preview: Description
+
+Amazon Leo is Amazon’s low Earth orbit satellite network. Our mission is to deliver fast, reliable internet connectivity to customers beyond the reach of existing networks. From individua...
+2026-03-03 14:35:19,167 -    Salary: None
+2026-03-03 14:35:19,167 -    Posted: None
+2026-03-03 14:35:19,167 - 
+2026-03-03 14:35:19,167 - 45. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,167 -    Job ID: amazon_3191123
+2026-03-03 14:35:19,167 -    URL: https://www.amazon.jobs/en/jobs/3191123/software-development-engineer
+2026-03-03 14:35:19,168 -    Description: 6346 characters
+2026-03-03 14:35:19,168 -    Preview: Description
+
+Amazon Leo is Amazon’s low Earth orbit satellite network. Our mission is to deliver fast, reliable internet connectivity to customers beyond the reach of existing networks. From individua...
+2026-03-03 14:35:19,168 -    Salary: None
+2026-03-03 14:35:19,168 -    Posted: None
+2026-03-03 14:35:19,168 - 
+2026-03-03 14:35:19,168 - 46. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,168 -    Job ID: amazon_3146673
+2026-03-03 14:35:19,168 -    URL: https://www.amazon.jobs/en/jobs/3146673/software-development-engineer
+2026-03-03 14:35:19,168 -    Description: 7063 characters
+2026-03-03 14:35:19,168 -    Preview: Description
+
+Amazon Web Services (AWS) is building a central pipeline of Software Development Engineer (SDE) talent for anticipated roles in 2026. This requisition supports hiring across all AWS SDE p...
+2026-03-03 14:35:19,168 -    Salary: None
+2026-03-03 14:35:19,168 -    Posted: None
+2026-03-03 14:35:19,168 - 
+2026-03-03 14:35:19,168 - 47. AMAZON: Software Development Engineer
+2026-03-03 14:35:19,168 -    Job ID: amazon_3146624
+2026-03-03 14:35:19,168 -    URL: https://www.amazon.jobs/en/jobs/3146624/software-development-engineer
+2026-03-03 14:35:19,168 -    Description: 7024 characters
+2026-03-03 14:35:19,169 -    Preview: Description
+
+Amazon Web Services (AWS) is building a central pipeline of Software Development Engineer (SDE) talent for anticipated roles in 2026. This requisition supports hiring across all AWS SDE p...
+2026-03-03 14:35:19,169 -    Salary: None
+2026-03-03 14:35:19,169 -    Posted: None
+2026-03-03 14:35:19,169 - 
+2026-03-03 14:35:19,169 - 48. AMAZON: Sr. Software Dev Engineer
+2026-03-03 14:35:19,169 -    Job ID: amazon_3191592
+2026-03-03 14:35:19,169 -    URL: https://www.amazon.jobs/en/jobs/3191592/sr-software-dev-engineer
+2026-03-03 14:35:19,169 -    Description: 5995 characters
+2026-03-03 14:35:19,169 -    Preview: Description
+
+Amazon Leo is Amazon’s low Earth orbit satellite network. Our mission is to deliver fast, reliable internet connectivity to customers beyond the reach of existing networks. From individua...
+2026-03-03 14:35:19,169 -    Salary: None
+2026-03-03 14:35:19,169 -    Posted: None
+2026-03-03 14:35:19,169 - 
+2026-03-03 14:35:19,169 - 49. AMAZON: Software Dev Engineer, Shield
+2026-03-03 14:35:19,170 -    Job ID: amazon_3165061
+2026-03-03 14:35:19,170 -    URL: https://www.amazon.jobs/en/jobs/3165061/software-dev-engineer-shield
+2026-03-03 14:35:19,170 -    Description: 5886 characters
+2026-03-03 14:35:19,170 -    Preview: Description
+
+AWS Infrastructure Services owns the design, planning, delivery, and operation of all AWS global infrastructure. In other words, we’re the people who keep the cloud running. We support al...
+2026-03-03 14:35:19,170 -    Salary: None
+2026-03-03 14:35:19,170 -    Posted: None
+2026-03-03 14:35:19,170 - 
+2026-03-03 14:35:19,170 - 50. AMAZON: Software Development Engineer, Leo Manufacturing Software Systems
+2026-03-03 14:35:19,170 -    Job ID: amazon_3179725
+2026-03-03 14:35:19,170 -    URL: https://www.amazon.jobs/en/jobs/3179725/software-development-engineer-leo-manufacturing-software-systems
+2026-03-03 14:35:19,170 -    Description: 5961 characters
+2026-03-03 14:35:19,170 -    Preview: Description
+
+Amazon Leo is Amazon’s low Earth orbit satellite broadband network. Its mission is to deliver fast, reliable internet to customers and communities around the world, and we’ve designed the...
+2026-03-03 14:35:19,171 -    Salary: None
+2026-03-03 14:35:19,171 -    Posted: None
+2026-03-03 14:35:19,171 - 
+2026-03-03 14:35:19,171 - 51. MICROSOFT: Software Engineer II & Senior Software Engineer
+2026-03-03 14:35:19,171 -    Job ID: microsoft_1970393556640555
+2026-03-03 14:35:19,171 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556640555
+2026-03-03 14:35:19,171 -    Description: 7336 characters
+2026-03-03 14:35:19,171 -    Preview: Overview
+
+
+Security represents the most critical priorities for our customers in a world awash in digital threats, regulatory scrutiny, and estate complexity. Microsoft Security aspires to make the wo...
+2026-03-03 14:35:19,171 -    Salary: None
+2026-03-03 14:35:19,171 -    Posted: None
+2026-03-03 14:35:19,171 - 
+2026-03-03 14:35:19,171 - 52. MICROSOFT: Senior Software Engineer and Software Engineer II (Multiple Positions) OneDrive and SharePoint Team
+2026-03-03 14:35:19,171 -    Job ID: microsoft_1970393556641220
+2026-03-03 14:35:19,171 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556641220
+2026-03-03 14:35:19,171 -    Description: 6072 characters
+2026-03-03 14:35:19,171 -    Preview: Overview
+
+
+OneDrive and SharePoint are rapidly growing services at the center of Microsoft's cloud, reaching almost every part of the company, like Windows and Office. You would be a part of a team th...
+2026-03-03 14:35:19,171 -    Salary: None
+2026-03-03 14:35:19,171 -    Posted: None
+2026-03-03 14:35:19,171 - 
+2026-03-03 14:35:19,171 - 53. MICROSOFT: Software Engineering II and Senior Software Engineer (Multiple Positions) Teams Copilot
+2026-03-03 14:35:19,171 -    Job ID: microsoft_1970393556752618
+2026-03-03 14:35:19,171 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556752618
+2026-03-03 14:35:19,171 -    Description: 5834 characters
+2026-03-03 14:35:19,171 -    Preview: Overview
+
+Microsoft Teams is the hub for modern collaboration—bringing together everything teams need to succeed, all within the Office 365 ecosystem. It serves as the canvas that unifies your content...
+2026-03-03 14:35:19,172 -    Salary: None
+2026-03-03 14:35:19,172 -    Posted: None
+2026-03-03 14:35:19,172 - 
+2026-03-03 14:35:19,172 - 54. MICROSOFT: Software Engineer 2
+2026-03-03 14:35:19,172 -    Job ID: microsoft_1970393556628404
+2026-03-03 14:35:19,172 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556628404
+2026-03-03 14:35:19,172 -    Description: 6642 characters
+2026-03-03 14:35:19,172 -    Preview: Overview
+
+
+Data Privacy has never been more top of mind than it is today. Governments around the world are passing new privacy legislation at a fast pace, and companies are investing in many aspects o...
+2026-03-03 14:35:19,172 -    Salary: None
+2026-03-03 14:35:19,172 -    Posted: None
+2026-03-03 14:35:19,172 - 
+2026-03-03 14:35:19,172 - 55. MICROSOFT: Software Engineering IC3
+2026-03-03 14:35:19,172 -    Job ID: microsoft_1970393556659168
+2026-03-03 14:35:19,172 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556659168
+2026-03-03 14:35:19,172 -    Description: 6762 characters
+2026-03-03 14:35:19,172 -    Preview: Overview
+
+
+The Experience plus Devices (E+D) Growth team is seeking engineers to help accelerate the adoption of Copilot and Microsoft 365. Our team is uniquely positioned at the strategic epicenter o...
+2026-03-03 14:35:19,172 -    Salary: None
+2026-03-03 14:35:19,172 -    Posted: None
+2026-03-03 14:35:19,172 - 
+2026-03-03 14:35:19,172 - 56. MICROSOFT: Software Engineer II
+2026-03-03 14:35:19,172 -    Job ID: microsoft_1970393556630577
+2026-03-03 14:35:19,172 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556630577
+2026-03-03 14:35:19,172 -    Description: 5228 characters
+2026-03-03 14:35:19,172 -    Preview: Overview
+
+We are looking for an experienced software engineer to work on our experimentation platform powering Bing Search quality evaluations. Our team is responsible for the highly scalable experime...
+2026-03-03 14:35:19,172 -    Salary: None
+2026-03-03 14:35:19,172 -    Posted: None
+2026-03-03 14:35:19,172 - 
+2026-03-03 14:35:19,172 - 57. MICROSOFT: Software Engineer II - Copilot M365 Calendar
+2026-03-03 14:35:19,173 -    Job ID: microsoft_1970393556619678
+2026-03-03 14:35:19,173 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556619678
+2026-03-03 14:35:19,173 -    Description: 6184 characters
+2026-03-03 14:35:19,173 -    Preview: Overview
+
+
+As a Software Engineer II in the Calendar team, you will design and build AI-powered scheduling systems by integrating backend services and Large Language Models (LLMs) with Application Pro...
+2026-03-03 14:35:19,173 -    Salary: None
+2026-03-03 14:35:19,173 -    Posted: None
+2026-03-03 14:35:19,173 - 
+2026-03-03 14:35:19,173 - 58. MICROSOFT: Software Engineer II - CTJ - POLY
+2026-03-03 14:35:19,173 -    Job ID: microsoft_1970393556637648
+2026-03-03 14:35:19,173 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556637648
+2026-03-03 14:35:19,173 -    Description: 21059 characters
+2026-03-03 14:35:19,174 -    Preview: Overview
+
+Overview
+ 
+Do you have a passion for high scale services and working with some of Microsoft’s most critical customers? We’re looking for a Senior Software Engineer with the right mix of soft...
+2026-03-03 14:35:19,175 -    Salary: None
+2026-03-03 14:35:19,175 -    Posted: None
+2026-03-03 14:35:19,175 - 
+2026-03-03 14:35:19,175 - 59. MICROSOFT: Software Engineer II
+2026-03-03 14:35:19,175 -    Job ID: microsoft_1970393556635888
+2026-03-03 14:35:19,175 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556635888
+2026-03-03 14:35:19,175 -    Description: 7602 characters
+2026-03-03 14:35:19,175 -    Preview: Overview
+
+Do you want to directly impact hundreds of millions of devices every month and enjoy the gratification that comes from keeping millions of customers protected from the ever-growing threats o...
+2026-03-03 14:35:19,175 -    Salary: None
+2026-03-03 14:35:19,175 -    Posted: None
+2026-03-03 14:35:19,175 - 
+2026-03-03 14:35:19,175 - 60. MICROSOFT: Software Engineer II - AI
+2026-03-03 14:35:19,175 -    Job ID: microsoft_1970393556753771
+2026-03-03 14:35:19,175 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556753771
+2026-03-03 14:35:19,176 -    Description: 7228 characters
+2026-03-03 14:35:19,176 -    Preview: Overview
+
+
+Dynamics 365 is Microsoft’s suite of enterprise applications powering many of the world’s largest organizations. The Customer Experience Applications team builds Dynamics 365 Sales Developm...
+2026-03-03 14:35:19,176 -    Salary: None
+2026-03-03 14:35:19,176 -    Posted: None
+2026-03-03 14:35:19,176 - 
+2026-03-03 14:35:19,176 - 61. MICROSOFT: Senior Software Engineer and Software Engineer II (Multiple Positions) OneDrive and SharePoint Team
+2026-03-03 14:35:19,176 -    Job ID: microsoft_1970393556641220
+2026-03-03 14:35:19,176 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556641220
+2026-03-03 14:35:19,176 -    Description: 6072 characters
+2026-03-03 14:35:19,177 -    Preview: Overview
+
+
+OneDrive and SharePoint are rapidly growing services at the center of Microsoft's cloud, reaching almost every part of the company, like Windows and Office. You would be a part of a team th...
+2026-03-03 14:35:19,177 -    Salary: None
+2026-03-03 14:35:19,177 -    Posted: None
+2026-03-03 14:35:19,177 - 
+2026-03-03 14:35:19,177 - 62. MICROSOFT: Software Engineer II and Senior Software Engineer (Multiple Positions) - Office Files and Identity
+2026-03-03 14:35:19,180 -    Job ID: microsoft_1970393556642878
+2026-03-03 14:35:19,180 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556642878
+2026-03-03 14:35:19,222 -    Description: 6380 characters
+2026-03-03 14:35:19,223 -    Preview: Overview
+
+
+The FIO (Office Files and Identity) Team drives collaboration, identity, cloud file experiences and cloud file growth for Office applications like Word, Excel and PowerPoint. We deliver the...
+2026-03-03 14:35:19,223 -    Salary: None
+2026-03-03 14:35:19,224 -    Posted: None
+2026-03-03 14:35:19,224 - 
+2026-03-03 14:35:19,224 - 63. MICROSOFT: Software Engineer II and Senior Software Engineer - AI Compilers
+2026-03-03 14:35:19,224 -    Job ID: microsoft_1970393556653554
+2026-03-03 14:35:19,224 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556653554
+2026-03-03 14:35:19,224 -    Description: 5633 characters
+2026-03-03 14:35:19,224 -    Preview: Overview
+
+
+The AI Frameworks team at Microsoft develops the AI software used to train and deploy the world’s most advanced AI models. We build state-of-the-art AI compilers and design new AI programmi...
+2026-03-03 14:35:19,224 -    Salary: None
+2026-03-03 14:35:19,225 -    Posted: None
+2026-03-03 14:35:19,225 - 
+2026-03-03 14:35:19,225 - 64. MICROSOFT: Software Engineer II + Senior Software Engineer - Applied AI for Microsoft Threat Protection (MTP)
+2026-03-03 14:35:19,225 -    Job ID: microsoft_1970393556745992
+2026-03-03 14:35:19,225 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556745992
+2026-03-03 14:35:19,225 -    Description: 6703 characters
+2026-03-03 14:35:19,225 -    Preview: Overview
+
+
+The Microsoft Security Organization is building the next generation of security solutions by rethinking how security work is done from the ground up. The AI for Security (AI4S) Team within ...
+2026-03-03 14:35:19,225 -    Salary: None
+2026-03-03 14:35:19,225 -    Posted: None
+2026-03-03 14:35:19,225 - 
+2026-03-03 14:35:19,225 - 65. MICROSOFT: Software Engineering II and Senior Software Engineer (Multiple Positions) Teams Copilot
+2026-03-03 14:35:19,226 -    Job ID: microsoft_1970393556752618
+2026-03-03 14:35:19,226 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556752618
+2026-03-03 14:35:19,226 -    Description: 5834 characters
+2026-03-03 14:35:19,226 -    Preview: Overview
+
+Microsoft Teams is the hub for modern collaboration—bringing together everything teams need to succeed, all within the Office 365 ecosystem. It serves as the canvas that unifies your content...
+2026-03-03 14:35:19,226 -    Salary: None
+2026-03-03 14:35:19,226 -    Posted: None
+2026-03-03 14:35:19,226 - 
+2026-03-03 14:35:19,226 - 66. MICROSOFT: Senior Software Engineer / Software Engineer II - Security
+2026-03-03 14:35:19,227 -    Job ID: microsoft_1970393556751404
+2026-03-03 14:35:19,227 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556751404
+2026-03-03 14:35:19,227 -    Description: 7653 characters
+2026-03-03 14:35:19,227 -    Preview: Overview
+
+
+Security represents the most critical priorities for our customers in a world awash in digital threats, regulatory scrutiny, and estate complexity. Microsoft Security aspires to make the wo...
+2026-03-03 14:35:19,227 -    Salary: None
+2026-03-03 14:35:19,228 -    Posted: None
+2026-03-03 14:35:19,228 - 
+2026-03-03 14:35:19,228 - 67. MICROSOFT: Software Engineer II and Senior Software Engineer - Performance
+2026-03-03 14:35:19,228 -    Job ID: microsoft_1970393556642428
+2026-03-03 14:35:19,228 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556642428
+2026-03-03 14:35:19,228 -    Description: 6837 characters
+2026-03-03 14:35:19,228 -    Preview: Overview
+
+
+The Artificial Intelligence Performance team at Microsoft develops AI software that enables running AI models everywhere, from world’s fastest AI supercomputers, to servers, desktops, mobil...
+2026-03-03 14:35:19,228 -    Salary: None
+2026-03-03 14:35:19,228 -    Posted: None
+2026-03-03 14:35:19,228 - 
+2026-03-03 14:35:19,229 - 68. MICROSOFT: Senior/Software Engineer II - Backend
+2026-03-03 14:35:19,229 -    Job ID: microsoft_1970393556769450
+2026-03-03 14:35:19,229 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556769450
+2026-03-03 14:35:19,229 -    Description: 6737 characters
+2026-03-03 14:35:19,229 -    Preview: Overview
+
+Security represents the most critical priorities for our customers in a world awash in digital threats, regulatory scrutiny, and estate complexity. Microsoft Security aspires to make the wor...
+2026-03-03 14:35:19,229 -    Salary: None
+2026-03-03 14:35:19,229 -    Posted: None
+2026-03-03 14:35:19,229 - 
+2026-03-03 14:35:19,229 - 69. MICROSOFT: Software Engineer II
+2026-03-03 14:35:19,229 -    Job ID: microsoft_1970393556638003
+2026-03-03 14:35:19,229 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556638003
+2026-03-03 14:35:19,229 -    Description: 6480 characters
+2026-03-03 14:35:19,229 -    Preview: Overview
+
+
+The Cloud & AI organization accelerates Microsoft’s mission and bold ambitions to ensure that our company and industry is securing digital technology platforms, devices, and clouds in our c...
+2026-03-03 14:35:19,229 -    Salary: None
+2026-03-03 14:35:19,229 -    Posted: None
+2026-03-03 14:35:19,229 - 
+2026-03-03 14:35:19,229 - 70. MICROSOFT: Software Engineer II
+2026-03-03 14:35:19,229 -    Job ID: microsoft_1970393556628780
+2026-03-03 14:35:19,229 -    URL: https://apply.careers.microsoft.com/careers/job/1970393556628780
+2026-03-03 14:35:19,229 -    Description: 5698 characters
+2026-03-03 14:35:19,229 -    Preview: Overview
+
+Join us to build the future of end user computing! Azure Virtual Desktop and Windows 365 are fundamentally changing the nature of personal computing, pushing computing to the cloud and makin...
+2026-03-03 14:35:19,229 -    Salary: None
+2026-03-03 14:35:19,230 -    Posted: None
+2026-03-03 14:35:19,230 - 
+2026-03-03 14:35:19,230 - 71. SALESFORCE: Backend Software Development Engineer - Mid/Senior/Lead/Principal
+2026-03-03 14:35:19,230 -    Job ID: salesforce_249832
+2026-03-03 14:35:19,230 -    URL: https://careers.salesforce.com/en/jobs/jr249832/backend-software-development-engineer-midseniorleadprincipal/
+2026-03-03 14:35:19,230 -    Description: 3301 characters
+2026-03-03 14:35:19,230 -    Preview: Description
+
+Note: By applying to the Software Backend Development posting, recruiters and hiring managers across the organization hiring for Backend Software Engineers will review your resume. Our go...
+2026-03-03 14:35:19,230 -    Salary: None
+2026-03-03 14:35:19,230 -    Posted: None
+2026-03-03 14:35:19,230 - 
+2026-03-03 14:35:19,230 - 72. SALESFORCE: Principal Backend Software Development Engineer, Agentforce for Supply Chain
+2026-03-03 14:35:19,230 -    Job ID: salesforce_322181
+2026-03-03 14:35:19,230 -    URL: https://careers.salesforce.com/en/jobs/jr322181/principal-backend-software-development-engineer-agentforce-for-supply-chain/
+2026-03-03 14:35:19,230 -    Description: 5651 characters
+2026-03-03 14:35:19,230 -    Preview: Description
+
+Overview of the Role
+
+Global supply chains still rely on slow, manual processes—email, spreadsheets, and fragmented data. The economy moves fast but supply chains don’t, creating an ineff...
+2026-03-03 14:35:19,230 -    Salary: None
+2026-03-03 14:35:19,230 -    Posted: None
+2026-03-03 14:35:19,230 - 
+2026-03-03 14:35:19,230 - 73. SALESFORCE: Full Stack Software Engineering, Lead, B2C Identity Platform
+2026-03-03 14:35:19,230 -    Job ID: salesforce_325057
+2026-03-03 14:35:19,230 -    URL: https://careers.salesforce.com/en/jobs/jr325057/full-stack-software-engineering-lead-b2c-identity-platform/
+2026-03-03 14:35:19,230 -    Description: 3448 characters
+2026-03-03 14:35:19,230 -    Preview: Applications will be accepted until 03/27/2026.
+
+Description
+
+This Lead Engineer role will lead Trailblazer Identity, a B2C identity platform within Salesforce’s Digital Marketing Technology group, re...
+2026-03-03 14:35:19,230 -    Salary: None
+2026-03-03 14:35:19,230 -    Posted: None
+2026-03-03 14:35:19,230 - 
+2026-03-03 14:35:19,231 - 74. SALESFORCE: Software Engineering LMTS
+2026-03-03 14:35:19,231 -    Job ID: salesforce_328821
+2026-03-03 14:35:19,231 -    URL: https://careers.salesforce.com/en/jobs/jr328821/software-engineering-lmts/
+2026-03-03 14:35:19,238 -    Description: 5009 characters
+2026-03-03 14:35:19,238 -    Preview: Description
+
+Salesforce Database Engineering builds and operates the cloud-native database platform that supports all core Salesforce traffic, forming the foundation of customer trust, availability, a...
+2026-03-03 14:35:19,238 -    Salary: None
+2026-03-03 14:35:19,239 -    Posted: None
+2026-03-03 14:35:19,239 - 
+2026-03-03 14:35:19,239 - 75. SALESFORCE: Software Engineering SMTS/LMTS
+2026-03-03 14:35:19,239 -    Job ID: salesforce_330021
+2026-03-03 14:35:19,239 -    URL: https://careers.salesforce.com/en/jobs/jr330021/software-engineering-smtslmts/
+2026-03-03 14:35:19,239 -    Description: 3854 characters
+2026-03-03 14:35:19,239 -    Preview: Description
+
+What you’ll be doing:
+
+As a Software Engineer at Salesforce, you will be part of a dynamic global team delivering and supporting technology infrastructure to meet the growth needs of the ...
+2026-03-03 14:35:19,240 -    Salary: None
+2026-03-03 14:35:19,240 -    Posted: None
+2026-03-03 14:35:19,240 - 
+2026-03-03 14:35:19,240 - 76. SALESFORCE: Software Engineering SMTS
+2026-03-03 14:35:19,240 -    Job ID: salesforce_327145
+2026-03-03 14:35:19,240 -    URL: https://careers.salesforce.com/en/jobs/jr327145/software-engineering-smts/
+2026-03-03 14:35:19,240 -    Description: 3016 characters
+2026-03-03 14:35:19,240 -    Preview: Description
+
+Join our dynamic team at Salesforce and make a real impact with your code! We’re looking for passionate individuals who want to shape the future of our products and deliver exceptional ex...
+2026-03-03 14:35:19,240 -    Salary: None
+2026-03-03 14:35:19,240 -    Posted: None
+2026-03-03 14:35:19,241 - 
+2026-03-03 14:35:19,241 - 77. SALESFORCE: Software Engineer, Search Data Infrastructure -Slack
+2026-03-03 14:35:19,241 -    Job ID: salesforce_331617
+2026-03-03 14:35:19,241 -    URL: https://careers.salesforce.com/en/jobs/jr331617/software-engineer-search-data-infrastructure-slack/
+2026-03-03 14:35:19,241 -    Description: 4506 characters
+2026-03-03 14:35:19,241 -    Preview: Description
+About the Team
+
+Slack is looking for experienced engineers to join its Core Infrastructure organization to help design, develop, and maintain the information retrieval infrastructure that ...
+2026-03-03 14:35:19,241 -    Salary: None
+2026-03-03 14:35:19,241 -    Posted: None
+2026-03-03 14:35:19,241 - 
+2026-03-03 14:35:19,241 - 78. SALESFORCE: Software Engineer, Search Infrastructure - Slack
+2026-03-03 14:35:19,241 -    Job ID: salesforce_331613
+2026-03-03 14:35:19,241 -    URL: https://careers.salesforce.com/en/jobs/jr331613/software-engineer-search-infrastructure-slack/
+2026-03-03 14:35:19,241 -    Description: 4533 characters
+2026-03-03 14:35:19,241 -    Preview: Description
+
+About the Team
+
+Slack is looking for experienced engineers to join its Core Infrastructure organization to help design, develop, and maintain the information retrieval infrastructure that...
+2026-03-03 14:35:19,241 -    Salary: None
+2026-03-03 14:35:19,241 -    Posted: None
+2026-03-03 14:35:19,241 - 
+2026-03-03 14:35:19,241 - 79. SALESFORCE: Sr. Manager, Software Engineering
+2026-03-03 14:35:19,241 -    Job ID: salesforce_326995
+2026-03-03 14:35:19,241 -    URL: https://careers.salesforce.com/en/jobs/jr326995/sr-manager-software-engineering/
+2026-03-03 14:35:19,241 -    Description: 3755 characters
+2026-03-03 14:35:19,241 -    Preview: Description
+
+About the Team: The Digital Marketing Technology Agent Engineering team at Salesforce is dedicated to building the next generation of intelligent agents that enhance productivity, automat...
+2026-03-03 14:35:19,242 -    Salary: None
+2026-03-03 14:35:19,242 -    Posted: None
+2026-03-03 14:35:19,242 - 
+2026-03-03 14:35:19,242 - 80. SALESFORCE: Sr. Manager - Software Engineering - IAM
+2026-03-03 14:35:19,242 -    Job ID: salesforce_327960
+2026-03-03 14:35:19,242 -    URL: https://careers.salesforce.com/en/jobs/jr327960/sr-manager-software-engineering-iam/
+2026-03-03 14:35:19,242 -    Description: 2872 characters
+2026-03-03 14:35:19,242 -    Preview: Description
+
+The Engineering Manager for the Authentication Platform leads the team responsible for the core identity services that power Salesforce’s production infrastructure. You will oversee a cri...
+2026-03-03 14:35:19,242 -    Salary: None
+2026-03-03 14:35:19,242 -    Posted: None
+2026-03-03 14:35:19,242 - 
+2026-03-03 14:35:19,242 - 81. SALESFORCE: Director/Sr. Director - Software Engineering
+2026-03-03 14:35:19,242 -    Job ID: salesforce_331398
+2026-03-03 14:35:19,242 -    URL: https://careers.salesforce.com/en/jobs/jr331398/directorsr-director-software-engineering/
+2026-03-03 14:35:19,242 -    Description: 2817 characters
+2026-03-03 14:35:19,242 -    Preview: Description
+
+As a Director/Sr. Director of Software Engineering, you will lead a mission-critical segment of Salesforce’s Engineering organization. You will be responsible for the architectural integr...
+2026-03-03 14:35:19,242 -    Salary: None
+2026-03-03 14:35:19,242 -    Posted: None
+2026-03-03 14:35:19,242 - 
+2026-03-03 14:35:19,242 - 82. SALESFORCE: Software Engineering Architect
+2026-03-03 14:35:19,242 -    Job ID: salesforce_329590
+2026-03-03 14:35:19,242 -    URL: https://careers.salesforce.com/en/jobs/jr329590/software-engineering-architect/
+2026-03-03 14:35:19,242 -    Description: 2291 characters
+2026-03-03 14:35:19,242 -    Preview: Description
+
+Lead the architectural design and evolution of MuleSoft's mission-critical Runtime Manager (ARM) and Universal Management Platform (UMP). This is the central Control Plane for the Anypoin...
+2026-03-03 14:35:19,243 -    Salary: None
+2026-03-03 14:35:19,243 -    Posted: None
+2026-03-03 14:35:19,243 - 
+2026-03-03 14:35:19,243 - 83. SALESFORCE: Staff Backend Software Engineer – Enterprise
+2026-03-03 14:35:19,243 -    Job ID: salesforce_329167
+2026-03-03 14:35:19,243 -    URL: https://careers.salesforce.com/en/jobs/jr329167/staff-backend-software-engineer-enterprise/
+2026-03-03 14:35:19,243 -    Description: 4607 characters
+2026-03-03 14:35:19,243 -    Preview: Description
+
+About the Team The Enterprise Trust team is at the forefront of protecting how work gets done. As Slack continues to scale across the world's largest organizations, our core mission is to...
+2026-03-03 14:35:19,243 -    Salary: None
+2026-03-03 14:35:19,243 -    Posted: None
+2026-03-03 14:35:19,243 - 
+2026-03-03 14:35:19,243 - 84. SALESFORCE: Staf Software Engineer, iOS DevXP
+2026-03-03 14:35:19,243 -    Job ID: salesforce_327610
+2026-03-03 14:35:19,243 -    URL: https://careers.salesforce.com/en/jobs/jr327610/staf-software-engineer-ios-devxp/
+2026-03-03 14:35:19,243 -    Description: 1995 characters
+2026-03-03 14:35:19,243 -    Preview: Description
+
+Job Description
+
+Job Description
+
+We are looking for people who are passionate about building strong, sustainable developer tooling for the Slack iOS, which is used by millions of people ...
+2026-03-03 14:35:19,243 -    Salary: None
+2026-03-03 14:35:19,243 -    Posted: None
+2026-03-03 14:35:19,243 - 
+2026-03-03 14:35:19,243 - 85. SALESFORCE: Principal Software Engineer, Data Platform
+2026-03-03 14:35:19,243 -    Job ID: salesforce_318460
+2026-03-03 14:35:19,243 -    URL: https://careers.salesforce.com/en/jobs/jr318460/principal-software-engineer-data-platform/
+2026-03-03 14:35:19,243 -    Description: 4927 characters
+2026-03-03 14:35:19,243 -    Preview: Description
+Principal Software Engineer, Data Platform
+
+The Principal Member of Technical Staff for the Enterprise Data Platform is the primary technical architect responsible for modernizing, integra...
+2026-03-03 14:35:19,243 -    Salary: None
+2026-03-03 14:35:19,243 -    Posted: None
+2026-03-03 14:35:19,244 - 
+2026-03-03 14:35:19,244 - 86. SALESFORCE: Sr. Software Engineer, Public Key Infrastructure (PKI)
+2026-03-03 14:35:19,244 -    Job ID: salesforce_324906
+2026-03-03 14:35:19,244 -    URL: https://careers.salesforce.com/en/jobs/jr324906/sr-software-engineer-public-key-infrastructure-pki/
+2026-03-03 14:35:19,244 -    Description: 3978 characters
+2026-03-03 14:35:19,244 -    Preview: Description
+
+*IN SCHOOL OR GRADUATED WITHIN THE LAST 12 MONTHS? PLEASE VISIT FUTURE FORCE FOR OPPORTUNITIES*
+
+About the team
+
+The Enterprise Security Technology team builds and operates highly scalabl...
+2026-03-03 14:35:19,245 -    Salary: None
+2026-03-03 14:35:19,245 -    Posted: None
+2026-03-03 14:35:19,245 - 
+2026-03-03 14:35:19,245 - 87. SALESFORCE: Senior Software Engineer, Agentforce for Supply Chain
+2026-03-03 14:35:19,246 -    Job ID: salesforce_322186
+2026-03-03 14:35:19,246 -    URL: https://careers.salesforce.com/en/jobs/jr322186/senior-software-engineer-agentforce-for-supply-chain/
+2026-03-03 14:35:19,246 -    Description: 3730 characters
+2026-03-03 14:35:19,246 -    Preview: Description
+
+Overview of the Role
+
+Global supply chains still rely on slow, manual processes—email, spreadsheets, and fragmented data. The economy moves fast but supply chains don’t, creating an ineff...
+2026-03-03 14:35:19,246 -    Salary: None
+2026-03-03 14:35:19,246 -    Posted: None
+2026-03-03 14:35:19,246 - 
+2026-03-03 14:35:19,246 - 88. SALESFORCE: Full Stack Software Engineer: Lead and Principal
+2026-03-03 14:35:19,246 -    Job ID: salesforce_289437
+2026-03-03 14:35:19,246 -    URL: https://careers.salesforce.com/en/jobs/jr289437/full-stack-software-engineer-lead-and-principal/
+2026-03-03 14:35:19,246 -    Description: 6131 characters
+2026-03-03 14:35:19,246 -    Preview: Description
+
+*IN SCHOOL OR GRADUATED WITHIN THE LAST 12 MONTHS? PLEASE VISIT FUTURE FORCE FOR OPPORTUNITIES*
+
+Note: By applying to this posting, recruiters and hiring managers across the organization ...
+2026-03-03 14:35:19,246 -    Salary: None
+2026-03-03 14:35:19,246 -    Posted: None
+2026-03-03 14:35:19,246 - 
+2026-03-03 14:35:19,246 - 89. SALESFORCE: Software Engineer (SWE II/Senior): Agentic Search
+2026-03-03 14:35:19,247 -    Job ID: salesforce_328087
+2026-03-03 14:35:19,247 -    URL: https://careers.salesforce.com/en/jobs/jr328087/software-engineer-swe-iisenior-agentic-search/
+2026-03-03 14:35:19,247 -    Description: 4052 characters
+2026-03-03 14:35:19,247 -    Preview: Description
+
+Slack is looking for a Software Engineer to join our innovative Agentic Search team. Our team owns the foundational tools, sub-agents, and search capabilities that power Slack AI's inform...
+2026-03-03 14:35:19,247 -    Salary: None
+2026-03-03 14:35:19,247 -    Posted: None
+2026-03-03 14:35:19,247 - 
+2026-03-03 14:35:19,247 - 90. SALESFORCE: Senior / Lead Software Engineer - Database/Distributed Storage Engineering
+2026-03-03 14:35:19,247 -    Job ID: salesforce_328544
+2026-03-03 14:35:19,248 -    URL: https://careers.salesforce.com/en/jobs/jr328544/senior-lead-software-engineer-databasedistributed-storage-engineering/
+2026-03-03 14:35:19,248 -    Description: 3009 characters
+2026-03-03 14:35:19,248 -    Preview: Description
+
+*IN SCHOOL OR GRADUATED WITHIN THE LAST 12 MONTHS? PLEASE VISIT FUTURE FORCE FOR OPPORTUNITIES*
+
+Our Salesforce Database (SDB) team provides a highly available database for Salesforce app...
+2026-03-03 14:35:19,248 -    Salary: None
+2026-03-03 14:35:19,248 -    Posted: None
+2026-03-03 14:35:19,248 - 
+2026-03-03 14:35:19,248 - 91. EXPEDIA: Front-end Software Development Engineer III
+2026-03-03 14:35:19,248 -    Job ID: expedia_front-end-software-development-engineer-iii
+2026-03-03 14:35:19,248 -    URL: https://careers.expediagroup.com/job/front-end-software-development-engineer-iii/seattle-WA/R-100315/
+2026-03-03 14:35:19,248 -    Description: 8239 characters
+2026-03-03 14:35:19,248 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,248 -    Salary: None
+2026-03-03 14:35:19,248 -    Posted: None
+2026-03-03 14:35:19,248 - 
+2026-03-03 14:35:19,248 - 92. EXPEDIA: Principal Software Development Engineer
+2026-03-03 14:35:19,248 -    Job ID: expedia_principal-software-development-engineer
+2026-03-03 14:35:19,248 -    URL: https://careers.expediagroup.com/job/principal-software-development-engineer/seattle-WA/R-100273/
+2026-03-03 14:35:19,248 -    Description: 7650 characters
+2026-03-03 14:35:19,248 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,248 -    Salary: None
+2026-03-03 14:35:19,248 -    Posted: None
+2026-03-03 14:35:19,248 - 
+2026-03-03 14:35:19,248 - 93. EXPEDIA: Software Development Engineer II - Full Stack
+2026-03-03 14:35:19,248 -    Job ID: expedia_software-development-engineer-ii-full-stack
+2026-03-03 14:35:19,249 -    URL: https://careers.expediagroup.com/job/software-development-engineer-ii-full-stack/seattle-WA/R-102680/
+2026-03-03 14:35:19,249 -    Description: 7761 characters
+2026-03-03 14:35:19,249 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,249 -    Salary: None
+2026-03-03 14:35:19,249 -    Posted: None
+2026-03-03 14:35:19,249 - 
+2026-03-03 14:35:19,249 - 94. EXPEDIA: Senior Software Development Engineer (GenAI, Agentic AI)
+2026-03-03 14:35:19,249 -    Job ID: expedia_senior-software-development-engineer-genai-agentic-ai
+2026-03-03 14:35:19,249 -    URL: https://careers.expediagroup.com/job/senior-software-development-engineer-genai-agentic-ai/seattle-WA/R-100850/
+2026-03-03 14:35:19,249 -    Description: 7356 characters
+2026-03-03 14:35:19,249 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,249 -    Salary: None
+2026-03-03 14:35:19,249 -    Posted: None
+2026-03-03 14:35:19,249 - 
+2026-03-03 14:35:19,249 - 95. EXPEDIA: Software Development Engineer III - Full Stack (Java/Kotlin, React.JS)
+2026-03-03 14:35:19,249 -    Job ID: expedia_software-development-engineer-iii-full-stack-java-kotlin-react-js
+2026-03-03 14:35:19,249 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii-full-stack-java-kotlin-react-js/seattle-WA/R-99889/
+2026-03-03 14:35:19,249 -    Description: 7557 characters
+2026-03-03 14:35:19,249 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,250 -    Salary: None
+2026-03-03 14:35:19,250 -    Posted: None
+2026-03-03 14:35:19,250 - 
+2026-03-03 14:35:19,250 - 96. EXPEDIA: Software Development Engineer II - Expedia Global Payments
+2026-03-03 14:35:19,250 -    Job ID: expedia_software-development-engineer-ii-expedia-global-payments
+2026-03-03 14:35:19,250 -    URL: https://careers.expediagroup.com/job/software-development-engineer-ii-expedia-global-payments/seattle-WA/R-102732/
+2026-03-03 14:35:19,250 -    Description: 6777 characters
+2026-03-03 14:35:19,250 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,250 -    Salary: None
+2026-03-03 14:35:19,250 -    Posted: None
+2026-03-03 14:35:19,250 - 
+2026-03-03 14:35:19,250 - 97. EXPEDIA: Software Development Engineer III, Advertising Technology
+2026-03-03 14:35:19,250 -    Job ID: expedia_software-development-engineer-iii-advertising-technology
+2026-03-03 14:35:19,250 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii-advertising-technology/seattle-WA/R-102319/
+2026-03-03 14:35:19,250 -    Description: 6847 characters
+2026-03-03 14:35:19,250 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,250 -    Salary: None
+2026-03-03 14:35:19,250 -    Posted: None
+2026-03-03 14:35:19,250 - 
+2026-03-03 14:35:19,250 - 98. EXPEDIA: Software Development Engineer III
+2026-03-03 14:35:19,250 -    Job ID: expedia_software-development-engineer-iii
+2026-03-03 14:35:19,250 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii/seattle-WA/R-102690/
+2026-03-03 14:35:19,250 -    Description: 6617 characters
+2026-03-03 14:35:19,250 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,250 -    Salary: None
+2026-03-03 14:35:19,250 -    Posted: None
+2026-03-03 14:35:19,251 - 
+2026-03-03 14:35:19,251 - 99. EXPEDIA: Software Development Engineer III - Full-Stack Developer
+2026-03-03 14:35:19,251 -    Job ID: expedia_software-development-engineer-iii-full-stack-developer
+2026-03-03 14:35:19,251 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii-full-stack-developer/seattle-WA/R-101757/
+2026-03-03 14:35:19,251 -    Description: 8012 characters
+2026-03-03 14:35:19,251 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,251 -    Salary: None
+2026-03-03 14:35:19,251 -    Posted: None
+2026-03-03 14:35:19,251 - 
+2026-03-03 14:35:19,251 - 100. EXPEDIA: Software Development Engineer III - React Developer
+2026-03-03 14:35:19,251 -    Job ID: expedia_software-development-engineer-iii-react-developer
+2026-03-03 14:35:19,251 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii-react-developer/seattle-WA/R-101765/
+2026-03-03 14:35:19,251 -    Description: 7043 characters
+2026-03-03 14:35:19,251 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,251 -    Salary: None
+2026-03-03 14:35:19,251 -    Posted: None
+2026-03-03 14:35:19,251 - 
+2026-03-03 14:35:19,251 - 101. EXPEDIA: Software Development Engineer III
+2026-03-03 14:35:19,251 -    Job ID: expedia_software-development-engineer-iii
+2026-03-03 14:35:19,251 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii/seattle-WA/R-101768/
+2026-03-03 14:35:19,251 -    Description: 6761 characters
+2026-03-03 14:35:19,251 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,251 -    Salary: None
+2026-03-03 14:35:19,251 -    Posted: None
+2026-03-03 14:35:19,251 - 
+2026-03-03 14:35:19,251 - 102. EXPEDIA: Software Development Engineer III - C++
+2026-03-03 14:35:19,251 -    Job ID: expedia_software-development-engineer-iii-c
+2026-03-03 14:35:19,251 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii-c/seattle-WA/R-102606/
+2026-03-03 14:35:19,251 -    Description: 8212 characters
+2026-03-03 14:35:19,251 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,251 -    Salary: None
+2026-03-03 14:35:19,251 -    Posted: None
+2026-03-03 14:35:19,251 - 
+2026-03-03 14:35:19,251 - 103. EXPEDIA: Software Development Engineer III
+2026-03-03 14:35:19,251 -    Job ID: expedia_software-development-engineer-iii
+2026-03-03 14:35:19,251 -    URL: https://careers.expediagroup.com/job/software-development-engineer-iii/seattle-WA/R-101417/
+2026-03-03 14:35:19,252 -    Description: 8346 characters
+2026-03-03 14:35:19,252 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,252 -    Salary: None
+2026-03-03 14:35:19,252 -    Posted: None
+2026-03-03 14:35:19,252 - 
+2026-03-03 14:35:19,252 - 104. EXPEDIA: Principal Software Development Engineer
+2026-03-03 14:35:19,252 -    Job ID: expedia_principal-software-development-engineer
+2026-03-03 14:35:19,252 -    URL: https://careers.expediagroup.com/job/principal-software-development-engineer/seattle-WA/R-101682/
+2026-03-03 14:35:19,252 -    Description: 7012 characters
+2026-03-03 14:35:19,252 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,252 -    Salary: None
+2026-03-03 14:35:19,252 -    Posted: None
+2026-03-03 14:35:19,252 - 
+2026-03-03 14:35:19,252 - 105. EXPEDIA: Senior Manager, Software Development Engineering - Air Shopping Platform, Best Fare Search
+2026-03-03 14:35:19,252 -    Job ID: expedia_senior-manager-software-development-engineering-air-shopping-platform-best-fare-search
+2026-03-03 14:35:19,252 -    URL: https://careers.expediagroup.com/job/senior-manager-software-development-engineering-air-shopping-platform-best-fare-search/seattle-WA/R-101685/
+2026-03-03 14:35:19,252 -    Description: 6984 characters
+2026-03-03 14:35:19,252 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,252 -    Salary: None
+2026-03-03 14:35:19,252 -    Posted: None
+2026-03-03 14:35:19,252 - 
+2026-03-03 14:35:19,252 - 106. EXPEDIA: Principal Software Development Engineer
+2026-03-03 14:35:19,252 -    Job ID: expedia_principal-software-development-engineer
+2026-03-03 14:35:19,252 -    URL: https://careers.expediagroup.com/job/principal-software-development-engineer/seattle-WA/R-101753/
+2026-03-03 14:35:19,252 -    Description: 6777 characters
+2026-03-03 14:35:19,252 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,252 -    Salary: None
+2026-03-03 14:35:19,252 -    Posted: None
+2026-03-03 14:35:19,252 - 
+2026-03-03 14:35:19,252 - 107. EXPEDIA: Salesforce Software Development Engineer II
+2026-03-03 14:35:19,252 -    Job ID: expedia_salesforce-software-development-engineer-ii
+2026-03-03 14:35:19,252 -    URL: https://careers.expediagroup.com/job/salesforce-software-development-engineer-ii/seattle-WA/R-98381-1/
+2026-03-03 14:35:19,252 -    Description: 6240 characters
+2026-03-03 14:35:19,252 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,252 -    Salary: None
+2026-03-03 14:35:19,252 -    Posted: None
+2026-03-03 14:35:19,253 - 
+2026-03-03 14:35:19,253 - 108. EXPEDIA: Sr. Machine Learning Engineer - Advertising Technology
+2026-03-03 14:35:19,253 -    Job ID: expedia_sr-machine-learning-engineer-advertising-technology
+2026-03-03 14:35:19,253 -    URL: https://careers.expediagroup.com/job/sr-machine-learning-engineer-advertising-technology/seattle-WA/R-101327/
+2026-03-03 14:35:19,253 -    Description: 7618 characters
+2026-03-03 14:35:19,253 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,253 -    Salary: None
+2026-03-03 14:35:19,253 -    Posted: None
+2026-03-03 14:35:19,253 - 
+2026-03-03 14:35:19,253 - 109. EXPEDIA: Senior Amazon Connect Engineer
+2026-03-03 14:35:19,253 -    Job ID: expedia_senior-amazon-connect-engineer
+2026-03-03 14:35:19,253 -    URL: https://careers.expediagroup.com/job/senior-amazon-connect-engineer/seattle-WA/R-101343/
+2026-03-03 14:35:19,253 -    Description: 8827 characters
+2026-03-03 14:35:19,253 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,253 -    Salary: None
+2026-03-03 14:35:19,253 -    Posted: None
+2026-03-03 14:35:19,253 - 
+2026-03-03 14:35:19,253 - 110. EXPEDIA: Senior User Experience Designer
+2026-03-03 14:35:19,253 -    Job ID: expedia_senior-user-experience-designer
+2026-03-03 14:35:19,253 -    URL: https://careers.expediagroup.com/job/senior-user-experience-designer/seattle-WA/R-102645/
+2026-03-03 14:35:19,253 -    Description: 8744 characters
+2026-03-03 14:35:19,253 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,253 -    Salary: None
+2026-03-03 14:35:19,253 -    Posted: None
+2026-03-03 14:35:19,253 - 
+2026-03-03 14:35:19,253 - 111. EXPEDIA: Mobile Engineer III - Android
+2026-03-03 14:35:19,253 -    Job ID: expedia_mobile-engineer-iii-android
+2026-03-03 14:35:19,253 -    URL: https://careers.expediagroup.com/job/mobile-engineer-iii-android/seattle-WA/R-101779/
+2026-03-03 14:35:19,253 -    Description: 7149 characters
+2026-03-03 14:35:19,253 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,255 -    Salary: None
+2026-03-03 14:35:19,255 -    Posted: None
+2026-03-03 14:35:19,255 - 
+2026-03-03 14:35:19,255 - 112. EXPEDIA: Android Engineer II - Air Shopping
+2026-03-03 14:35:19,255 -    Job ID: expedia_android-engineer-ii-air-shopping
+2026-03-03 14:35:19,255 -    URL: https://careers.expediagroup.com/job/android-engineer-ii-air-shopping/seattle-WA/R-102530/
+2026-03-03 14:35:19,255 -    Description: 7006 characters
+2026-03-03 14:35:19,255 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,255 -    Salary: None
+2026-03-03 14:35:19,255 -    Posted: None
+2026-03-03 14:35:19,255 - 
+2026-03-03 14:35:19,255 - 113. EXPEDIA: Mobile Engineer III - iOS
+2026-03-03 14:35:19,256 -    Job ID: expedia_mobile-engineer-iii-ios
+2026-03-03 14:35:19,256 -    URL: https://careers.expediagroup.com/job/mobile-engineer-iii-ios/seattle-WA/R-102246/
+2026-03-03 14:35:19,256 -    Description: 7295 characters
+2026-03-03 14:35:19,256 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,256 -    Salary: None
+2026-03-03 14:35:19,256 -    Posted: None
+2026-03-03 14:35:19,256 - 
+2026-03-03 14:35:19,256 - 114. EXPEDIA: Senior Mobile Engineer
+2026-03-03 14:35:19,256 -    Job ID: expedia_senior-mobile-engineer
+2026-03-03 14:35:19,256 -    URL: https://careers.expediagroup.com/job/senior-mobile-engineer/seattle-WA/R-102325/
+2026-03-03 14:35:19,256 -    Description: 7068 characters
+2026-03-03 14:35:19,256 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,256 -    Salary: None
+2026-03-03 14:35:19,256 -    Posted: None
+2026-03-03 14:35:19,257 - 
+2026-03-03 14:35:19,257 - 115. EXPEDIA: Distinguished Engineer, AI Search
+2026-03-03 14:35:19,257 -    Job ID: expedia_distinguished-engineer-ai-search
+2026-03-03 14:35:19,257 -    URL: https://careers.expediagroup.com/job/distinguished-engineer-ai-search/seattle-WA/R-101911/
+2026-03-03 14:35:19,257 -    Description: 6721 characters
+2026-03-03 14:35:19,257 -    Preview: Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our ...
+2026-03-03 14:35:19,257 -    Salary: None
+2026-03-03 14:35:19,257 -    Posted: None
+2026-03-03 14:35:19,257 - 
+2026-03-03 14:35:19,257 - 116. ORACLE: Senior Software Developer
+2026-03-03 14:35:19,257 -    Job ID: oracle_323413
+2026-03-03 14:35:19,257 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/323413/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,257 -    Description: 7443 characters
+2026-03-03 14:35:19,257 -    Preview: Senior Software Developer
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+HOT JOB
+ 
+TREN...
+2026-03-03 14:35:19,257 -    Salary: None
+2026-03-03 14:35:19,257 -    Posted: None
+2026-03-03 14:35:19,257 - 
+2026-03-03 14:35:19,257 - 117. ORACLE: Principal Software Developer(hybrid)
+2026-03-03 14:35:19,257 -    Job ID: oracle_323421
+2026-03-03 14:35:19,257 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/323421/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,257 -    Description: 7658 characters
+2026-03-03 14:35:19,258 -    Preview: Principal Software Developer(hybrid)
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+HOT...
+2026-03-03 14:35:19,258 -    Salary: None
+2026-03-03 14:35:19,258 -    Posted: None
+2026-03-03 14:35:19,258 - 
+2026-03-03 14:35:19,258 - 118. ORACLE: Software Developer 3
+2026-03-03 14:35:19,258 -    Job ID: oracle_328074
+2026-03-03 14:35:19,258 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/328074/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,258 -    Description: 7382 characters
+2026-03-03 14:35:19,258 -    Preview: Software Developer 3
+Santa Clara, CA, United States
+United States
+Seattle, WA, United States
+
+TRENDING
+Job Identification
+328074
+Job Category
+Product Development
+Posting Date
+02/28/2026, 06:27 PM
+Role...
+2026-03-03 14:35:19,258 -    Salary: None
+2026-03-03 14:35:19,258 -    Posted: None
+2026-03-03 14:35:19,258 - 
+2026-03-03 14:35:19,258 - 119. ORACLE: Principal Software Developer
+2026-03-03 14:35:19,258 -    Job ID: oracle_323392
+2026-03-03 14:35:19,258 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/323392/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,258 -    Description: 7615 characters
+2026-03-03 14:35:19,258 -    Preview: Principal Software Developer
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+HOT JOB
+ 
+T...
+2026-03-03 14:35:19,258 -    Salary: None
+2026-03-03 14:35:19,258 -    Posted: None
+2026-03-03 14:35:19,258 - 
+2026-03-03 14:35:19,258 - 120. ORACLE: Principal Software Developer
+2026-03-03 14:35:19,258 -    Job ID: oracle_323414
+2026-03-03 14:35:19,258 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/323414/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,258 -    Description: 8911 characters
+2026-03-03 14:35:19,258 -    Preview: Principal Software Developer
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+HOT JOB
+Job...
+2026-03-03 14:35:19,258 -    Salary: None
+2026-03-03 14:35:19,258 -    Posted: None
+2026-03-03 14:35:19,258 - 
+2026-03-03 14:35:19,258 - 121. ORACLE: Principal Software Developer
+2026-03-03 14:35:19,258 -    Job ID: oracle_325182
+2026-03-03 14:35:19,258 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/325182/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,258 -    Description: 8918 characters
+2026-03-03 14:35:19,258 -    Preview: Principal Software Developer
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+HOT JOB
+ 
+T...
+2026-03-03 14:35:19,258 -    Salary: None
+2026-03-03 14:35:19,258 -    Posted: None
+2026-03-03 14:35:19,258 - 
+2026-03-03 14:35:19,258 - 122. ORACLE: Software Developer 4
+2026-03-03 14:35:19,258 -    Job ID: oracle_328611
+2026-03-03 14:35:19,258 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/328611/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,258 -    Description: ❌ Not found
+2026-03-03 14:35:19,258 -    Salary: None
+2026-03-03 14:35:19,258 -    Posted: None
+2026-03-03 14:35:19,258 - 
+2026-03-03 14:35:19,259 - 123. ORACLE: Senior Software Developer(hybrid)
+2026-03-03 14:35:19,259 -    Job ID: oracle_323419
+2026-03-03 14:35:19,259 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/323419/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,259 -    Description: 8686 characters
+2026-03-03 14:35:19,259 -    Preview: Senior Software Developer(hybrid)
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+HOT JO...
+2026-03-03 14:35:19,259 -    Salary: None
+2026-03-03 14:35:19,259 -    Posted: None
+2026-03-03 14:35:19,259 - 
+2026-03-03 14:35:19,259 - 124. ORACLE: Senior Software Developer
+2026-03-03 14:35:19,259 -    Job ID: oracle_327184
+2026-03-03 14:35:19,259 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/327184/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,259 -    Description: 7418 characters
+2026-03-03 14:35:19,259 -    Preview: Senior Software Developer
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+TRENDING
+Job I...
+2026-03-03 14:35:19,259 -    Salary: None
+2026-03-03 14:35:19,259 -    Posted: None
+2026-03-03 14:35:19,259 - 
+2026-03-03 14:35:19,259 - 125. ORACLE: Principal Software Engineer
+2026-03-03 14:35:19,259 -    Job ID: oracle_315756
+2026-03-03 14:35:19,259 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/315756/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,259 -    Description: ❌ Not found
+2026-03-03 14:35:19,259 -    Salary: None
+2026-03-03 14:35:19,259 -    Posted: None
+2026-03-03 14:35:19,259 - 
+2026-03-03 14:35:19,259 - 126. ORACLE: Sr Principal Software Engineer - Data Platform Team
+2026-03-03 14:35:19,259 -    Job ID: oracle_323320
+2026-03-03 14:35:19,259 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/323320/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,259 -    Description: 9262 characters
+2026-03-03 14:35:19,259 -    Preview: Sr Principal Software Engineer - Data Platform Team
+Nashville, TN, United States
+Austin, TX, United States
+Seattle, WA, United States
+United States
+
+HOT JOB
+ 
+TRENDING
+Job Identification
+323320
+Job Ca...
+2026-03-03 14:35:19,259 -    Salary: None
+2026-03-03 14:35:19,259 -    Posted: None
+2026-03-03 14:35:19,259 - 
+2026-03-03 14:35:19,259 - 127. ORACLE: Principal Software Developer
+2026-03-03 14:35:19,259 -    Job ID: oracle_327185
+2026-03-03 14:35:19,259 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/327185/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,259 -    Description: 7596 characters
+2026-03-03 14:35:19,259 -    Preview: Principal Software Developer
+Austin, TX, United States
+Nashville, TN, United States
+Redwood City, CA, United States
+Seattle, WA, United States
+United States
+Santa Clara, CA, United States
+
+Job Identif...
+2026-03-03 14:35:19,259 -    Salary: None
+2026-03-03 14:35:19,259 -    Posted: None
+2026-03-03 14:35:19,260 - 
+2026-03-03 14:35:19,260 - 128. ORACLE: Sr. Software Developer
+2026-03-03 14:35:19,260 -    Job ID: oracle_315741
+2026-03-03 14:35:19,260 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/315741/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,260 -    Description: 6956 characters
+2026-03-03 14:35:19,260 -    Preview: Sr. Software Developer
+Santa Clara, CA, United States
+Seattle, WA, United States
+Burlington, MA, United States
+Nashville, TN, United States
+
+TRENDING
+Job Identification
+315741
+Job Category
+Product Dev...
+2026-03-03 14:35:19,260 -    Salary: None
+2026-03-03 14:35:19,260 -    Posted: None
+2026-03-03 14:35:19,260 - 
+2026-03-03 14:35:19,260 - 129. ORACLE: Senior Software Engineer
+2026-03-03 14:35:19,260 -    Job ID: oracle_326182
+2026-03-03 14:35:19,260 -    URL: https://careers.oracle.com/en/sites/jobsearch/job/326182/?keyword=Software+Developer&location=Seattle%252C+WA%252C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-03 14:35:19,260 -    Description: 7211 characters
+2026-03-03 14:35:19,260 -    Preview: Senior Software Engineer
+Seattle, WA, United States
+TRENDING
+Job Identification
+326182
+Job Category
+Product Development
+Posting Date
+02/18/2026, 12:52 PM
+Role
+Individual Contributor
+Job Type
+Regular E...
+2026-03-03 14:35:19,260 -    Salary: None
+2026-03-03 14:35:19,260 -    Posted: None
+2026-03-03 14:35:19,260 - 
+2026-03-03 14:35:19,260 - ============================================================
+2026-03-03 14:35:19,260 - ✓ Test results saved to: details_scraper_test.log
+2026-03-03 14:35:19,260 - ============================================================

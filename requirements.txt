@@ -1,10 +1,12 @@
 # Web scraping
 playwright
+playwright-stealth
 
 # AI/ML
 sentence-transformers
 faiss-cpu
-together
+litellm
+google-genai
 
 # Agent framework
 crewai
