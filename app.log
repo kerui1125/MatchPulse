@@ -6224,3 +6224,743 @@ Call log:
 2026-03-04 12:32:15,012 - MatchPulse - INFO - Analyzed: 5 jobs (RAG with top-k=5)
 2026-03-04 12:32:15,012 - MatchPulse - INFO - Notified: 5 jobs sent to Telegram
 2026-03-04 12:32:15,012 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:48:29,389 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:48:29,389 - MatchPulse - INFO - Starting MatchPulse Pipeline
+2026-03-04 22:48:29,389 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:48:29,389 - MatchPulse - INFO - 🔴 PRODUCTION MODE: Telegram notifications enabled
+2026-03-04 22:48:29,389 - MatchPulse - INFO - ⚠️  LIMIT MODE: Processing 40 jobs
+2026-03-04 22:48:29,390 - MatchPulse - INFO - 📊 Match threshold: 0.75
+2026-03-04 22:48:29,390 - MatchPulse - INFO - 🔍 RAG top-k chunks: 3
+2026-03-04 22:48:29,390 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:48:29,390 - MatchPulse - INFO - 
+📋 Pipeline Status:
+2026-03-04 22:48:29,390 - MatchPulse - INFO -   ✅ Fetcher Agent  - Implemented
+2026-03-04 22:48:29,390 - MatchPulse - INFO -   ✅ Matcher Agent  - Implemented
+2026-03-04 22:48:29,390 - MatchPulse - INFO -   ✅ Analyzer Agent - Implemented (RAG-based)
+2026-03-04 22:48:29,390 - MatchPulse - INFO -   ✅ Notifier Agent - Implemented (Telegram)
+
+2026-03-04 22:48:29,390 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:48:29,390 - MatchPulse - INFO - Step 1: Running Fetcher Agent...
+2026-03-04 22:48:29,390 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:48:29,390 - MatchPulse - INFO - Fetcher Agent: Starting (limit=40)
+2026-03-04 22:48:29,390 - MatchPulse - INFO - ============================================================
+2026-03-04 22:48:29,390 - MatchPulse - INFO - Starting job fetch and enrichment process
+2026-03-04 22:48:29,390 - MatchPulse - INFO - ============================================================
+2026-03-04 22:48:29,390 - MatchPulse - WARNING - 🔴 PRODUCTION MODE: Jobs WILL be saved to database
+2026-03-04 22:48:29,390 - MatchPulse - WARNING - ⚠️  LIMIT MODE: Only processing first 40 jobs
+2026-03-04 22:48:29,390 - MatchPulse - INFO - ============================================================
+2026-03-04 22:48:29,392 - MatchPulse - INFO - 📋 Configured companies: ['nvidia', 'google', 'amazon', 'microsoft', 'salesforce', 'expedia', 'oracle']
+2026-03-04 22:48:29,392 - MatchPulse - INFO - 🔍 Fetching job listings...
+2026-03-04 22:48:31,093 - MatchPulse - INFO - Scraping nvidia: https://jobs.nvidia.com/careers?query=Software+Development&start=0&location=Seattle%2C++WA%2C++United+States&pid=893393809695&sort_by=timestamp&filter_distance=80&filter_include_remote=1&filter_work_location_option=office%2Cremote&filter_time_type=full+time%2Cpart+time
+2026-03-04 22:48:33,550 - MatchPulse - INFO - Found 20 NVIDIA jobs
+2026-03-04 22:48:43,285 - MatchPulse - INFO - Found 20 jobs from nvidia
+2026-03-04 22:48:46,509 - MatchPulse - INFO - Scraping google: https://www.google.com/about/careers/applications/jobs/results/?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-04 22:48:47,250 - MatchPulse - INFO - Found 20 Google jobs
+2026-03-04 22:48:57,133 - MatchPulse - INFO - Found 20 jobs from google
+2026-03-04 22:49:02,584 - MatchPulse - INFO - Scraping amazon: https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&country%5B%5D=USA&state%5B%5D=Washington&city%5B%5D=Seattle&city%5B%5D=Redmond&city%5B%5D=Bellevue&distanceType=Mi&radius=24km&industry_experience=four_to_six_years&loc_group_id=seattle-metro&latitude=&longitude=&loc_group_id=seattle-metro&loc_query=Greater%20Seattle%20Area%2C%20WA%2C%20United%20States&base_query=software%20engineer&city=&country=&region=&county=&query_options=&
+2026-03-04 22:49:04,130 - MatchPulse - INFO - Found 10 Amazon jobs
+2026-03-04 22:49:08,767 - MatchPulse - INFO - Found 10 jobs from amazon
+2026-03-04 22:49:12,747 - MatchPulse - INFO - Scraping microsoft: https://apply.careers.microsoft.com/careers?query=Software+Development&start=0&location=United+States%2C+Washington%2C+Redmond&pid=1970393556640555&sort_by=relevance&filter_distance=160&filter_include_remote=1&filter_seniority=Mid-Level
+2026-03-04 22:49:16,117 - MatchPulse - INFO - Found 20 Microsoft jobs using selector: a.r-link.card-F1ebU
+2026-03-04 22:49:26,011 - MatchPulse - INFO - Found 20 jobs from microsoft
+2026-03-04 22:49:29,803 - MatchPulse - INFO - Scraping salesforce: https://careers.salesforce.com/en/jobs/?search=software+development+engineer&country=United+States+of+America&region=Washington&location=Bellevue&location=Remote&location=Seattle&pagesize=20#results
+2026-03-04 22:49:30,557 - MatchPulse - INFO - Found 20 Salesforce jobs
+2026-03-04 22:49:40,307 - MatchPulse - INFO - Found 20 jobs from salesforce
+2026-03-04 22:49:44,843 - MatchPulse - INFO - Scraping expedia: https://careers.expediagroup.com/jobs/?keyword=Software+Development+Engineer&&filter[country]=United+States&filter[state]=Washington&filter[city]=Seattle
+2026-03-04 22:49:49,671 - MatchPulse - INFO - Found 50 Expedia jobs using selector: a[href*="/job/"]
+2026-03-04 22:49:58,335 - MatchPulse - INFO - Found 25 Expedia jobs
+2026-03-04 22:49:58,335 - MatchPulse - INFO - Found 25 jobs from expedia
+2026-03-04 22:50:04,284 - MatchPulse - INFO - Scraping oracle: https://careers.oracle.com/en/sites/jobsearch/jobs?keyword=Software+Developer&location=Seattle%2C+WA%2C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-04 22:50:09,807 - MatchPulse - INFO - Found 14 Oracle jobs
+2026-03-04 22:50:16,517 - MatchPulse - INFO - Found 14 jobs from oracle
+2026-03-04 22:50:20,129 - MatchPulse - INFO - Total jobs scraped: 129
+2026-03-04 22:50:20,130 - MatchPulse - INFO - ✓ Found 129 total jobs
+2026-03-04 22:50:20,130 - MatchPulse - INFO - 🔎 Checking for duplicates...
+2026-03-04 22:50:20,147 - MatchPulse - INFO - ✓ Found 95 NEW jobs (filtered 34 duplicates)
+2026-03-04 22:50:20,147 - MatchPulse - WARNING - ⚠️  Limiting to first 40 jobs
+2026-03-04 22:50:20,147 - MatchPulse - INFO - 📊 New jobs by company:
+2026-03-04 22:50:20,147 - MatchPulse - INFO -    - nvidia: 6 jobs
+2026-03-04 22:50:20,147 - MatchPulse - INFO -    - amazon: 10 jobs
+2026-03-04 22:50:20,147 - MatchPulse - INFO -    - microsoft: 20 jobs
+2026-03-04 22:50:20,147 - MatchPulse - INFO -    - salesforce: 4 jobs
+2026-03-04 22:50:20,147 - MatchPulse - INFO - 🌐 Starting detail scraping for 40 jobs...
+2026-03-04 22:50:20,957 - MatchPulse - INFO - ✓ Stealth mode applied
+2026-03-04 22:50:20,957 - MatchPulse - INFO - [1/40] nvidia - Solution Architect, Sovereign AI...
+2026-03-04 22:50:20,957 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893383351027
+2026-03-04 22:50:25,120 - MatchPulse - INFO - ✓ NVIDIA description found (4095 chars)
+2026-03-04 22:50:25,125 - MatchPulse - INFO - ✓ Saved to database: nvidia_893383351027
+2026-03-04 22:50:25,125 - MatchPulse - INFO - ⏳ Waiting 3.1s...
+2026-03-04 22:50:28,228 - MatchPulse - INFO - [2/40] nvidia - Senior Director, Business Operations - Networking ...
+2026-03-04 22:50:28,228 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893393862656
+2026-03-04 22:50:31,719 - MatchPulse - INFO - ✓ NVIDIA description found (5257 chars)
+2026-03-04 22:50:31,721 - MatchPulse - INFO - ✓ Saved to database: nvidia_893393862656
+2026-03-04 22:50:31,721 - MatchPulse - INFO - ⏳ Waiting 3.1s...
+2026-03-04 22:50:34,814 - MatchPulse - INFO - [3/40] nvidia - Gen AI Product Evangelist Engineer, Supply Chain...
+2026-03-04 22:50:34,814 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893379939457
+2026-03-04 22:53:03,808 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task cancelling name='Task-1' coro=<fetch_and_enrich_jobs() done, defined at /Users/liukerui/Documents/MatchPulse/src/tools/details_scraper.py:273> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[gather.<locals>._done_callback() at /opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/tasks.py:820]>
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:58:02,746 - MatchPulse - INFO - Starting MatchPulse Pipeline
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:58:02,746 - MatchPulse - INFO - 🔴 PRODUCTION MODE: Telegram notifications enabled
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ⚠️  LIMIT MODE: Processing 50 jobs
+2026-03-04 22:58:02,746 - MatchPulse - INFO - 📊 Match threshold: 0.75
+2026-03-04 22:58:02,746 - MatchPulse - INFO - 🔍 RAG top-k chunks: 7
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:58:02,746 - MatchPulse - INFO - 
+📋 Pipeline Status:
+2026-03-04 22:58:02,746 - MatchPulse - INFO -   ✅ Fetcher Agent  - Implemented
+2026-03-04 22:58:02,746 - MatchPulse - INFO -   ✅ Matcher Agent  - Implemented
+2026-03-04 22:58:02,746 - MatchPulse - INFO -   ✅ Analyzer Agent - Implemented (RAG-based)
+2026-03-04 22:58:02,746 - MatchPulse - INFO -   ✅ Notifier Agent - Implemented (Telegram)
+
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:58:02,746 - MatchPulse - INFO - Step 1: Running Fetcher Agent...
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ======================================================================
+2026-03-04 22:58:02,746 - MatchPulse - INFO - Fetcher Agent: Starting (limit=50)
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ============================================================
+2026-03-04 22:58:02,746 - MatchPulse - INFO - Starting job fetch and enrichment process
+2026-03-04 22:58:02,746 - MatchPulse - INFO - ============================================================
+2026-03-04 22:58:02,746 - MatchPulse - WARNING - 🔴 PRODUCTION MODE: Jobs WILL be saved to database
+2026-03-04 22:58:02,746 - MatchPulse - WARNING - ⚠️  LIMIT MODE: Only processing first 50 jobs
+2026-03-04 22:58:02,747 - MatchPulse - INFO - ============================================================
+2026-03-04 22:58:02,749 - MatchPulse - INFO - 📋 Configured companies: ['nvidia', 'google', 'amazon', 'microsoft', 'salesforce', 'expedia', 'oracle']
+2026-03-04 22:58:02,749 - MatchPulse - INFO - 🔍 Fetching job listings...
+2026-03-04 22:58:04,465 - MatchPulse - INFO - Scraping nvidia: https://jobs.nvidia.com/careers?query=Software+Development&start=0&location=Seattle%2C++WA%2C++United+States&pid=893393809695&sort_by=timestamp&filter_distance=80&filter_include_remote=1&filter_work_location_option=office%2Cremote&filter_time_type=full+time%2Cpart+time
+2026-03-04 22:58:06,847 - MatchPulse - INFO - Found 20 NVIDIA jobs
+2026-03-04 22:58:16,764 - MatchPulse - INFO - Found 20 jobs from nvidia
+2026-03-04 22:58:20,360 - MatchPulse - INFO - Scraping google: https://www.google.com/about/careers/applications/jobs/results/?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-04 22:58:21,098 - MatchPulse - INFO - Found 20 Google jobs
+2026-03-04 22:58:30,970 - MatchPulse - INFO - Found 20 jobs from google
+2026-03-04 22:58:36,473 - MatchPulse - INFO - Scraping amazon: https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&country%5B%5D=USA&state%5B%5D=Washington&city%5B%5D=Seattle&city%5B%5D=Redmond&city%5B%5D=Bellevue&distanceType=Mi&radius=24km&industry_experience=four_to_six_years&loc_group_id=seattle-metro&latitude=&longitude=&loc_group_id=seattle-metro&loc_query=Greater%20Seattle%20Area%2C%20WA%2C%20United%20States&base_query=software%20engineer&city=&country=&region=&county=&query_options=&
+2026-03-04 22:58:38,093 - MatchPulse - INFO - Found 10 Amazon jobs
+2026-03-04 22:58:42,708 - MatchPulse - INFO - Found 10 jobs from amazon
+2026-03-04 22:58:47,188 - MatchPulse - INFO - Scraping microsoft: https://apply.careers.microsoft.com/careers?query=Software+Development&start=0&location=United+States%2C+Washington%2C+Redmond&pid=1970393556640555&sort_by=relevance&filter_distance=160&filter_include_remote=1&filter_seniority=Mid-Level
+2026-03-04 22:58:50,436 - MatchPulse - INFO - Found 20 Microsoft jobs using selector: a.r-link.card-F1ebU
+2026-03-04 22:59:00,281 - MatchPulse - INFO - Found 20 jobs from microsoft
+2026-03-04 22:59:04,808 - MatchPulse - INFO - Scraping salesforce: https://careers.salesforce.com/en/jobs/?search=software+development+engineer&country=United+States+of+America&region=Washington&location=Bellevue&location=Remote&location=Seattle&pagesize=20#results
+2026-03-04 22:59:05,540 - MatchPulse - INFO - Found 20 Salesforce jobs
+2026-03-04 22:59:15,274 - MatchPulse - INFO - Found 20 jobs from salesforce
+2026-03-04 22:59:19,275 - MatchPulse - INFO - Scraping expedia: https://careers.expediagroup.com/jobs/?keyword=Software+Development+Engineer&&filter[country]=United+States&filter[state]=Washington&filter[city]=Seattle
+2026-03-04 22:59:24,038 - MatchPulse - INFO - Found 50 Expedia jobs using selector: a[href*="/job/"]
+2026-03-04 22:59:32,564 - MatchPulse - INFO - Found 25 Expedia jobs
+2026-03-04 22:59:32,565 - MatchPulse - INFO - Found 25 jobs from expedia
+2026-03-04 22:59:35,852 - MatchPulse - INFO - Scraping oracle: https://careers.oracle.com/en/sites/jobsearch/jobs?keyword=Software+Developer&location=Seattle%2C+WA%2C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-04 22:59:41,017 - MatchPulse - INFO - Found 14 Oracle jobs
+2026-03-04 22:59:47,781 - MatchPulse - INFO - Found 14 jobs from oracle
+2026-03-04 22:59:52,354 - MatchPulse - INFO - Total jobs scraped: 129
+2026-03-04 22:59:52,354 - MatchPulse - INFO - ✓ Found 129 total jobs
+2026-03-04 22:59:52,355 - MatchPulse - INFO - 🔎 Checking for duplicates...
+2026-03-04 22:59:52,372 - MatchPulse - INFO - ✓ Found 93 NEW jobs (filtered 36 duplicates)
+2026-03-04 22:59:52,372 - MatchPulse - WARNING - ⚠️  Limiting to first 50 jobs
+2026-03-04 22:59:52,372 - MatchPulse - INFO - 📊 New jobs by company:
+2026-03-04 22:59:52,372 - MatchPulse - INFO -    - nvidia: 4 jobs
+2026-03-04 22:59:52,372 - MatchPulse - INFO -    - amazon: 10 jobs
+2026-03-04 22:59:52,372 - MatchPulse - INFO -    - microsoft: 20 jobs
+2026-03-04 22:59:52,372 - MatchPulse - INFO -    - salesforce: 16 jobs
+2026-03-04 22:59:52,372 - MatchPulse - INFO - 🌐 Starting detail scraping for 50 jobs...
+2026-03-04 22:59:53,192 - MatchPulse - INFO - ✓ Stealth mode applied
+2026-03-04 22:59:53,192 - MatchPulse - INFO - [1/50] nvidia - Gen AI Product Evangelist Engineer, Supply Chain...
+2026-03-04 22:59:53,193 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893379939457
+2026-03-04 22:59:57,359 - MatchPulse - INFO - ✓ NVIDIA description found (5381 chars)
+2026-03-04 22:59:57,361 - MatchPulse - INFO - ✓ Saved to database: nvidia_893379939457
+2026-03-04 22:59:57,362 - MatchPulse - INFO - ⏳ Waiting 4.2s...
+2026-03-04 23:00:01,615 - MatchPulse - INFO - [2/50] nvidia - Senior ASIC Power Engineer...
+2026-03-04 23:00:01,618 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893393316832
+2026-03-04 23:00:05,072 - MatchPulse - INFO - ✓ NVIDIA description found (4935 chars)
+2026-03-04 23:00:05,075 - MatchPulse - INFO - ✓ Saved to database: nvidia_893393316832
+2026-03-04 23:00:05,076 - MatchPulse - INFO - ⏳ Waiting 3.2s...
+2026-03-04 23:00:08,305 - MatchPulse - INFO - [3/50] nvidia - Senior Agentic Systems Engineer, Neural Graphics...
+2026-03-04 23:00:08,305 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893393843075
+2026-03-04 23:00:11,998 - MatchPulse - INFO - ✓ NVIDIA description found (4178 chars)
+2026-03-04 23:00:12,001 - MatchPulse - INFO - ✓ Saved to database: nvidia_893393843075
+2026-03-04 23:00:12,001 - MatchPulse - INFO - ⏳ Waiting 4.1s...
+2026-03-04 23:00:16,052 - MatchPulse - INFO - [4/50] nvidia - Senior System Software Engineer, NCCL - Partner En...
+2026-03-04 23:00:16,052 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893392819277
+2026-03-04 23:00:19,436 - MatchPulse - INFO - ✓ NVIDIA description found (3985 chars)
+2026-03-04 23:00:19,438 - MatchPulse - INFO - ✓ Saved to database: nvidia_893392819277
+2026-03-04 23:00:19,439 - MatchPulse - INFO - ⏳ Waiting 3.4s...
+2026-03-04 23:00:22,885 - MatchPulse - INFO - [5/50] amazon - Software Development Engineer...
+2026-03-04 23:00:22,886 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3146660/software-development-engineer
+2026-03-04 23:00:26,927 - MatchPulse - INFO - ✓ Amazon description found (7364 chars)
+2026-03-04 23:00:26,929 - MatchPulse - INFO - ✓ Saved to database: amazon_3146660
+2026-03-04 23:00:26,930 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:00:31,746 - MatchPulse - INFO - [6/50] amazon - Software Development Engineer...
+2026-03-04 23:00:31,747 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3146620/software-development-engineer
+2026-03-04 23:00:35,514 - MatchPulse - INFO - ✓ Amazon description found (7364 chars)
+2026-03-04 23:00:35,517 - MatchPulse - INFO - ✓ Saved to database: amazon_3146620
+2026-03-04 23:00:35,517 - MatchPulse - INFO - ⏳ Waiting 4.1s...
+2026-03-04 23:00:39,641 - MatchPulse - INFO - [7/50] amazon - Software Development Engineer...
+2026-03-04 23:00:39,642 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3146656/software-development-engineer
+2026-03-04 23:00:43,132 - MatchPulse - INFO - ✓ Amazon description found (7080 chars)
+2026-03-04 23:00:43,135 - MatchPulse - INFO - ✓ Saved to database: amazon_3146656
+2026-03-04 23:00:43,135 - MatchPulse - INFO - ⏳ Waiting 4.5s...
+2026-03-04 23:00:47,588 - MatchPulse - INFO - [8/50] amazon - Software Development Engineer...
+2026-03-04 23:00:47,591 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3191114/software-development-engineer
+2026-03-04 23:00:51,142 - MatchPulse - INFO - ✓ Amazon description found (6343 chars)
+2026-03-04 23:00:51,146 - MatchPulse - INFO - ✓ Saved to database: amazon_3191114
+2026-03-04 23:00:51,147 - MatchPulse - INFO - ⏳ Waiting 3.2s...
+2026-03-04 23:00:54,322 - MatchPulse - INFO - [9/50] amazon - Software Development Engineer...
+2026-03-04 23:00:54,324 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3191123/software-development-engineer
+2026-03-04 23:00:57,793 - MatchPulse - INFO - ✓ Amazon description found (6343 chars)
+2026-03-04 23:00:57,795 - MatchPulse - INFO - ✓ Saved to database: amazon_3191123
+2026-03-04 23:00:57,795 - MatchPulse - INFO - ⏳ Waiting 4.0s...
+2026-03-04 23:01:01,749 - MatchPulse - INFO - [10/50] amazon - Software Development Engineer...
+2026-03-04 23:01:01,750 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3146673/software-development-engineer
+2026-03-04 23:01:05,512 - MatchPulse - INFO - ✓ Amazon description found (7077 chars)
+2026-03-04 23:01:05,514 - MatchPulse - INFO - ✓ Saved to database: amazon_3146673
+2026-03-04 23:01:05,515 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:01:10,359 - MatchPulse - INFO - [11/50] amazon - Software Development Engineer...
+2026-03-04 23:01:10,359 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3146624/software-development-engineer
+2026-03-04 23:01:13,849 - MatchPulse - INFO - ✓ Amazon description found (6993 chars)
+2026-03-04 23:01:13,850 - MatchPulse - INFO - ✓ Saved to database: amazon_3146624
+2026-03-04 23:01:13,850 - MatchPulse - INFO - ⏳ Waiting 4.1s...
+2026-03-04 23:01:17,984 - MatchPulse - INFO - [12/50] amazon - Sr. Software Dev Engineer...
+2026-03-04 23:01:17,986 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3191592/sr-software-dev-engineer
+2026-03-04 23:01:21,524 - MatchPulse - INFO - ✓ Amazon description found (6041 chars)
+2026-03-04 23:01:21,527 - MatchPulse - INFO - ✓ Saved to database: amazon_3191592
+2026-03-04 23:01:21,527 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:01:26,361 - MatchPulse - INFO - [13/50] amazon - Software Dev Engineer, Shield...
+2026-03-04 23:01:26,362 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3165061/software-dev-engineer-shield
+2026-03-04 23:01:29,927 - MatchPulse - INFO - ✓ Amazon description found (5951 chars)
+2026-03-04 23:01:29,929 - MatchPulse - INFO - ✓ Saved to database: amazon_3165061
+2026-03-04 23:01:29,929 - MatchPulse - INFO - ⏳ Waiting 4.0s...
+2026-03-04 23:01:33,902 - MatchPulse - INFO - [14/50] amazon - Software Dev Engineer, Shield...
+2026-03-04 23:01:33,906 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3188360/software-dev-engineer-shield
+2026-03-04 23:01:37,381 - MatchPulse - INFO - ✓ Amazon description found (6624 chars)
+2026-03-04 23:01:37,384 - MatchPulse - INFO - ✓ Saved to database: amazon_3188360
+2026-03-04 23:01:37,385 - MatchPulse - INFO - ⏳ Waiting 4.9s...
+2026-03-04 23:01:42,270 - MatchPulse - INFO - [15/50] microsoft - Software Engineer II & Senior Software Engineer...
+2026-03-04 23:01:42,274 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556640555
+2026-03-04 23:01:46,600 - MatchPulse - INFO - ✓ Microsoft description found (7336 chars)
+2026-03-04 23:01:46,603 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556640555
+2026-03-04 23:01:46,603 - MatchPulse - INFO - ⏳ Waiting 3.8s...
+2026-03-04 23:01:50,416 - MatchPulse - INFO - [16/50] microsoft - Senior Software Engineer and Software Engineer II ...
+2026-03-04 23:01:50,417 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556641220
+2026-03-04 23:01:53,980 - MatchPulse - INFO - ✓ Microsoft description found (6072 chars)
+2026-03-04 23:01:53,985 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556641220
+2026-03-04 23:01:53,985 - MatchPulse - INFO - ⏳ Waiting 3.0s...
+2026-03-04 23:01:56,991 - MatchPulse - INFO - [17/50] microsoft - Software Engineering II and Senior Software Engine...
+2026-03-04 23:01:56,993 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556752618
+2026-03-04 23:02:00,408 - MatchPulse - INFO - ✓ Microsoft description found (5834 chars)
+2026-03-04 23:02:00,410 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556752618
+2026-03-04 23:02:00,410 - MatchPulse - INFO - ⏳ Waiting 3.5s...
+2026-03-04 23:02:03,905 - MatchPulse - INFO - [18/50] microsoft - Software Engineer 2...
+2026-03-04 23:02:03,905 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556628404
+2026-03-04 23:02:09,030 - MatchPulse - INFO - ✓ Microsoft description found (6642 chars)
+2026-03-04 23:02:09,032 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556628404
+2026-03-04 23:02:09,032 - MatchPulse - INFO - ⏳ Waiting 3.9s...
+2026-03-04 23:02:12,969 - MatchPulse - INFO - [19/50] microsoft - Software Engineering IC3...
+2026-03-04 23:02:12,970 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556659168
+2026-03-04 23:02:16,438 - MatchPulse - INFO - ✓ Microsoft description found (6762 chars)
+2026-03-04 23:02:16,442 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556659168
+2026-03-04 23:02:16,442 - MatchPulse - INFO - ⏳ Waiting 4.6s...
+2026-03-04 23:02:21,015 - MatchPulse - INFO - [20/50] microsoft - Software Engineer II...
+2026-03-04 23:02:21,015 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556630577
+2026-03-04 23:02:24,535 - MatchPulse - INFO - ✓ Microsoft description found (5228 chars)
+2026-03-04 23:02:24,536 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556630577
+2026-03-04 23:02:24,536 - MatchPulse - INFO - ⏳ Waiting 3.4s...
+2026-03-04 23:02:27,966 - MatchPulse - INFO - [21/50] microsoft - Software Engineer II - CTJ - POLY...
+2026-03-04 23:02:27,968 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556637648
+2026-03-04 23:02:31,469 - MatchPulse - INFO - ✓ Microsoft description found (21059 chars)
+2026-03-04 23:02:31,471 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556637648
+2026-03-04 23:02:31,471 - MatchPulse - INFO - ⏳ Waiting 4.2s...
+2026-03-04 23:02:35,661 - MatchPulse - INFO - [22/50] microsoft - Software Engineer II - Copilot M365 Calendar...
+2026-03-04 23:02:35,663 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556619678
+2026-03-04 23:02:39,243 - MatchPulse - INFO - ✓ Microsoft description found (6184 chars)
+2026-03-04 23:02:39,247 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556619678
+2026-03-04 23:02:39,247 - MatchPulse - INFO - ⏳ Waiting 3.2s...
+2026-03-04 23:02:42,482 - MatchPulse - INFO - [23/50] microsoft - Principal Software Engineer...
+2026-03-04 23:02:42,484 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556620962
+2026-03-04 23:02:45,962 - MatchPulse - INFO - ✓ Microsoft description found (6253 chars)
+2026-03-04 23:02:45,965 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556620962
+2026-03-04 23:02:45,965 - MatchPulse - INFO - ⏳ Waiting 3.8s...
+2026-03-04 23:02:49,757 - MatchPulse - INFO - [24/50] microsoft - Software Engineer II - CoreAI...
+2026-03-04 23:02:49,760 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556637527
+2026-03-04 23:02:53,312 - MatchPulse - INFO - ✓ Microsoft description found (7314 chars)
+2026-03-04 23:02:53,315 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556637527
+2026-03-04 23:02:53,315 - MatchPulse - INFO - ⏳ Waiting 3.1s...
+2026-03-04 23:02:56,371 - MatchPulse - INFO - [25/50] microsoft - Senior Software Engineer and Software Engineer II ...
+2026-03-04 23:02:56,372 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556641220
+2026-03-04 23:02:59,947 - MatchPulse - INFO - ✓ Microsoft description found (6072 chars)
+2026-03-04 23:02:59,948 - MatchPulse - ERROR - ✗ Database error: UNIQUE constraint failed: push_history.job_id
+2026-03-04 23:02:59,948 - MatchPulse - INFO - ⏳ Waiting 3.9s...
+2026-03-04 23:03:03,897 - MatchPulse - INFO - [26/50] microsoft - Software Engineer II and Senior Software Engineer ...
+2026-03-04 23:03:03,897 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556642878
+2026-03-04 23:03:07,286 - MatchPulse - INFO - ✓ Microsoft description found (6380 chars)
+2026-03-04 23:03:07,287 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556642878
+2026-03-04 23:03:07,288 - MatchPulse - INFO - ⏳ Waiting 4.6s...
+2026-03-04 23:03:11,870 - MatchPulse - INFO - [27/50] microsoft - Software Engineer II and Senior Software Engineer ...
+2026-03-04 23:03:11,871 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556653554
+2026-03-04 23:03:15,370 - MatchPulse - INFO - ✓ Microsoft description found (5633 chars)
+2026-03-04 23:03:15,374 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556653554
+2026-03-04 23:03:15,375 - MatchPulse - INFO - ⏳ Waiting 3.3s...
+2026-03-04 23:03:18,715 - MatchPulse - INFO - [28/50] microsoft - Software Engineer II + Senior Software Engineer - ...
+2026-03-04 23:03:18,715 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556745992
+2026-03-04 23:03:22,201 - MatchPulse - INFO - ✓ Microsoft description found (6703 chars)
+2026-03-04 23:03:22,204 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556745992
+2026-03-04 23:03:22,204 - MatchPulse - INFO - ⏳ Waiting 3.5s...
+2026-03-04 23:03:25,710 - MatchPulse - INFO - [29/50] microsoft - Software Engineering II and Senior Software Engine...
+2026-03-04 23:03:25,711 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556752618
+2026-03-04 23:03:29,167 - MatchPulse - INFO - ✓ Microsoft description found (5834 chars)
+2026-03-04 23:03:29,169 - MatchPulse - ERROR - ✗ Database error: UNIQUE constraint failed: push_history.job_id
+2026-03-04 23:03:29,169 - MatchPulse - INFO - ⏳ Waiting 4.9s...
+2026-03-04 23:03:34,073 - MatchPulse - INFO - [30/50] microsoft - Senior Software Engineer / Software Engineer II - ...
+2026-03-04 23:03:34,073 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556751404
+2026-03-04 23:03:37,587 - MatchPulse - INFO - ✓ Microsoft description found (7653 chars)
+2026-03-04 23:03:37,590 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556751404
+2026-03-04 23:03:37,590 - MatchPulse - INFO - ⏳ Waiting 3.3s...
+2026-03-04 23:03:40,937 - MatchPulse - INFO - [31/50] microsoft - Software Engineer II and Senior Software Engineer ...
+2026-03-04 23:03:40,938 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556642428
+2026-03-04 23:03:44,436 - MatchPulse - INFO - ✓ Microsoft description found (6837 chars)
+2026-03-04 23:03:44,439 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556642428
+2026-03-04 23:03:44,439 - MatchPulse - INFO - ⏳ Waiting 4.5s...
+2026-03-04 23:03:48,926 - MatchPulse - INFO - [32/50] microsoft - Senior/Software Engineer II - Backend...
+2026-03-04 23:03:48,927 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556769450
+2026-03-04 23:03:52,789 - MatchPulse - INFO - ✓ Microsoft description found (6737 chars)
+2026-03-04 23:03:52,793 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556769450
+2026-03-04 23:03:52,793 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:03:57,562 - MatchPulse - INFO - [33/50] microsoft - Software Engineer II...
+2026-03-04 23:03:57,565 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556638003
+2026-03-04 23:04:01,012 - MatchPulse - INFO - ✓ Microsoft description found (6480 chars)
+2026-03-04 23:04:01,016 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556638003
+2026-03-04 23:04:01,016 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:04:05,816 - MatchPulse - INFO - [34/50] microsoft - Software Engineer II...
+2026-03-04 23:04:05,817 - MatchPulse - INFO - Scraping Microsoft details: https://apply.careers.microsoft.com/careers/job/1970393556628780
+2026-03-04 23:04:09,369 - MatchPulse - INFO - ✓ Microsoft description found (5698 chars)
+2026-03-04 23:04:09,371 - MatchPulse - INFO - ✓ Saved to database: microsoft_1970393556628780
+2026-03-04 23:04:09,371 - MatchPulse - INFO - ⏳ Waiting 3.6s...
+2026-03-04 23:04:12,961 - MatchPulse - INFO - [35/50] salesforce - Backend Software Development Engineer - Mid/Senior...
+2026-03-04 23:04:12,961 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr249832/backend-software-development-engineer-midseniorleadprincipal/
+2026-03-04 23:04:16,782 - MatchPulse - INFO - ✓ Salesforce description found (3301 chars)
+2026-03-04 23:04:16,784 - MatchPulse - INFO - ✓ Saved to database: salesforce_249832
+2026-03-04 23:04:16,784 - MatchPulse - INFO - ⏳ Waiting 3.7s...
+2026-03-04 23:04:20,446 - MatchPulse - INFO - [36/50] salesforce - Principal Backend Software Development Engineer, A...
+2026-03-04 23:04:20,448 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr322181/principal-backend-software-development-engineer-agentforce-for-supply-chain/
+2026-03-04 23:04:24,014 - MatchPulse - INFO - ✓ Salesforce description found (5651 chars)
+2026-03-04 23:04:24,015 - MatchPulse - INFO - ✓ Saved to database: salesforce_322181
+2026-03-04 23:04:24,015 - MatchPulse - INFO - ⏳ Waiting 4.2s...
+2026-03-04 23:04:28,201 - MatchPulse - INFO - [37/50] salesforce - Principal Software Engineer - Event Technology...
+2026-03-04 23:04:28,201 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr328543/principal-software-engineer-event-technology/
+2026-03-04 23:04:31,544 - MatchPulse - INFO - ✓ Salesforce description found (4444 chars)
+2026-03-04 23:04:31,546 - MatchPulse - INFO - ✓ Saved to database: salesforce_328543
+2026-03-04 23:04:31,546 - MatchPulse - INFO - ⏳ Waiting 3.8s...
+2026-03-04 23:04:35,354 - MatchPulse - INFO - [38/50] salesforce - Senior Software Engineer - Digital Enterprise Tech...
+2026-03-04 23:04:35,354 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr332295/senior-software-engineer-digital-enterprise-technology-full-stack/
+2026-03-04 23:04:38,715 - MatchPulse - INFO - ✓ Salesforce description found (2494 chars)
+2026-03-04 23:04:38,720 - MatchPulse - INFO - ✓ Saved to database: salesforce_332295
+2026-03-04 23:04:38,720 - MatchPulse - INFO - ⏳ Waiting 3.4s...
+2026-03-04 23:04:42,084 - MatchPulse - INFO - [39/50] salesforce - Software Engineering SMTS...
+2026-03-04 23:04:42,085 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr327145/software-engineering-smts/
+2026-03-04 23:04:45,476 - MatchPulse - INFO - ✓ Salesforce description found (3016 chars)
+2026-03-04 23:04:45,479 - MatchPulse - INFO - ✓ Saved to database: salesforce_327145
+2026-03-04 23:04:45,479 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:04:50,310 - MatchPulse - INFO - [40/50] salesforce - Software Engineering SMTS/LMTS...
+2026-03-04 23:04:50,311 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr330021/software-engineering-smtslmts/
+2026-03-04 23:04:53,672 - MatchPulse - INFO - ✓ Salesforce description found (3854 chars)
+2026-03-04 23:04:53,674 - MatchPulse - INFO - ✓ Saved to database: salesforce_330021
+2026-03-04 23:04:53,675 - MatchPulse - INFO - ⏳ Waiting 4.1s...
+2026-03-04 23:04:57,745 - MatchPulse - INFO - [41/50] salesforce - Software Engineering LMTS...
+2026-03-04 23:04:57,746 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr328821/software-engineering-lmts/
+2026-03-04 23:05:01,149 - MatchPulse - INFO - ✓ Salesforce description found (5009 chars)
+2026-03-04 23:05:01,151 - MatchPulse - INFO - ✓ Saved to database: salesforce_328821
+2026-03-04 23:05:01,151 - MatchPulse - INFO - ⏳ Waiting 4.9s...
+2026-03-04 23:05:06,072 - MatchPulse - INFO - [42/50] salesforce - Sr. Manager - Software Engineering - IAM...
+2026-03-04 23:05:06,073 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr327960/sr-manager-software-engineering-iam/
+2026-03-04 23:05:09,574 - MatchPulse - INFO - ✓ Salesforce description found (2872 chars)
+2026-03-04 23:05:09,577 - MatchPulse - INFO - ✓ Saved to database: salesforce_327960
+2026-03-04 23:05:09,577 - MatchPulse - INFO - ⏳ Waiting 3.2s...
+2026-03-04 23:05:12,750 - MatchPulse - INFO - [43/50] salesforce - Full Stack Software Engineering, Lead, B2C Identit...
+2026-03-04 23:05:12,751 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr325057/full-stack-software-engineering-lead-b2c-identity-platform/
+2026-03-04 23:05:16,006 - MatchPulse - INFO - ✓ Salesforce description found (3448 chars)
+2026-03-04 23:05:16,009 - MatchPulse - INFO - ✓ Saved to database: salesforce_325057
+2026-03-04 23:05:16,009 - MatchPulse - INFO - ⏳ Waiting 3.5s...
+2026-03-04 23:05:19,511 - MatchPulse - INFO - [44/50] salesforce - Sr. Manager, Software Engineering...
+2026-03-04 23:05:19,513 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr326995/sr-manager-software-engineering/
+2026-03-04 23:05:22,952 - MatchPulse - INFO - ✓ Salesforce description found (3755 chars)
+2026-03-04 23:05:22,955 - MatchPulse - INFO - ✓ Saved to database: salesforce_326995
+2026-03-04 23:05:22,956 - MatchPulse - INFO - ⏳ Waiting 3.0s...
+2026-03-04 23:05:25,984 - MatchPulse - INFO - [45/50] salesforce - Software Engineer, Search Infrastructure - Slack...
+2026-03-04 23:05:25,984 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr331613/software-engineer-search-infrastructure-slack/
+2026-03-04 23:05:29,487 - MatchPulse - INFO - ✓ Salesforce description found (4533 chars)
+2026-03-04 23:05:29,490 - MatchPulse - INFO - ✓ Saved to database: salesforce_331613
+2026-03-04 23:05:29,490 - MatchPulse - INFO - ⏳ Waiting 3.6s...
+2026-03-04 23:05:33,138 - MatchPulse - INFO - [46/50] salesforce - Principal Software Engineer, Data Platform...
+2026-03-04 23:05:33,138 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr318460/principal-software-engineer-data-platform/
+2026-03-04 23:05:36,545 - MatchPulse - INFO - ✓ Salesforce description found (4927 chars)
+2026-03-04 23:05:36,547 - MatchPulse - INFO - ✓ Saved to database: salesforce_318460
+2026-03-04 23:05:36,547 - MatchPulse - INFO - ⏳ Waiting 3.6s...
+2026-03-04 23:05:40,138 - MatchPulse - INFO - [47/50] salesforce - Staff Backend Software Engineer – Enterprise...
+2026-03-04 23:05:40,138 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr329167/staff-backend-software-engineer-enterprise/
+2026-03-04 23:05:43,695 - MatchPulse - INFO - ✓ Salesforce description found (4607 chars)
+2026-03-04 23:05:43,698 - MatchPulse - INFO - ✓ Saved to database: salesforce_329167
+2026-03-04 23:05:43,698 - MatchPulse - INFO - ⏳ Waiting 3.7s...
+2026-03-04 23:05:47,398 - MatchPulse - INFO - [48/50] salesforce - Software Engineer, Search Data Infrastructure -Sla...
+2026-03-04 23:05:47,399 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr331617/software-engineer-search-data-infrastructure-slack/
+2026-03-04 23:05:50,785 - MatchPulse - INFO - ✓ Salesforce description found (4506 chars)
+2026-03-04 23:05:50,792 - MatchPulse - INFO - ✓ Saved to database: salesforce_331617
+2026-03-04 23:05:50,792 - MatchPulse - INFO - ⏳ Waiting 4.8s...
+2026-03-04 23:05:55,599 - MatchPulse - INFO - [49/50] salesforce - Software Engineering Architect...
+2026-03-04 23:05:55,600 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr329590/software-engineering-architect/
+2026-03-04 23:05:59,087 - MatchPulse - INFO - ✓ Salesforce description found (2291 chars)
+2026-03-04 23:05:59,091 - MatchPulse - INFO - ✓ Saved to database: salesforce_329590
+2026-03-04 23:05:59,091 - MatchPulse - INFO - ⏳ Waiting 4.1s...
+2026-03-04 23:06:03,200 - MatchPulse - INFO - [50/50] salesforce - Senior / Lead Software Engineer - Database/Distrib...
+2026-03-04 23:06:03,201 - MatchPulse - INFO - Scraping Salesforce details: https://careers.salesforce.com/en/jobs/jr328544/senior-lead-software-engineer-databasedistributed-storage-engineering/
+2026-03-04 23:06:06,553 - MatchPulse - INFO - ✓ Salesforce description found (3009 chars)
+2026-03-04 23:06:06,556 - MatchPulse - INFO - ✓ Saved to database: salesforce_328544
+2026-03-04 23:06:06,653 - MatchPulse - INFO - 
+============================================================
+2026-03-04 23:06:06,654 - MatchPulse - INFO - 📊 Summary
+2026-03-04 23:06:06,654 - MatchPulse - INFO - ============================================================
+2026-03-04 23:06:06,654 - MatchPulse - INFO - ✓ Enriched: 48 jobs
+2026-03-04 23:06:06,654 - MatchPulse - INFO - ✗ Failed: 2 jobs
+2026-03-04 23:06:06,655 - MatchPulse - INFO - 
+✓ Sample:
+2026-03-04 23:06:06,655 - MatchPulse - INFO -    - nvidia: Gen AI Product Evangelist Engineer, Supp... (5381 chars)
+2026-03-04 23:06:06,655 - MatchPulse - INFO -    - nvidia: Senior ASIC Power Engineer... (4935 chars)
+2026-03-04 23:06:06,655 - MatchPulse - INFO -    - nvidia: Senior Agentic Systems Engineer, Neural ... (4178 chars)
+2026-03-04 23:06:06,655 - MatchPulse - INFO - ============================================================
+2026-03-04 23:06:06,656 - MatchPulse - INFO - Fetcher Agent: Completed. Fetched 48 jobs
+2026-03-04 23:06:06,657 - MatchPulse - INFO - ✓ Fetcher completed: 48 jobs fetched
+2026-03-04 23:06:06,657 - MatchPulse - INFO - 
+======================================================================
+2026-03-04 23:06:06,657 - MatchPulse - INFO - Step 2: Running Matcher Agent...
+2026-03-04 23:06:06,657 - MatchPulse - INFO - ======================================================================
+2026-03-04 23:06:06,657 - MatchPulse - INFO - Matcher Agent: Starting (threshold=0.75)
+2026-03-04 23:06:06,666 - root - INFO - Resume embedding loaded from data/embeddings/resume_embedding.npy
+2026-03-04 23:06:06,666 - MatchPulse - INFO - ✓ Loaded resume embedding (shape: (768,))
+2026-03-04 23:06:06,670 - MatchPulse - INFO - ✓ Found 50 jobs with status='fetched'
+2026-03-04 23:06:06,670 - MatchPulse - INFO - 🔍 Computing similarities...
+2026-03-04 23:06:10,193 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-03-04 23:06:10,193 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-03-04 23:06:13,417 - MatchPulse - INFO - [1/50] ○ nvidia - Solution Architect, Sovereign AI... (score: 0.696)
+2026-03-04 23:06:13,526 - MatchPulse - INFO - [2/50] ○ nvidia - Senior Director, Business Operations - N... (score: 0.701)
+2026-03-04 23:06:13,644 - MatchPulse - INFO - [3/50] ○ nvidia - Gen AI Product Evangelist Engineer, Supp... (score: 0.693)
+2026-03-04 23:06:13,841 - MatchPulse - INFO - [4/50] ○ nvidia - Senior ASIC Power Engineer... (score: 0.609)
+2026-03-04 23:06:13,935 - MatchPulse - INFO - [5/50] ○ nvidia - Senior Agentic Systems Engineer, Neural ... (score: 0.717)
+2026-03-04 23:06:14,032 - MatchPulse - INFO - [6/50] ○ nvidia - Senior System Software Engineer, NCCL - ... (score: 0.692)
+2026-03-04 23:06:14,134 - MatchPulse - INFO - [7/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.818)
+2026-03-04 23:06:14,229 - MatchPulse - INFO - [8/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.818)
+2026-03-04 23:06:14,327 - MatchPulse - INFO - [9/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.818)
+2026-03-04 23:06:14,423 - MatchPulse - INFO - [10/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.811)
+2026-03-04 23:06:14,517 - MatchPulse - INFO - [11/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.811)
+2026-03-04 23:06:14,610 - MatchPulse - INFO - [12/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.818)
+2026-03-04 23:06:14,700 - MatchPulse - INFO - [13/50] ✓ MATCH amazon - Software Development Engineer... (score: 0.818)
+2026-03-04 23:06:14,790 - MatchPulse - INFO - [14/50] ✓ MATCH amazon - Sr. Software Dev Engineer... (score: 0.811)
+2026-03-04 23:06:14,918 - MatchPulse - INFO - [15/50] ✓ MATCH amazon - Software Dev Engineer, Shield... (score: 0.842)
+2026-03-04 23:06:15,019 - MatchPulse - INFO - [16/50] ✓ MATCH amazon - Software Dev Engineer, Shield... (score: 0.842)
+2026-03-04 23:06:15,107 - MatchPulse - INFO - [17/50] ✓ MATCH microsoft - Software Engineer II & Senior Software E... (score: 0.763)
+2026-03-04 23:06:15,195 - MatchPulse - INFO - [18/50] ✓ MATCH microsoft - Senior Software Engineer and Software En... (score: 0.758)
+2026-03-04 23:06:15,283 - MatchPulse - INFO - [19/50] ○ microsoft - Software Engineering II and Senior Softw... (score: 0.693)
+2026-03-04 23:06:15,375 - MatchPulse - INFO - [20/50] ○ microsoft - Software Engineer 2... (score: 0.745)
+2026-03-04 23:06:15,464 - MatchPulse - INFO - [21/50] ○ microsoft - Software Engineering IC3... (score: 0.732)
+2026-03-04 23:06:15,554 - MatchPulse - INFO - [22/50] ○ microsoft - Software Engineer II... (score: 0.720)
+2026-03-04 23:06:15,653 - MatchPulse - INFO - [23/50] ✓ MATCH microsoft - Software Engineer II - CTJ - POLY... (score: 0.773)
+2026-03-04 23:06:15,743 - MatchPulse - INFO - [24/50] ○ microsoft - Software Engineer II - Copilot M365 Cale... (score: 0.717)
+2026-03-04 23:06:15,833 - MatchPulse - INFO - [25/50] ○ microsoft - Principal Software Engineer... (score: 0.730)
+2026-03-04 23:06:15,927 - MatchPulse - INFO - [26/50] ✓ MATCH microsoft - Software Engineer II - CoreAI... (score: 0.769)
+2026-03-04 23:06:16,016 - MatchPulse - INFO - [27/50] ○ microsoft - Software Engineer II and Senior Software... (score: 0.730)
+2026-03-04 23:06:16,112 - MatchPulse - INFO - [28/50] ○ microsoft - Software Engineer II and Senior Software... (score: 0.676)
+2026-03-04 23:06:16,206 - MatchPulse - INFO - [29/50] ○ microsoft - Software Engineer II + Senior Software E... (score: 0.707)
+2026-03-04 23:06:16,309 - MatchPulse - INFO - [30/50] ✓ MATCH microsoft - Senior Software Engineer / Software Engi... (score: 0.753)
+2026-03-04 23:06:16,405 - MatchPulse - INFO - [31/50] ○ microsoft - Software Engineer II and Senior Software... (score: 0.674)
+2026-03-04 23:06:16,495 - MatchPulse - INFO - [32/50] ✓ MATCH microsoft - Senior/Software Engineer II - Backend... (score: 0.759)
+2026-03-04 23:06:16,590 - MatchPulse - INFO - [33/50] ✓ MATCH microsoft - Software Engineer II... (score: 0.753)
+2026-03-04 23:06:16,685 - MatchPulse - INFO - [34/50] ✓ MATCH microsoft - Software Engineer II... (score: 0.774)
+2026-03-04 23:06:16,776 - MatchPulse - INFO - [35/50] ✓ MATCH salesforce - Backend Software Development Engineer - ... (score: 0.760)
+2026-03-04 23:06:16,871 - MatchPulse - INFO - [36/50] ✓ MATCH salesforce - Principal Backend Software Development E... (score: 0.754)
+2026-03-04 23:06:16,963 - MatchPulse - INFO - [37/50] ○ salesforce - Principal Software Engineer - Event Tech... (score: 0.745)
+2026-03-04 23:06:17,049 - MatchPulse - INFO - [38/50] ✓ MATCH salesforce - Senior Software Engineer - Digital Enter... (score: 0.768)
+2026-03-04 23:06:17,139 - MatchPulse - INFO - [39/50] ○ salesforce - Software Engineering SMTS... (score: 0.726)
+2026-03-04 23:06:17,228 - MatchPulse - INFO - [40/50] ○ salesforce - Software Engineering SMTS/LMTS... (score: 0.723)
+2026-03-04 23:06:17,326 - MatchPulse - INFO - [41/50] ○ salesforce - Software Engineering LMTS... (score: 0.706)
+2026-03-04 23:06:17,439 - MatchPulse - INFO - [42/50] ○ salesforce - Sr. Manager - Software Engineering - IAM... (score: 0.747)
+2026-03-04 23:06:17,535 - MatchPulse - INFO - [43/50] ✓ MATCH salesforce - Full Stack Software Engineering, Lead, B... (score: 0.754)
+2026-03-04 23:06:17,625 - MatchPulse - INFO - [44/50] ○ salesforce - Sr. Manager, Software Engineering... (score: 0.697)
+2026-03-04 23:06:17,716 - MatchPulse - INFO - [45/50] ○ salesforce - Software Engineer, Search Infrastructure... (score: 0.683)
+2026-03-04 23:06:17,812 - MatchPulse - INFO - [46/50] ✓ MATCH salesforce - Principal Software Engineer, Data Platfo... (score: 0.759)
+2026-03-04 23:06:17,917 - MatchPulse - INFO - [47/50] ✓ MATCH salesforce - Staff Backend Software Engineer – Enterp... (score: 0.761)
+2026-03-04 23:06:18,014 - MatchPulse - INFO - [48/50] ○ salesforce - Software Engineer, Search Data Infrastru... (score: 0.688)
+2026-03-04 23:06:18,104 - MatchPulse - INFO - [49/50] ✓ MATCH salesforce - Software Engineering Architect... (score: 0.844)
+2026-03-04 23:06:18,202 - MatchPulse - INFO - [50/50] ○ salesforce - Senior / Lead Software Engineer - Databa... (score: 0.734)
+2026-03-04 23:06:18,205 - MatchPulse - INFO - ✓ Found 25 jobs above threshold 0.75
+2026-03-04 23:06:18,245 - MatchPulse - INFO - ✓ Updated 25 jobs to status='matched'
+2026-03-04 23:06:18,245 - MatchPulse - INFO - ✓ Updated 25 jobs to status='not_matched'
+2026-03-04 23:06:18,245 - MatchPulse - INFO - Matcher Agent: Completed. Matched 25/50 jobs
+2026-03-04 23:06:18,247 - MatchPulse - INFO - ✓ Matcher completed: 25/50 jobs matched
+2026-03-04 23:06:18,247 - MatchPulse - INFO - 
+======================================================================
+2026-03-04 23:06:18,247 - MatchPulse - INFO - Step 3: Running Analyzer Agent...
+2026-03-04 23:06:18,247 - MatchPulse - INFO - ======================================================================
+2026-03-04 23:06:18,247 - MatchPulse - INFO - Analyzer Agent: Starting (RAG with top_k=7)
+2026-03-04 23:06:18,248 - MatchPulse - INFO - ✓ Found 25 jobs with status='matched'
+2026-03-04 23:06:18,252 - root - INFO - Loaded 7 resume chunks and embeddings
+2026-03-04 23:06:18,252 - MatchPulse - INFO - ✓ Loaded cached resume chunks (7 chunks)
+2026-03-04 23:06:18,252 - MatchPulse - INFO - 🤖 Generating RAG-based insights...
+2026-03-04 23:06:18,252 - MatchPulse - INFO - [1/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:06:18,258 - faiss.loader - INFO - Loading faiss.
+2026-03-04 23:06:18,354 - faiss.loader - INFO - Successfully loaded faiss.
+2026-03-04 23:06:18,417 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:06:18,425 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:06:35,317 - MatchPulse - INFO - ✓ Generated RAG-based insights (648 chars)
+2026-03-04 23:06:35,318 - MatchPulse - INFO - [2/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:06:35,320 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:06:35,321 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:06:44,007 - MatchPulse - INFO - ✓ Generated RAG-based insights (616 chars)
+2026-03-04 23:06:44,008 - MatchPulse - INFO - [3/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:06:44,009 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:06:44,010 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:06:54,346 - MatchPulse - INFO - ✓ Generated RAG-based insights (616 chars)
+2026-03-04 23:06:54,346 - MatchPulse - INFO - [4/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:06:54,348 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:06:54,349 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:03,980 - MatchPulse - INFO - ✓ Generated RAG-based insights (634 chars)
+2026-03-04 23:07:03,980 - MatchPulse - INFO - [5/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:07:03,981 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:03,982 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:20,053 - MatchPulse - INFO - ✓ Generated RAG-based insights (654 chars)
+2026-03-04 23:07:20,054 - MatchPulse - INFO - [6/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:07:20,055 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:20,056 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:32,143 - MatchPulse - INFO - ✓ Generated RAG-based insights (615 chars)
+2026-03-04 23:07:32,143 - MatchPulse - INFO - [7/25] Analyzing: amazon - Software Development Engineer...
+2026-03-04 23:07:32,145 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:32,145 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:40,643 - MatchPulse - INFO - ✓ Generated RAG-based insights (612 chars)
+2026-03-04 23:07:40,643 - MatchPulse - INFO - [8/25] Analyzing: amazon - Sr. Software Dev Engineer...
+2026-03-04 23:07:40,645 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:40,647 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:40,785 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 19.222169458s.
+2026-03-04 23:07:40,786 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 19.222169458s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}
+2026-03-04 23:07:40,796 - MatchPulse - INFO - ✓ Generated RAG-based insights (425 chars)
+2026-03-04 23:07:40,796 - MatchPulse - INFO - [9/25] Analyzing: amazon - Software Dev Engineer, Shield...
+2026-03-04 23:07:40,797 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:40,797 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:40,935 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 19.073672463s.
+2026-03-04 23:07:40,935 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 19.073672463s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}
+2026-03-04 23:07:40,939 - MatchPulse - INFO - ✓ Generated RAG-based insights (425 chars)
+2026-03-04 23:07:40,939 - MatchPulse - INFO - [10/25] Analyzing: amazon - Software Dev Engineer, Shield...
+2026-03-04 23:07:40,940 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:40,940 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:41,143 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 18.927538874s.
+2026-03-04 23:07:41,143 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 18.927538874s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-04 23:07:41,150 - MatchPulse - INFO - ✓ Generated RAG-based insights (425 chars)
+2026-03-04 23:07:41,150 - MatchPulse - INFO - [11/25] Analyzing: microsoft - Software Engineer II & Senior Software E...
+2026-03-04 23:07:41,151 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:41,151 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:41,293 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 18.71700192s.
+2026-03-04 23:07:41,294 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 18.71700192s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-04 23:07:41,300 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:41,300 - MatchPulse - INFO - [12/25] Analyzing: microsoft - Senior Software Engineer and Software En...
+2026-03-04 23:07:41,301 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:41,302 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:41,439 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 18.566923211s.
+2026-03-04 23:07:41,440 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 18.566923211s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-04 23:07:41,445 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:41,446 - MatchPulse - INFO - [13/25] Analyzing: microsoft - Software Engineer II - CTJ - POLY...
+2026-03-04 23:07:41,447 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:41,448 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:41,665 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 18.419959711s.
+2026-03-04 23:07:41,665 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 18.419959711s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-04 23:07:41,671 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:41,671 - MatchPulse - INFO - [14/25] Analyzing: microsoft - Software Engineer II - CoreAI...
+2026-03-04 23:07:41,672 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:41,673 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:41,804 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 18.203871289s.
+2026-03-04 23:07:41,805 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 18.203871289s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-04 23:07:41,807 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:41,807 - MatchPulse - INFO - [15/25] Analyzing: microsoft - Senior Software Engineer / Software Engi...
+2026-03-04 23:07:41,808 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:41,808 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:41,960 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 18.051162355s.
+2026-03-04 23:07:41,961 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 18.051162355s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-04 23:07:41,966 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:41,966 - MatchPulse - INFO - [16/25] Analyzing: microsoft - Senior/Software Engineer II - Backend...
+2026-03-04 23:07:41,968 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:41,969 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:53,453 - MatchPulse - INFO - ✓ Generated RAG-based insights (647 chars)
+2026-03-04 23:07:53,454 - MatchPulse - INFO - [17/25] Analyzing: microsoft - Software Engineer II...
+2026-03-04 23:07:53,463 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:53,464 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:53,597 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 6.409314403s.
+2026-03-04 23:07:53,597 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 6.409314403s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+2026-03-04 23:07:53,603 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:53,603 - MatchPulse - INFO - [18/25] Analyzing: microsoft - Software Engineer II...
+2026-03-04 23:07:53,605 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:53,606 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:53,737 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 6.267428287s.
+2026-03-04 23:07:53,737 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 6.267428287s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+2026-03-04 23:07:53,743 - MatchPulse - INFO - ✓ Generated RAG-based insights (428 chars)
+2026-03-04 23:07:53,743 - MatchPulse - INFO - [19/25] Analyzing: salesforce - Backend Software Development Engineer - ...
+2026-03-04 23:07:53,745 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:53,746 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:53,880 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 6.126110188s.
+2026-03-04 23:07:53,880 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 6.126110188s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+2026-03-04 23:07:53,884 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:53,884 - MatchPulse - INFO - [20/25] Analyzing: salesforce - Principal Backend Software Development E...
+2026-03-04 23:07:53,885 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:53,886 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:54,001 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 6.003960044s.
+2026-03-04 23:07:54,001 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 6.003960044s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+2026-03-04 23:07:54,006 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:54,006 - MatchPulse - INFO - [21/25] Analyzing: salesforce - Senior Software Engineer - Digital Enter...
+2026-03-04 23:07:54,007 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:54,007 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:54,144 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 5.862464575s.
+2026-03-04 23:07:54,144 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 5.862464575s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}
+2026-03-04 23:07:54,147 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:54,147 - MatchPulse - INFO - [22/25] Analyzing: salesforce - Full Stack Software Engineering, Lead, B...
+2026-03-04 23:07:54,147 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:54,147 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:54,268 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 5.736885094s.
+2026-03-04 23:07:54,268 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 5.736885094s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}
+2026-03-04 23:07:54,272 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:54,272 - MatchPulse - INFO - [23/25] Analyzing: salesforce - Principal Software Engineer, Data Platfo...
+2026-03-04 23:07:54,272 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:54,273 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:54,394 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 5.611621161s.
+2026-03-04 23:07:54,394 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 5.611621161s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}
+2026-03-04 23:07:54,398 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:54,398 - MatchPulse - INFO - [24/25] Analyzing: salesforce - Staff Backend Software Engineer – Enterp...
+2026-03-04 23:07:54,399 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:54,399 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:54,529 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 5.47581354s.
+2026-03-04 23:07:54,530 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 5.47581354s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}
+2026-03-04 23:07:54,531 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:54,531 - MatchPulse - INFO - [25/25] Analyzing: salesforce - Software Engineering Architect...
+2026-03-04 23:07:54,532 - MatchPulse - INFO - ✓ Retrieved 7 relevant resume sections
+2026-03-04 23:07:54,532 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-04 23:07:54,666 - root - ERROR - Google Gemini API error: 429 - You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 5.342878214s.
+2026-03-04 23:07:54,666 - MatchPulse - ERROR - LLM generation failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 5.342878214s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}
+2026-03-04 23:07:54,670 - MatchPulse - INFO - ✓ Generated RAG-based insights (429 chars)
+2026-03-04 23:07:54,670 - MatchPulse - INFO - Analyzer Agent: Completed. Analyzed 25/25 jobs
+2026-03-04 23:07:54,671 - MatchPulse - INFO - ✓ Analyzer completed: 25/25 jobs analyzed
+2026-03-04 23:07:54,671 - MatchPulse - INFO - 
+======================================================================
+2026-03-04 23:07:54,671 - MatchPulse - INFO - Step 4: Running Notifier Agent...
+2026-03-04 23:07:54,671 - MatchPulse - INFO - ======================================================================
+2026-03-04 23:07:54,671 - MatchPulse - INFO - Notifier Agent: Starting (dry_run=False)
+2026-03-04 23:07:54,676 - MatchPulse - INFO - ✓ Found 25 jobs with status='matched'
+2026-03-04 23:07:54,676 - MatchPulse - INFO - ✓ 25 jobs have explanations (ready to notify)
+2026-03-04 23:07:54,676 - MatchPulse - INFO - 📤 Sending Telegram notifications...
+2026-03-04 23:07:54,677 - MatchPulse - INFO - [1/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:07:55,455 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:07:55,460 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:07:56,961 - MatchPulse - INFO - [2/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:07:57,744 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:07:57,749 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:07:59,253 - MatchPulse - INFO - [3/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:08:00,018 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:00,023 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:01,525 - MatchPulse - INFO - [4/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:08:02,277 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:02,282 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:03,784 - MatchPulse - INFO - [5/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:08:04,544 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:04,546 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:06,048 - MatchPulse - INFO - [6/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:08:06,830 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:06,832 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:08,334 - MatchPulse - INFO - [7/25] 📤 Sending: amazon - Software Development Engineer...
+2026-03-04 23:08:09,088 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:09,094 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:10,596 - MatchPulse - INFO - [8/25] 📤 Sending: amazon - Sr. Software Dev Engineer...
+2026-03-04 23:08:11,401 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:11,406 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:12,910 - MatchPulse - INFO - [9/25] 📤 Sending: amazon - Software Dev Engineer, Shield...
+2026-03-04 23:08:13,705 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:13,710 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:15,212 - MatchPulse - INFO - [10/25] 📤 Sending: amazon - Software Dev Engineer, Shield...
+2026-03-04 23:08:15,956 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:15,960 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:17,462 - MatchPulse - INFO - [11/25] 📤 Sending: microsoft - Software Engineer II & Senior Software E...
+2026-03-04 23:08:18,184 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:18,189 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:19,692 - MatchPulse - INFO - [12/25] 📤 Sending: microsoft - Senior Software Engineer and Software En...
+2026-03-04 23:08:20,851 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:20,858 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:22,393 - MatchPulse - INFO - [13/25] 📤 Sending: microsoft - Software Engineer II - CTJ - POLY...
+2026-03-04 23:08:23,234 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:23,241 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:24,756 - MatchPulse - INFO - [14/25] 📤 Sending: microsoft - Software Engineer II - CoreAI...
+2026-03-04 23:08:25,819 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:25,836 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:27,740 - MatchPulse - INFO - [15/25] 📤 Sending: microsoft - Senior Software Engineer / Software Engi...
+2026-03-04 23:08:28,729 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:28,774 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:30,297 - MatchPulse - INFO - [16/25] 📤 Sending: microsoft - Senior/Software Engineer II - Backend...
+2026-03-04 23:08:31,152 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:31,167 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:32,671 - MatchPulse - INFO - [17/25] 📤 Sending: microsoft - Software Engineer II...
+2026-03-04 23:08:33,397 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:33,408 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:34,910 - MatchPulse - INFO - [18/25] 📤 Sending: microsoft - Software Engineer II...
+2026-03-04 23:08:35,666 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:35,669 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:37,174 - MatchPulse - INFO - [19/25] 📤 Sending: salesforce - Backend Software Development Engineer - ...
+2026-03-04 23:08:37,932 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:37,936 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:39,446 - MatchPulse - INFO - [20/25] 📤 Sending: salesforce - Principal Backend Software Development E...
+2026-03-04 23:08:40,190 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:40,194 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:41,697 - MatchPulse - INFO - [21/25] 📤 Sending: salesforce - Senior Software Engineer - Digital Enter...
+2026-03-04 23:08:42,481 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:42,484 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:43,986 - MatchPulse - INFO - [22/25] 📤 Sending: salesforce - Full Stack Software Engineering, Lead, B...
+2026-03-04 23:08:44,837 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:44,842 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:46,344 - MatchPulse - INFO - [23/25] 📤 Sending: salesforce - Principal Software Engineer, Data Platfo...
+2026-03-04 23:08:47,049 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:47,054 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:48,559 - MatchPulse - INFO - [24/25] 📤 Sending: salesforce - Staff Backend Software Engineer – Enterp...
+2026-03-04 23:08:49,301 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:49,307 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:50,809 - MatchPulse - INFO - [25/25] 📤 Sending: salesforce - Software Engineering Architect...
+2026-03-04 23:08:51,510 - root - INFO - Telegram message sent successfully to chat 5622433525
+2026-03-04 23:08:51,517 - MatchPulse - INFO - ✓ Sent and updated status to 'pushed'
+2026-03-04 23:08:51,518 - MatchPulse - INFO - Notifier Agent: Completed. Notified 25/25 jobs
+2026-03-04 23:08:51,522 - MatchPulse - INFO - ✓ Notifier completed: 25/25 jobs sent to Telegram
+2026-03-04 23:08:51,522 - MatchPulse - INFO - 
+======================================================================
+2026-03-04 23:08:51,522 - MatchPulse - INFO - Pipeline Completed
+2026-03-04 23:08:51,522 - MatchPulse - INFO - ======================================================================
+2026-03-04 23:08:51,522 - MatchPulse - INFO - Fetched: 48 jobs
+2026-03-04 23:08:51,523 - MatchPulse - INFO - Matched: 25 jobs (threshold: 0.75)
+2026-03-04 23:08:51,523 - MatchPulse - INFO - Analyzed: 25 jobs (RAG with top-k=7)
+2026-03-04 23:08:51,523 - MatchPulse - INFO - Notified: 25 jobs sent to Telegram
+2026-03-04 23:08:51,523 - MatchPulse - INFO - ======================================================================

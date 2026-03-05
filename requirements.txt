@@ -27,6 +27,8 @@ streamlit
 fastapi
 uvicorn[standard]
 python-multipart
+plotly
+pandas
 
 # Database
 sqlalchemy
