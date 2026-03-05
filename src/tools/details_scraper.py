@@ -26,12 +26,13 @@ except ImportError:
 logger = setup_logging()
 
 
-async def enrich_job_descriptions(jobs: List[Dict]) -> List[Dict]:
+async def enrich_job_descriptions(jobs: List[Dict], dry_run: bool = False) -> List[Dict]:
     """
     Enrich job listings with full descriptions from detail pages.
     
     Args:
         jobs: List of job dictionaries from scraper
+        dry_run: If True, don't save to database
     
     Returns:
         List of enriched job dictionaries with full descriptions
@@ -94,9 +95,12 @@ async def enrich_job_descriptions(jobs: List[Dict]) -> List[Dict]:
                 else:
                     logger.warning(f"✗ {job['company']} description not found")
                 
-                # Save to database
-                save_job(job)
-                logger.info(f"✓ Saved to database: {job['job_id']}")
+                # Save to database (skip if dry_run)
+                if not dry_run:
+                    save_job(job)
+                    logger.info(f"✓ Saved to database: {job['job_id']}")
+                else:
+                    logger.info(f"⚠️  DRY-RUN: Skipped saving {job['job_id']}")
                 
                 enriched_jobs.append(job)
                 
@@ -221,7 +225,7 @@ async def fetch_and_enrich_jobs(dry_run: bool = True, limit: Optional[int] = Non
     for company, count in jobs_by_company.items():
         logger.info(f"   - {company}: {count} jobs")
     
-    # Enrich with details (this will also save to DB)
-    enriched_jobs = await enrich_job_descriptions(new_jobs)
+    # Enrich with details (pass dry_run parameter)
+    enriched_jobs = await enrich_job_descriptions(new_jobs, dry_run=dry_run)
     
     return enriched_jobs
