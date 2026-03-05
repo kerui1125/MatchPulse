@@ -143,8 +143,8 @@ Examples:
     
     parser.add_argument('--limit', type=int, help='Limit number of jobs')
     parser.add_argument('--dry-run', action='store_true', help='No Telegram notifications')
-    parser.add_argument('--threshold', type=float, default=0.7, help='Match score threshold (0-1)')
-    parser.add_argument('--top-k', type=int, default=3, help='Number of resume chunks for RAG (default: 3)')
+    parser.add_argument('--threshold', type=float, default=0.78, help='Match score threshold (0-1)')
+    parser.add_argument('--top-k', type=int, default=7, help='Number of resume chunks for RAG (default: 7)')
     
     args = parser.parse_args()
     run_pipeline(limit=args.limit, dry_run=args.dry_run, threshold=args.threshold, top_k=args.top_k)

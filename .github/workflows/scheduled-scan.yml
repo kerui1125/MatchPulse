@@ -1,0 +1,119 @@
+name: Scheduled Job Scan
+
+# Trigger: Bi-hourly during business hours (9AM-5PM, Mon-Fri)
+# Cron syntax: minute hour day month weekday
+# GitHub Actions uses UTC time, so adjust for your timezone
+# Bellevue (PST/PDT) = UTC-8 (winter) or UTC-7 (summer)
+# 9AM PST = 5PM UTC (winter) or 4PM UTC (summer)
+# For simplicity, using UTC times that cover both timezones
+on:
+  schedule:
+    # Run at 5PM, 7PM, 9PM, 11PM, 1AM UTC (Mon-Fri)
+    # This covers 9AM-5PM PST/PDT approximately
+    - cron: '0 17,19,21,23,1 * * 1-5'
+  
+  # Allow manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      threshold:
+        description: 'Match score threshold (0-1)'
+        required: false
+        default: '0.78'
+      top_k:
+        description: 'Number of resume chunks for RAG'
+        required: false
+        default: '7'
+      dry_run:
+        description: 'Dry run (no Telegram notifications)'
+        required: false
+        default: 'false'
+
+jobs:
+  scan:
+    name: Run Job Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # Step 2: Set up Python
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      # Step 4: Install Playwright browsers
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+      
+      # Step 5: Create .env file from secrets
+      - name: Create .env file
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> .env
+      
+      # Step 6: Restore database and embeddings from cache
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            match_pulse.db
+            data/embeddings/
+          key: matchpulse-data-${{ github.run_id }}
+          restore-keys: |
+            matchpulse-data-
+      
+      # Step 7: Run the pipeline
+      - name: Run MatchPulse pipeline
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python src/main.py \
+              --threshold ${{ github.event.inputs.threshold || '0.78' }} \
+              --top-k ${{ github.event.inputs.top_k || '7' }} \
+              --dry-run
+          else
+            python src/main.py \
+              --threshold ${{ github.event.inputs.threshold || '0.78' }} \
+              --top-k ${{ github.event.inputs.top_k || '7' }}
+          fi
+      
+      # Step 8: Save database and embeddings to cache
+      - name: Save data cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            match_pulse.db
+            data/embeddings/
+          key: matchpulse-data-${{ github.run_id }}
+      
+      # Step 9: Upload logs as artifact
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scan-logs-${{ github.run_number }}
+          path: app.log
+          retention-days: 7
+      
+      # Step 10: Notify on failure (optional)
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "Job scan failed! Check logs for details."
+          # Optional: Send notification to Telegram
+          # curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          #   -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+          #   -d "text=⚠️ MatchPulse scheduled scan failed! Check GitHub Actions logs."

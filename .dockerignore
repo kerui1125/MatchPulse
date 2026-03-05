@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+app.log
+details_scraper_test.log
+
+# Database (will be mounted as volume)
+match_pulse.db
+match_pulse.db-journal
+
+# Embeddings (will be mounted as volume)
+data/embeddings/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+design_doc.md
+
+# Tests
+tests/
+pytest.ini
+
+# CI/CD
+.github/
+
+# OS
+.DS_Store
+Thumbs.db

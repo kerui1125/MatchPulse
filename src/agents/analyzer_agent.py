@@ -140,6 +140,13 @@ class AnalyzeJobsTool(BaseTool):
                 
                 logger.info(f"✓ Generated RAG-based insights ({len(explanation)} chars)")
                 
+                # Rate limiting: Add delay between LLM calls to avoid hitting API limits
+                # Even with upgraded plan, rapid consecutive calls can trigger rate limits
+                if i < len(matched_jobs) - 1:  # Don't sleep after last job
+                    import time
+                    time.sleep(1.0)  # 1 second delay between jobs
+                    logger.debug(f"⏱️  Rate limit delay (1.0s)")
+                
             except Exception as e:
                 logger.error(f"✗ Error analyzing {job['job_id']}: {e}")
                 continue

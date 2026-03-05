@@ -1,0 +1,51 @@
+services:
+  matchpulse:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: matchpulse-app
+    
+    # Environment variables (override with .env file)
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+    
+    # Mount volumes for data persistence
+    volumes:
+      - ./data:/app/data
+      - ./match_pulse.db:/app/match_pulse.db
+      - ./app.log:/app/app.log
+    
+    # Network mode (host allows accessing localhost services)
+    network_mode: bridge
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Command override (optional, uncomment to customize)
+    # command: python src/main.py --threshold 0.78 --top-k 7 --dry-run
+
+  # Optional: Streamlit dashboard service
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: matchpulse-dashboard
+    
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+    
+    volumes:
+      - ./data:/app/data
+      - ./match_pulse.db:/app/match_pulse.db
+      - ./app.log:/app/app.log
+    
+    ports:
+      - "8501:8501"
+    
+    command: streamlit run dashboard/MatchPulse.py --server.port=8501 --server.address=0.0.0.0
+    
+    restart: unless-stopped

@@ -1,9 +1,53 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Environment Variables
 .env
-data/
+.env.local
+
+# Data & Embeddings
+data/embeddings/
+data/resumes/*.pdf
 *.faiss
-*.pdf
-details_scraper_test.log
-view_jobs.py
+
+# Database
 match_pulse.db
+match_pulse.db-journal
+
+# Logs
+*.log
+app.log
+details_scraper_test.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+docs/
+# Temporary files
+view_jobs.py
+*.tmp

@@ -6964,3 +6964,281 @@ Please retry in 5.342878214s.
 2026-03-04 23:08:51,523 - MatchPulse - INFO - Analyzed: 25 jobs (RAG with top-k=7)
 2026-03-04 23:08:51,523 - MatchPulse - INFO - Notified: 25 jobs sent to Telegram
 2026-03-04 23:08:51,523 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:52:53,738 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:52:53,739 - MatchPulse - INFO - Starting MatchPulse Pipeline
+2026-03-05 21:52:53,739 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:52:53,739 - MatchPulse - INFO - ⚠️  DRY-RUN MODE: No Telegram notifications
+2026-03-05 21:52:53,739 - MatchPulse - INFO - ⚠️  LIMIT MODE: Processing 5 jobs
+2026-03-05 21:52:53,739 - MatchPulse - INFO - 📊 Match threshold: 0.7
+2026-03-05 21:52:53,739 - MatchPulse - INFO - 🔍 RAG top-k chunks: 3
+2026-03-05 21:52:53,739 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:52:53,740 - MatchPulse - INFO - 
+📋 Pipeline Status:
+2026-03-05 21:52:53,740 - MatchPulse - INFO -   ✅ Fetcher Agent  - Implemented
+2026-03-05 21:52:53,740 - MatchPulse - INFO -   ✅ Matcher Agent  - Implemented
+2026-03-05 21:52:53,740 - MatchPulse - INFO -   ✅ Analyzer Agent - Implemented (RAG-based)
+2026-03-05 21:52:53,740 - MatchPulse - INFO -   ✅ Notifier Agent - Implemented (Telegram)
+
+2026-03-05 21:52:53,740 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:52:53,740 - MatchPulse - INFO - Step 1: Running Fetcher Agent...
+2026-03-05 21:52:53,740 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:52:53,740 - MatchPulse - INFO - Fetcher Agent: Starting (limit=5)
+2026-03-05 21:52:53,741 - MatchPulse - INFO - ============================================================
+2026-03-05 21:52:53,741 - MatchPulse - INFO - Starting job fetch and enrichment process
+2026-03-05 21:52:53,741 - MatchPulse - INFO - ============================================================
+2026-03-05 21:52:53,741 - MatchPulse - WARNING - 🔴 PRODUCTION MODE: Jobs WILL be saved to database
+2026-03-05 21:52:53,741 - MatchPulse - WARNING - ⚠️  LIMIT MODE: Only processing first 5 jobs
+2026-03-05 21:52:53,741 - MatchPulse - INFO - ============================================================
+2026-03-05 21:52:53,743 - MatchPulse - INFO - 📋 Configured companies: ['nvidia', 'google', 'amazon', 'microsoft', 'salesforce', 'expedia', 'oracle']
+2026-03-05 21:52:53,743 - MatchPulse - INFO - 🔍 Fetching job listings...
+2026-03-05 21:52:54,478 - MatchPulse - INFO - Scraping nvidia: https://jobs.nvidia.com/careers?query=Software+Development&start=0&location=Seattle%2C++WA%2C++United+States&pid=893393809695&sort_by=timestamp&filter_distance=80&filter_include_remote=1&filter_work_location_option=office%2Cremote&filter_time_type=full+time%2Cpart+time
+2026-03-05 21:52:59,519 - MatchPulse - INFO - Found 20 NVIDIA jobs
+2026-03-05 21:53:09,350 - MatchPulse - INFO - Found 20 jobs from nvidia
+2026-03-05 21:53:13,938 - MatchPulse - INFO - Scraping google: https://www.google.com/about/careers/applications/jobs/results/?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-05 21:53:15,867 - MatchPulse - INFO - Found 20 Google jobs
+2026-03-05 21:53:25,997 - MatchPulse - INFO - Found 20 jobs from google
+2026-03-05 21:53:31,964 - MatchPulse - INFO - Scraping amazon: https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&country%5B%5D=USA&state%5B%5D=Washington&city%5B%5D=Seattle&city%5B%5D=Redmond&city%5B%5D=Bellevue&distanceType=Mi&radius=24km&industry_experience=four_to_six_years&loc_group_id=seattle-metro&latitude=&longitude=&loc_group_id=seattle-metro&loc_query=Greater%20Seattle%20Area%2C%20WA%2C%20United%20States&base_query=software%20engineer&city=&country=&region=&county=&query_options=&
+2026-03-05 21:53:36,504 - MatchPulse - INFO - Found 10 Amazon jobs
+2026-03-05 21:53:41,725 - MatchPulse - INFO - Found 10 jobs from amazon
+2026-03-05 21:53:46,063 - MatchPulse - INFO - Scraping microsoft: https://apply.careers.microsoft.com/careers?query=Software+Development&start=0&location=United+States%2C+Washington%2C+Redmond&pid=1970393556640555&sort_by=relevance&filter_distance=160&filter_include_remote=1&filter_seniority=Mid-Level
+2026-03-05 21:53:51,132 - MatchPulse - INFO - Found 20 Microsoft jobs using selector: a.r-link.card-F1ebU
+2026-03-05 21:54:01,790 - MatchPulse - INFO - Found 20 jobs from microsoft
+2026-03-05 21:54:04,914 - MatchPulse - INFO - Scraping salesforce: https://careers.salesforce.com/en/jobs/?search=software+development+engineer&country=United+States+of+America&region=Washington&location=Bellevue&location=Remote&location=Seattle&pagesize=20#results
+2026-03-05 21:54:07,598 - MatchPulse - INFO - Found 20 Salesforce jobs
+2026-03-05 21:54:18,651 - MatchPulse - INFO - Found 20 jobs from salesforce
+2026-03-05 21:54:24,395 - MatchPulse - INFO - Scraping expedia: https://careers.expediagroup.com/jobs/?keyword=Software+Development+Engineer&&filter[country]=United+States&filter[state]=Washington&filter[city]=Seattle
+2026-03-05 21:54:30,290 - MatchPulse - INFO - Found 50 Expedia jobs using selector: a[href*="/job/"]
+2026-03-05 21:54:39,685 - MatchPulse - INFO - Found 25 Expedia jobs
+2026-03-05 21:54:39,687 - MatchPulse - INFO - Found 25 jobs from expedia
+2026-03-05 21:54:42,873 - MatchPulse - INFO - Scraping oracle: https://careers.oracle.com/en/sites/jobsearch/jobs?keyword=Software+Developer&location=Seattle%2C+WA%2C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-05 21:55:06,390 - MatchPulse - ERROR - Error scraping Oracle: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("a[href*=\"/en/sites/jobsearch/job/\"]") to be visible
+
+2026-03-05 21:55:06,393 - MatchPulse - INFO - Found 0 jobs from oracle
+2026-03-05 21:55:12,461 - MatchPulse - INFO - Total jobs scraped: 115
+2026-03-05 21:55:12,462 - MatchPulse - INFO - ✓ Found 115 total jobs
+2026-03-05 21:55:12,462 - MatchPulse - INFO - 🔎 Checking for duplicates...
+2026-03-05 21:55:12,492 - MatchPulse - INFO - ✓ Found 36 NEW jobs (filtered 79 duplicates)
+2026-03-05 21:55:12,492 - MatchPulse - WARNING - ⚠️  Limiting to first 5 jobs
+2026-03-05 21:55:12,492 - MatchPulse - INFO - 📊 New jobs by company:
+2026-03-05 21:55:12,492 - MatchPulse - INFO -    - nvidia: 2 jobs
+2026-03-05 21:55:12,493 - MatchPulse - INFO -    - google: 2 jobs
+2026-03-05 21:55:12,493 - MatchPulse - INFO -    - amazon: 1 jobs
+2026-03-05 21:55:12,493 - MatchPulse - INFO - 🌐 Starting detail scraping for 5 jobs...
+2026-03-05 21:55:13,005 - MatchPulse - INFO - ✓ Stealth mode applied
+2026-03-05 21:55:13,005 - MatchPulse - INFO - [1/5] nvidia - Senior Platform Software Engineer – Factory...
+2026-03-05 21:55:13,005 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893392984678
+2026-03-05 21:55:21,856 - MatchPulse - INFO - ✓ NVIDIA description found (4574 chars)
+2026-03-05 21:55:21,865 - MatchPulse - INFO - ✓ Saved to database: nvidia_893392984678
+2026-03-05 21:55:21,866 - MatchPulse - INFO - ⏳ Waiting 3.6s...
+2026-03-05 21:55:25,510 - MatchPulse - INFO - [2/5] nvidia - Senior Java Acceleration Engineer, Vector Search a...
+2026-03-05 21:55:25,516 - MatchPulse - INFO - Scraping NVIDIA details: https://jobs.nvidia.com/careers/job/893393671632
+2026-03-05 21:55:29,581 - MatchPulse - INFO - ✓ NVIDIA description found (4578 chars)
+2026-03-05 21:55:29,593 - MatchPulse - INFO - ✓ Saved to database: nvidia_893393671632
+2026-03-05 21:55:29,593 - MatchPulse - INFO - ⏳ Waiting 4.2s...
+2026-03-05 21:55:33,823 - MatchPulse - INFO - [3/5] google - Software Engineer, AI/ML...
+2026-03-05 21:55:33,826 - MatchPulse - INFO - Scraping Google details: https://www.google.com/about/careers/applications/jobs/results/130864805362705094-software-engineer-aiml?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-05 21:55:38,205 - MatchPulse - INFO - ✓ Google description found (1676 chars)
+2026-03-05 21:55:38,211 - MatchPulse - INFO - ✓ Saved to database: google_130864805362705094
+2026-03-05 21:55:38,211 - MatchPulse - INFO - ⏳ Waiting 3.9s...
+2026-03-05 21:55:42,142 - MatchPulse - INFO - [4/5] google - Software Engineer, BigQuery Continuous Query...
+2026-03-05 21:55:42,145 - MatchPulse - INFO - Scraping Google details: https://www.google.com/about/careers/applications/jobs/results/87329917338821318-software-engineer-bigquery-continuous-query?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-05 21:55:46,185 - MatchPulse - INFO - ✓ Google description found (786 chars)
+2026-03-05 21:55:46,200 - MatchPulse - INFO - ✓ Saved to database: google_87329917338821318
+2026-03-05 21:55:46,200 - MatchPulse - INFO - ⏳ Waiting 4.4s...
+2026-03-05 21:55:50,575 - MatchPulse - INFO - [5/5] amazon - Senior Software Engineer, Twitch...
+2026-03-05 21:55:50,579 - MatchPulse - INFO - Scraping Amazon details: https://www.amazon.jobs/en/jobs/3138042/senior-software-engineer-twitch
+2026-03-05 21:55:55,837 - MatchPulse - INFO - ✓ Amazon description found (7097 chars)
+2026-03-05 21:55:55,862 - MatchPulse - INFO - ✓ Saved to database: amazon_3138042
+2026-03-05 21:55:55,936 - MatchPulse - INFO - 
+============================================================
+2026-03-05 21:55:55,936 - MatchPulse - INFO - 📊 Summary
+2026-03-05 21:55:55,936 - MatchPulse - INFO - ============================================================
+2026-03-05 21:55:55,937 - MatchPulse - INFO - ✓ Enriched: 5 jobs
+2026-03-05 21:55:55,937 - MatchPulse - INFO - ✗ Failed: 0 jobs
+2026-03-05 21:55:55,937 - MatchPulse - INFO - 
+✓ Sample:
+2026-03-05 21:55:55,937 - MatchPulse - INFO -    - nvidia: Senior Platform Software Engineer – Fact... (4574 chars)
+2026-03-05 21:55:55,937 - MatchPulse - INFO -    - nvidia: Senior Java Acceleration Engineer, Vecto... (4578 chars)
+2026-03-05 21:55:55,938 - MatchPulse - INFO -    - google: Software Engineer, AI/ML... (1676 chars)
+2026-03-05 21:55:55,938 - MatchPulse - INFO - ============================================================
+2026-03-05 21:55:55,940 - MatchPulse - INFO - Fetcher Agent: Completed. Fetched 5 jobs
+2026-03-05 21:55:55,940 - MatchPulse - INFO - ✓ Fetcher completed: 5 jobs fetched
+2026-03-05 21:55:55,940 - MatchPulse - INFO - 
+======================================================================
+2026-03-05 21:55:55,940 - MatchPulse - INFO - Step 2: Running Matcher Agent...
+2026-03-05 21:55:55,941 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:55:55,941 - MatchPulse - INFO - Matcher Agent: Starting (threshold=0.7)
+2026-03-05 21:55:55,959 - root - INFO - Resume embedding loaded from data/embeddings/resume_embedding.npy
+2026-03-05 21:55:55,959 - MatchPulse - INFO - ✓ Loaded resume embedding (shape: (768,))
+2026-03-05 21:55:55,964 - MatchPulse - INFO - ✓ Found 5 jobs with status='fetched'
+2026-03-05 21:55:55,964 - MatchPulse - INFO - 🔍 Computing similarities...
+2026-03-05 21:56:01,607 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-03-05 21:56:01,607 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-03-05 21:56:04,662 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-05 21:56:22,942 - MatchPulse - INFO - [1/5] ✓ MATCH nvidia - Senior Platform Software Engineer – Fact... (score: 0.731)
+2026-03-05 21:56:24,106 - MatchPulse - INFO - [2/5] ○ nvidia - Senior Java Acceleration Engineer, Vecto... (score: 0.654)
+2026-03-05 21:56:25,344 - MatchPulse - INFO - [3/5] ○ google - Software Engineer, AI/ML... (score: 0.678)
+2026-03-05 21:56:25,784 - MatchPulse - INFO - [4/5] ✓ MATCH google - Software Engineer, BigQuery Continuous Q... (score: 0.706)
+2026-03-05 21:56:26,752 - MatchPulse - INFO - [5/5] ✓ MATCH amazon - Senior Software Engineer, Twitch... (score: 0.772)
+2026-03-05 21:56:26,761 - MatchPulse - INFO - ✓ Found 53 jobs above threshold 0.7
+2026-03-05 21:56:26,773 - MatchPulse - INFO - ✓ Updated 53 jobs to status='matched'
+2026-03-05 21:56:26,773 - MatchPulse - INFO - ✓ Updated -48 jobs to status='not_matched'
+2026-03-05 21:56:26,773 - MatchPulse - INFO - Matcher Agent: Completed. Matched 53/5 jobs
+2026-03-05 21:56:26,779 - MatchPulse - INFO - ✓ Matcher completed: 53/5 jobs matched
+2026-03-05 21:56:26,779 - MatchPulse - INFO - 
+======================================================================
+2026-03-05 21:56:26,779 - MatchPulse - INFO - Step 3: Running Analyzer Agent...
+2026-03-05 21:56:26,779 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:56:26,781 - MatchPulse - INFO - Analyzer Agent: Starting (RAG with top_k=3)
+2026-03-05 21:56:26,785 - MatchPulse - INFO - ✓ Found 3 jobs with status='matched'
+2026-03-05 21:56:26,800 - root - INFO - Loaded 7 resume chunks and embeddings
+2026-03-05 21:56:26,800 - MatchPulse - INFO - ✓ Loaded cached resume chunks (7 chunks)
+2026-03-05 21:56:26,801 - MatchPulse - INFO - 🤖 Generating RAG-based insights...
+2026-03-05 21:56:26,802 - MatchPulse - INFO - [1/3] Analyzing: nvidia - Senior Platform Software Engineer – Fact...
+2026-03-05 21:56:26,830 - faiss.loader - INFO - Loading faiss.
+2026-03-05 21:56:27,019 - faiss.loader - INFO - Successfully loaded faiss.
+2026-03-05 21:56:27,029 - MatchPulse - INFO - ✓ Retrieved 3 relevant resume sections
+2026-03-05 21:56:27,051 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-05 21:56:45,009 - MatchPulse - INFO - ✓ Generated RAG-based insights (630 chars)
+2026-03-05 21:56:46,018 - MatchPulse - INFO - [2/3] Analyzing: google - Software Engineer, BigQuery Continuous Q...
+2026-03-05 21:56:46,024 - MatchPulse - INFO - ✓ Retrieved 3 relevant resume sections
+2026-03-05 21:56:46,027 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-05 21:57:03,350 - MatchPulse - INFO - ✓ Generated RAG-based insights (640 chars)
+2026-03-05 21:57:04,355 - MatchPulse - INFO - [3/3] Analyzing: amazon - Senior Software Engineer, Twitch...
+2026-03-05 21:57:04,362 - MatchPulse - INFO - ✓ Retrieved 3 relevant resume sections
+2026-03-05 21:57:04,363 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-03-05 21:57:21,636 - MatchPulse - INFO - ✓ Generated RAG-based insights (642 chars)
+2026-03-05 21:57:21,638 - MatchPulse - INFO - Analyzer Agent: Completed. Analyzed 3/3 jobs
+2026-03-05 21:57:21,639 - MatchPulse - INFO - ✓ Analyzer completed: 3/3 jobs analyzed
+2026-03-05 21:57:21,639 - MatchPulse - INFO - 
+======================================================================
+2026-03-05 21:57:21,639 - MatchPulse - INFO - Step 4: Running Notifier Agent...
+2026-03-05 21:57:21,639 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:57:21,640 - MatchPulse - INFO - Notifier Agent: Starting (dry_run=True)
+2026-03-05 21:57:21,648 - MatchPulse - INFO - ✓ Found 3 jobs with status='matched'
+2026-03-05 21:57:21,648 - MatchPulse - INFO - ✓ 3 jobs have explanations (ready to notify)
+2026-03-05 21:57:21,648 - MatchPulse - INFO - 🔵 DRY-RUN MODE: Skipping actual Telegram sends
+2026-03-05 21:57:21,648 - MatchPulse - INFO - [1/3] 🔵 DRY-RUN: nvidia - Senior Platform Software Engineer – Fact...
+2026-03-05 21:57:21,649 - MatchPulse - INFO - [2/3] 🔵 DRY-RUN: google - Software Engineer, BigQuery Continuous Q...
+2026-03-05 21:57:21,649 - MatchPulse - INFO - [3/3] 🔵 DRY-RUN: amazon - Senior Software Engineer, Twitch...
+2026-03-05 21:57:21,649 - MatchPulse - INFO - Notifier Agent: Completed. Notified 3/3 jobs
+2026-03-05 21:57:21,649 - MatchPulse - INFO - ✓ Notifier completed (DRY-RUN): 3/3 jobs formatted
+2026-03-05 21:57:21,650 - MatchPulse - INFO - 
+======================================================================
+2026-03-05 21:57:21,650 - MatchPulse - INFO - Pipeline Completed
+2026-03-05 21:57:21,650 - MatchPulse - INFO - ======================================================================
+2026-03-05 21:57:21,650 - MatchPulse - INFO - Fetched: 5 jobs
+2026-03-05 21:57:21,650 - MatchPulse - INFO - Matched: 53 jobs (threshold: 0.7)
+2026-03-05 21:57:21,651 - MatchPulse - INFO - Analyzed: 3 jobs (RAG with top-k=3)
+2026-03-05 21:57:21,651 - MatchPulse - INFO - Formatted: 3 messages (dry-run)
+2026-03-05 21:57:21,651 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:15:23,352 - MatchPulse - INFO - Starting MatchPulse Pipeline
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ⚠️  DRY-RUN MODE: No Telegram notifications
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ⚠️  LIMIT MODE: Processing 2 jobs
+2026-03-05 14:15:23,352 - MatchPulse - INFO - 📊 Match threshold: 0.78
+2026-03-05 14:15:23,352 - MatchPulse - INFO - 🔍 RAG top-k chunks: 7
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:15:23,352 - MatchPulse - INFO - 
+📋 Pipeline Status:
+2026-03-05 14:15:23,352 - MatchPulse - INFO -   ✅ Fetcher Agent  - Implemented
+2026-03-05 14:15:23,352 - MatchPulse - INFO -   ✅ Matcher Agent  - Implemented
+2026-03-05 14:15:23,352 - MatchPulse - INFO -   ✅ Analyzer Agent - Implemented (RAG-based)
+2026-03-05 14:15:23,352 - MatchPulse - INFO -   ✅ Notifier Agent - Implemented (Telegram)
+
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:15:23,352 - MatchPulse - INFO - Step 1: Running Fetcher Agent...
+2026-03-05 14:15:23,352 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:15:23,352 - MatchPulse - INFO - Fetcher Agent: Starting (limit=2)
+2026-03-05 14:15:23,354 - MatchPulse - INFO - ============================================================
+2026-03-05 14:15:23,354 - MatchPulse - INFO - Starting job fetch and enrichment process
+2026-03-05 14:15:23,354 - MatchPulse - INFO - ============================================================
+2026-03-05 14:15:23,354 - MatchPulse - WARNING - 🔴 PRODUCTION MODE: Jobs WILL be saved to database
+2026-03-05 14:15:23,354 - MatchPulse - WARNING - ⚠️  LIMIT MODE: Only processing first 2 jobs
+2026-03-05 14:15:23,354 - MatchPulse - INFO - ============================================================
+2026-03-05 14:15:23,355 - MatchPulse - INFO - 📋 Configured companies: ['nvidia', 'google', 'amazon', 'microsoft', 'salesforce', 'expedia', 'oracle']
+2026-03-05 14:15:23,356 - MatchPulse - INFO - 🔍 Fetching job listings...
+2026-03-05 14:15:23,356 - MatchPulse - INFO - Available scrapers: ['amazon', 'google', 'microsoft', 'nvidia', 'salesforce', 'expedia', 'oracle']
+2026-03-05 14:15:26,433 - MatchPulse - INFO - Scraping nvidia: https://jobs.nvidia.com/careers?query=Software+Development&start=0&location=Seattle%2C++WA%2C++United+States&pid=893393809695&sort_by=timestamp&filter_distance=80&filter_include_remote=1&filter_work_location_option=office%2Cremote&filter_time_type=full+time%2Cpart+time
+2026-03-05 14:15:28,679 - MatchPulse - INFO - Found 20 NVIDIA jobs
+2026-03-05 14:15:38,394 - MatchPulse - INFO - Found 20 jobs from nvidia
+2026-03-05 14:15:41,742 - MatchPulse - INFO - Scraping google: https://www.google.com/about/careers/applications/jobs/results/?q=Software+Engineer&location=Kirkland%2C+WA%2C+USA&hl=en
+2026-03-05 14:15:42,472 - MatchPulse - INFO - Found 20 Google jobs
+2026-03-05 14:15:52,303 - MatchPulse - INFO - Found 20 jobs from google
+2026-03-05 14:15:57,647 - MatchPulse - INFO - Scraping amazon: https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&country%5B%5D=USA&state%5B%5D=Washington&city%5B%5D=Seattle&city%5B%5D=Redmond&city%5B%5D=Bellevue&distanceType=Mi&radius=24km&industry_experience=four_to_six_years&loc_group_id=seattle-metro&latitude=&longitude=&loc_group_id=seattle-metro&loc_query=Greater%20Seattle%20Area%2C%20WA%2C%20United%20States&base_query=software%20engineer&city=&country=&region=&county=&query_options=&
+2026-03-05 14:15:59,292 - MatchPulse - INFO - Found 10 Amazon jobs
+2026-03-05 14:16:03,878 - MatchPulse - INFO - Found 10 jobs from amazon
+2026-03-05 14:16:08,457 - MatchPulse - INFO - Scraping microsoft: https://apply.careers.microsoft.com/careers?query=Software+Development&start=0&location=United+States%2C+Washington%2C+Redmond&pid=1970393556640555&sort_by=relevance&filter_distance=160&filter_include_remote=1&filter_seniority=Mid-Level
+2026-03-05 14:16:11,903 - MatchPulse - INFO - Found 20 Microsoft jobs using selector: a.r-link.card-F1ebU
+2026-03-05 14:16:21,697 - MatchPulse - INFO - Found 20 jobs from microsoft
+2026-03-05 14:16:26,113 - MatchPulse - INFO - Scraping salesforce: https://careers.salesforce.com/en/jobs/?search=software+development+engineer&country=United+States+of+America&region=Washington&location=Bellevue&location=Remote&location=Seattle&pagesize=20#results
+2026-03-05 14:16:27,116 - MatchPulse - INFO - Found 20 Salesforce jobs
+2026-03-05 14:16:36,813 - MatchPulse - INFO - Found 20 jobs from salesforce
+2026-03-05 14:16:41,875 - MatchPulse - INFO - Scraping expedia: https://careers.expediagroup.com/jobs/?keyword=Software+Development+Engineer&&filter[country]=United+States&filter[state]=Washington&filter[city]=Seattle
+2026-03-05 14:16:46,437 - MatchPulse - INFO - Found 50 Expedia jobs using selector: a[href*="/job/"]
+2026-03-05 14:16:54,993 - MatchPulse - INFO - Found 25 Expedia jobs
+2026-03-05 14:16:54,994 - MatchPulse - INFO - Found 25 jobs from expedia
+2026-03-05 14:17:00,862 - MatchPulse - INFO - Scraping oracle: https://careers.oracle.com/en/sites/jobsearch/jobs?keyword=Software+Developer&location=Seattle%2C+WA%2C+United+States&locationId=100000000731910&locationLevel=city&mode=location&radius=25&radiusUnit=KM
+2026-03-05 14:17:06,436 - MatchPulse - INFO - Found 14 Oracle jobs
+2026-03-05 14:17:13,146 - MatchPulse - INFO - Found 14 jobs from oracle
+2026-03-05 14:17:19,066 - MatchPulse - INFO - Total jobs scraped: 129
+2026-03-05 14:17:19,066 - MatchPulse - INFO - ✓ Found 129 total jobs
+2026-03-05 14:17:19,066 - MatchPulse - INFO - 🔎 Checking for duplicates...
+2026-03-05 14:17:19,088 - MatchPulse - INFO - ✓ Found 46 NEW jobs (filtered 83 duplicates)
+2026-03-05 14:17:19,088 - MatchPulse - WARNING - ⚠️  Limiting to first 2 jobs
+2026-03-05 14:17:19,088 - MatchPulse - INFO - 📊 New jobs by company:
+2026-03-05 14:17:19,088 - MatchPulse - INFO -    - Nvidia: 1 jobs
+2026-03-05 14:17:19,088 - MatchPulse - INFO -    - Microsoft: 1 jobs
+2026-03-05 14:17:19,088 - MatchPulse - INFO - 🌐 Starting detail scraping for 2 jobs...
+2026-03-05 14:17:19,974 - MatchPulse - INFO - ✓ Stealth mode applied
+2026-03-05 14:17:19,975 - MatchPulse - INFO - [1/2] Nvidia - Verification Engineer - Compilers C++...
+2026-03-05 14:17:32,646 - MatchPulse - ERROR - Error scraping NVIDIA job details: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("div#content") to be visible
+
+2026-03-05 14:17:32,648 - MatchPulse - WARNING - ✗ Nvidia description not found
+2026-03-05 14:17:32,649 - MatchPulse - ERROR - ✗ Error enriching job nvidia_893390979750: insert_job() missing 3 required positional arguments: 'job_id', 'job_url', and 'title'
+2026-03-05 14:17:32,649 - MatchPulse - INFO - [2/2] Microsoft - Software Engineer II...
+2026-03-05 14:17:46,085 - MatchPulse - ERROR - Error scraping Microsoft job details: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("div#content") to be visible
+
+2026-03-05 14:17:46,086 - MatchPulse - WARNING - ✗ Microsoft description not found
+2026-03-05 14:17:46,086 - MatchPulse - ERROR - ✗ Error enriching job microsoft_1970393556753570: insert_job() missing 3 required positional arguments: 'job_id', 'job_url', and 'title'
+2026-03-05 14:17:46,137 - MatchPulse - INFO - 
+============================================================
+2026-03-05 14:17:46,137 - MatchPulse - INFO - 📊 Summary
+2026-03-05 14:17:46,137 - MatchPulse - INFO - ============================================================
+2026-03-05 14:17:46,137 - MatchPulse - INFO - ✓ Enriched: 2 jobs
+2026-03-05 14:17:46,137 - MatchPulse - INFO - ✗ Failed: 0 jobs
+2026-03-05 14:17:46,137 - MatchPulse - INFO - 
+✓ Sample:
+2026-03-05 14:17:46,137 - MatchPulse - INFO -    - Nvidia: Verification Engineer - Compilers C++... (47 chars)
+2026-03-05 14:17:46,137 - MatchPulse - INFO -    - Microsoft: Software Engineer II... (33 chars)
+2026-03-05 14:17:46,137 - MatchPulse - INFO - ============================================================
+2026-03-05 14:17:46,138 - MatchPulse - INFO - Fetcher Agent: Completed. Fetched 2 jobs
+2026-03-05 14:17:46,138 - MatchPulse - INFO - ✓ Fetcher completed: 2 jobs fetched
+2026-03-05 14:17:46,138 - MatchPulse - INFO - 
+======================================================================
+2026-03-05 14:17:46,138 - MatchPulse - INFO - Step 2: Running Matcher Agent...
+2026-03-05 14:17:46,138 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:17:46,138 - MatchPulse - INFO - Matcher Agent: Starting (threshold=0.78)
+2026-03-05 14:17:46,145 - root - INFO - Resume embedding loaded from data/embeddings/resume_embedding.npy
+2026-03-05 14:17:46,146 - MatchPulse - INFO - ✓ Loaded resume embedding (shape: (768,))
+2026-03-05 14:17:46,151 - MatchPulse - INFO - ✓ Found 0 jobs with status='fetched'
+2026-03-05 14:17:46,151 - MatchPulse - INFO - ⚠️  No jobs to match
+2026-03-05 14:17:46,151 - MatchPulse - INFO - ✓ Matcher completed: 0/0 jobs matched
+2026-03-05 14:17:46,151 - MatchPulse - INFO - 
+⚠️  Skipping Analyzer Agent (no matched jobs)
+2026-03-05 14:17:46,151 - MatchPulse - INFO - 
+⚠️  Skipping Notifier Agent (no analyzed jobs)
+2026-03-05 14:17:46,151 - MatchPulse - INFO - 
+======================================================================
+2026-03-05 14:17:46,151 - MatchPulse - INFO - Pipeline Completed
+2026-03-05 14:17:46,151 - MatchPulse - INFO - ======================================================================
+2026-03-05 14:17:46,162 - MatchPulse - INFO - Fetched: 2 jobs
+2026-03-05 14:17:46,162 - MatchPulse - INFO - Matched: 0 jobs (threshold: 0.78)
+2026-03-05 14:17:46,162 - MatchPulse - INFO - ======================================================================
