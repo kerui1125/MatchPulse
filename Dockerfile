@@ -81,11 +81,18 @@ COPY --from=builder /root/.cache/ms-playwright /root/.cache/ms-playwright
 # Copy application code
 COPY src/ ./src/
 COPY dashboard/ ./dashboard/
-COPY data/ ./data/
-COPY .env .env
 
-# Create directory for database (will be mounted as volume)
-RUN mkdir -p /app/data/embeddings
+# Note: data/ directory is NOT copied (contains user's resume and embeddings)
+# It will be created at runtime or mounted as volume
+
+# Note: .env is NOT copied (it's in .gitignore)
+# Environment variables should be set via:
+# - Docker run: --env-file .env
+# - Docker compose: environment section
+# - GitHub Actions: secrets
+
+# Create directories for runtime data
+RUN mkdir -p /app/data/embeddings /app/data/resumes
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
