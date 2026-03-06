@@ -7,9 +7,13 @@ from src.agents.matcher_agent import matcher_agent, match_task
 from src.agents.analyzer_agent import analyzer_agent, analyze_task
 from src.agents.notifier_agent import notifier_agent, notify_task
 from src.tools.utils import setup_logging
+from src.tools.db import setup_database
 import json
 
 logger = setup_logging()
+
+# Initialize database on startup
+setup_database()
 
 
 def run_pipeline(limit: int = None, dry_run: bool = False, threshold: float = 0.7, top_k: int = 3):
