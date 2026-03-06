@@ -102,13 +102,33 @@ class MicrosoftScraper(BaseScraper):
     async def scrape_details(self, page: Page, job_url: str) -> Optional[str]:
         """Scrape full job description from Microsoft job detail page."""
         try:
-            await page.goto(job_url, wait_until='networkidle', timeout=30000)
-            await page.wait_for_selector('div#content', timeout=10000)
+            await page.goto(job_url, wait_until='domcontentloaded', timeout=45000)
+            await asyncio.sleep(3)
             
-            desc_elem = await page.query_selector('div#content')
-            description = await safe_get_text(desc_elem)
+            # Try multiple selectors (fallback strategy from old working version)
+            desc_selectors = [
+                '#job-description-container',
+                'div[data-automation-id*="description"]',
+                'div#content'
+            ]
             
-            return description if description else None
+            description = None
+            for selector in desc_selectors:
+                try:
+                    elem = await page.query_selector(selector)
+                    if elem:
+                        text = await safe_get_text(elem)
+                        if text and len(text.strip()) > 100:
+                            description = text.strip()
+                            logger.info(f"✓ Microsoft description found using {selector} ({len(description)} chars)")
+                            break
+                except Exception:
+                    continue
+            
+            if not description:
+                logger.warning(f"No description found for Microsoft job: {job_url}")
+            
+            return description
         
         except Exception as e:
             logger.error(f"Error scraping Microsoft job details: {e}")

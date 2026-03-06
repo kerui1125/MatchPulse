@@ -1,0 +1,48 @@
+name: Upload Resume Embeddings
+
+# 手动触发，用于上传本地生成的 embeddings
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    name: Upload Resume Embeddings Artifact
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Check embeddings exist
+        run: |
+          if [ ! -f "data/embeddings/resume_embedding.npy" ]; then
+            echo "❌ Error: data/embeddings/resume_embedding.npy not found"
+            echo "Please generate embeddings locally first using the dashboard"
+            exit 1
+          fi
+          
+          if [ ! -f "data/embeddings/resume_chunks_embeddings.npy" ]; then
+            echo "❌ Error: data/embeddings/resume_chunks_embeddings.npy not found"
+            echo "Please generate embeddings locally first using the dashboard"
+            exit 1
+          fi
+          
+          echo "✓ All embeddings found"
+          ls -lh data/embeddings/
+      
+      - name: Upload embeddings as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-embeddings
+          path: |
+            data/embeddings/resume_embedding.npy
+            data/embeddings/resume_chunks.json
+            data/embeddings/resume_chunks_embeddings.npy
+          retention-days: 90
+          compression-level: 9
+      
+      - name: Success message
+        run: |
+          echo "✅ Resume embeddings uploaded successfully!"
+          echo "These will be available for 90 days"
+          echo "The scheduled-scan workflow will automatically download them"

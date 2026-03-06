@@ -97,7 +97,16 @@ async def enrich_job_descriptions(jobs: List[Dict], dry_run: bool = False) -> Li
                 
                 # Save to database (skip if dry_run)
                 if not dry_run:
-                    save_job(job)
+                    save_job(
+                        company=job['company'],
+                        job_id=job['job_id'],
+                        job_url=job['job_url'],
+                        title=job['title'],
+                        salary=job.get('salary'),
+                        posted_date=job.get('posted_date'),
+                        description=job.get('description'),
+                        status='fetched'  # Initial status
+                    )
                     logger.info(f"✓ Saved to database: {job['job_id']}")
                 else:
                     logger.info(f"⚠️  DRY-RUN: Skipped saving {job['job_id']}")

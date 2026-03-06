@@ -64,18 +64,42 @@ jobs:
           echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
           echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> .env
       
-      # Step 6: Restore database and embeddings from cache
+      # Step 6: Download resume embeddings from artifacts
+      - name: Download resume embeddings
+        uses: actions/download-artifact@v4
+        with:
+          name: resume-embeddings
+          path: data/embeddings/
+        continue-on-error: true
+      
+      # Step 7: Verify embeddings exist
+      - name: Verify embeddings
+        id: check-embeddings
+        run: |
+          if [ -f "data/embeddings/resume_embedding.npy" ]; then
+            echo "✓ Resume embeddings found"
+            echo "exists=true" >> $GITHUB_OUTPUT
+            ls -lh data/embeddings/
+          else
+            echo "❌ Resume embeddings not found!"
+            echo "Please run the 'Upload Resume Embeddings' workflow first"
+            echo "To upload: Go to Actions → Upload Resume Embeddings → Run workflow"
+            echo "exists=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+      
+      # Step 8: Restore database and job embeddings from cache
       - name: Restore data cache
         uses: actions/cache@v4
         with:
           path: |
             match_pulse.db
-            data/embeddings/
+            data/embeddings/job_embeddings/
           key: matchpulse-data-${{ github.run_id }}
           restore-keys: |
             matchpulse-data-
       
-      # Step 7: Run the pipeline
+      # Step 9: Run the pipeline
       - name: Run MatchPulse pipeline
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
@@ -89,17 +113,17 @@ jobs:
               --top-k ${{ github.event.inputs.top_k || '7' }}
           fi
       
-      # Step 8: Save database and embeddings to cache
+      # Step 10: Save database and job embeddings to cache
       - name: Save data cache
         uses: actions/cache/save@v4
         if: always()
         with:
           path: |
             match_pulse.db
-            data/embeddings/
+            data/embeddings/job_embeddings/
           key: matchpulse-data-${{ github.run_id }}
       
-      # Step 9: Upload logs as artifact
+      # Step 11: Upload logs as artifact
       - name: Upload logs
         uses: actions/upload-artifact@v4
         if: always()
@@ -108,7 +132,7 @@ jobs:
           path: app.log
           retention-days: 7
       
-      # Step 10: Notify on failure (optional)
+      # Step 12: Notify on failure (optional)
       - name: Notify on failure
         if: failure()
         run: |

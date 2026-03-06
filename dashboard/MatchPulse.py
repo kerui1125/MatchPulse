@@ -9,7 +9,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from dashboard.utils.db_helper import (
-    get_statistics, get_recent_jobs, apply_design_system, THEMES
+    get_statistics, get_recent_jobs, apply_design_system, THEMES, DB_PATH
 )
 
 # Page config
@@ -39,6 +39,13 @@ with st.sidebar:
 
 # Apply theme
 apply_design_system(st.session_state.theme_mode)
+
+# Database indicator
+db_name = os.path.basename(DB_PATH)
+if 'prod' in db_name.lower():
+    st.info(f"🌐 **Production Mode** - Viewing GitHub Actions data (`{db_name}`)")
+else:
+    st.success(f"💻 **Development Mode** - Viewing local data (`{db_name}`)")
 
 # Header
 st.title("🎯 MatchPulse")

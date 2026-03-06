@@ -59,6 +59,11 @@ jobs:
     name: Build Docker Image
     runs-on: ubuntu-latest
     needs: test  # Run after tests pass
+    # Only build if Dockerfile or requirements.txt changed
+    if: |
+      contains(github.event.head_commit.modified, 'Dockerfile') ||
+      contains(github.event.head_commit.modified, 'requirements.txt') ||
+      contains(github.event.head_commit.modified, 'docker-compose.yml')
     
     steps:
       # Step 1: Checkout code

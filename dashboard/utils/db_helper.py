@@ -7,13 +7,30 @@ import streamlit as st
 from typing import List, Dict, Optional, Tuple
 from datetime import datetime
 import pandas as pd
+import sys
+import os
+
+
+# ==================== Database Configuration ====================
+
+# 支持命令行参数指定数据库路径
+DB_PATH = 'match_pulse.db'  # 默认本地数据库
+
+# 检查命令行参数（用于运行生产 Dashboard）
+for i, arg in enumerate(sys.argv):
+    if arg == '--db-path' and i + 1 < len(sys.argv):
+        DB_PATH = sys.argv[i + 1]
+        # 只在第一次加载时打印
+        if 'db_path_set' not in st.session_state:
+            st.session_state.db_path_set = True
+        break
 
 
 # ==================== Database Connection ====================
 
 def get_db_connection():
     """Get database connection."""
-    return sqlite3.connect('match_pulse.db')
+    return sqlite3.connect(DB_PATH)
 
 
 # ==================== Cached Query Functions ====================

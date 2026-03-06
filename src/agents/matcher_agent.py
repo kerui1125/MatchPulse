@@ -65,7 +65,14 @@ class MatchResumeAndJobsTool(BaseTool):
             logger.info(f"✓ Loaded resume embedding (shape: {resume_embedding.shape})")
         except Exception as e:
             logger.error(f"✗ Failed to load resume embedding: {e}")
-            return json.dumps({'status': 'error', 'message': 'Resume embedding not found'})
+            return json.dumps({
+                'status': 'error', 
+                'message': 'Resume embedding not found',
+                'total_jobs': 0,
+                'matched_jobs': 0,
+                'threshold': threshold,
+                'jobs': []
+            })
         
         # 2. Get jobs with status='fetched'
         jobs = get_jobs_by_status('fetched')
