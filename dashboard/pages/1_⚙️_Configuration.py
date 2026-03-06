@@ -7,15 +7,46 @@ import os
 import subprocess
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-from dashboard.utils.db_helper import apply_design_system, THEMES, THRESHOLD_PRESETS, get_threshold_from_preset
+from dashboard.utils.db_helper import apply_design_system, THEMES, THRESHOLD_PRESETS, get_threshold_from_preset, DB_PATH
 
-st.set_page_config(page_title="Configuration", page_icon="⚙️", layout="wide")
+# Determine environment
+db_name = os.path.basename(DB_PATH)
+is_production = 'prod' in db_name.lower()
+env_prefix = "🌐 PROD" if is_production else "💻 DEV"
+
+st.set_page_config(page_title=f"{env_prefix} | Configuration", page_icon="⚙️", layout="wide")
 
 # Theme sync
 if 'theme_mode' not in st.session_state:
-    st.session_state.theme_mode = 'light'
+    st.session_state.theme_mode = 'dark'
 
 with st.sidebar:
+    # Environment indicator in sidebar
+    if is_production:
+        st.markdown("""
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                    border-radius: 8px; padding: 12px; margin-bottom: 16px; text-align: center;">
+            <div style="color: white; font-size: 18px; font-weight: bold;">
+                🌐 PRODUCTION
+            </div>
+            <div style="color: rgba(255,255,255,0.8); font-size: 12px; margin-top: 4px;">
+                Port 8502
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown("""
+        <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
+                    border-radius: 8px; padding: 12px; margin-bottom: 16px; text-align: center;">
+            <div style="color: white; font-size: 18px; font-weight: bold;">
+                💻 DEVELOPMENT
+            </div>
+            <div style="color: rgba(255,255,255,0.8); font-size: 12px; margin-top: 4px;">
+                Port 8501
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    
     theme = st.selectbox("Theme", list(THEMES.keys()), 
                         index=list(THEMES.keys()).index(st.session_state.theme_mode),
                         key="config_theme")

@@ -15,23 +15,24 @@ build/
 venv/
 ENV/
 
-# Environment Variables
+# Environment Variables (NEVER commit secrets!)
 .env
 .env.local
 
-# Data & Embeddings
+# Data & Embeddings (NEVER commit resume or embeddings!)
 data/embeddings/
 data/resumes/*.pdf
 *.faiss
 
-# Database
+# Database (local and production, NEVER commit!)
 match_pulse.db
 match_pulse.db-journal
+match_pulse_prod.db
 
 # Logs
 *.log
 app.log
-details_scraper_test.log
+docs/
 
 # IDE
 .vscode/
@@ -47,7 +48,9 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
-docs/
+
 # Temporary files
-view_jobs.py
 *.tmp
+test_download.sh
+test_env.py
+commit_fixes.sh

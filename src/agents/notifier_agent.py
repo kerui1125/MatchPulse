@@ -59,11 +59,19 @@ class NotifyJobsTool(BaseTool):
         
         # Get Telegram credentials
         telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID")
-        telegram_bot_token = os.getenv("TELEGRAM_TOKEN")  # Note: .env uses TELEGRAM_TOKEN
+        telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")  # Match workflow env var name
         
         if not dry_run and (not telegram_chat_id or not telegram_bot_token):
             logger.error("✗ Telegram credentials not found in .env")
-            return json.dumps({'status': 'error', 'message': 'Missing Telegram credentials'})
+            logger.error(f"TELEGRAM_CHAT_ID: {'✓' if telegram_chat_id else '✗'}")
+            logger.error(f"TELEGRAM_BOT_TOKEN: {'✓' if telegram_bot_token else '✗'}")
+            return json.dumps({
+                'status': 'error', 
+                'message': 'Missing Telegram credentials',
+                'total_jobs': 0,
+                'notified_jobs': 0,
+                'jobs': []
+            })
         
         # 1. Get matched jobs with explanations
         matched_jobs = get_jobs_by_status('matched')

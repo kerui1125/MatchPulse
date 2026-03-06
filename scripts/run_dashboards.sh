@@ -8,13 +8,23 @@ echo ""
 if [ ! -f "match_pulse_prod.db" ]; then
     echo "⚠️  Production database not found"
     echo ""
-    echo "Download it first:"
-    echo "  bash scripts/download_prod_db.sh"
+    echo "Initializing production database..."
     echo ""
-    echo "Starting local dashboard only..."
+    
+    # 运行初始化脚本
+    bash scripts/init_prod_db.sh
+    
+    if [ ! -f "match_pulse_prod.db" ]; then
+        echo ""
+        echo "❌ Failed to initialize production database"
+        echo ""
+        echo "Starting local dashboard only..."
+        echo ""
+        streamlit run dashboard/MatchPulse.py
+        exit 0
+    fi
+    
     echo ""
-    streamlit run dashboard/MatchPulse.py
-    exit 0
 fi
 
 echo "📊 Local Dashboard (Development):"

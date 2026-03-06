@@ -20,7 +20,7 @@ links = get_company_links()
 print(f"Company links: {links}")
 
 print("\n=== Test2: Parse resume ===")
-resume_text = parse_resume(file_path="data/resumes/Kerui Liu Resume - sde - FullStack.pdf")
+resume_text = parse_resume(file_path="data/resumes/Kerui Liu Resume - sde - Agentic AI.pdf")
 print(f"Resume text length: {len(resume_text)} characters")
 print(f"First 200 chars: {resume_text[:200]}")
 print(f"All chars: {resume_text}")

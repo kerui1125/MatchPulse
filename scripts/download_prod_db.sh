@@ -32,11 +32,12 @@ echo ""
 echo "🔍 Finding workflow run with database artifact..."
 echo ""
 
-# 获取最近 10 个 completed runs
-RUN_IDS=$(gh run list --workflow="scheduled-scan.yml" --limit 10 --status completed --json databaseId --jq '.[].databaseId')
+# 获取最近 10 个 runs (包括 completed 和 failure)
+# 因为即使 workflow failed，database artifact 也会上传（if: always()）
+RUN_IDS=$(gh run list --workflow="scheduled-scan.yml" --limit 10 --json databaseId,conclusion --jq '.[] | select(.conclusion == "success" or .conclusion == "failure") | .databaseId')
 
 if [ -z "$RUN_IDS" ]; then
-    echo "❌ No completed workflow runs found"
+    echo "❌ No workflow runs found (completed or failed)"
     echo ""
     echo "Run the scheduled-scan workflow first:"
     echo "  GitHub → Actions → Scheduled Job Scan → Run workflow"
@@ -44,11 +45,22 @@ if [ -z "$RUN_IDS" ]; then
     exit 1
 fi
 
+echo "  Searching in recent runs (including failed runs)..."
+echo ""
+
 # 尝试每个 run，直到找到有 database artifact 的
 FOUND=false
 
 for RUN_ID in $RUN_IDS; do
-    echo "  Checking run $RUN_ID..."
+    # 获取 run 的状态
+    RUN_INFO=$(gh run view $RUN_ID --json conclusion,displayTitle --jq '{conclusion: .conclusion, title: .displayTitle}')
+    CONCLUSION=$(echo "$RUN_INFO" | jq -r '.conclusion')
+    
+    if [ "$CONCLUSION" = "failure" ]; then
+        echo "  Checking run $RUN_ID (⚠️  failed, but may have database)..."
+    else
+        echo "  Checking run $RUN_ID (✓ success)..."
+    fi
     
     # 尝试下载这个 run 的 artifact（静默模式）
     if gh run download $RUN_ID --name matchpulse-database 2>/dev/null; then

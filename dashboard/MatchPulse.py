@@ -12,9 +12,14 @@ from dashboard.utils.db_helper import (
     get_statistics, get_recent_jobs, apply_design_system, THEMES, DB_PATH
 )
 
+# Determine environment
+db_name = os.path.basename(DB_PATH)
+is_production = 'prod' in db_name.lower()
+env_prefix = "🌐 PROD" if is_production else "💻 DEV"
+
 # Page config
 st.set_page_config(
-    page_title="MatchPulse",
+    page_title=f"{env_prefix} | MatchPulse",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -26,6 +31,32 @@ if 'theme_mode' not in st.session_state:
 
 # Theme selector in sidebar
 with st.sidebar:
+    # Environment indicator in sidebar
+    if is_production:
+        st.markdown("""
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                    border-radius: 8px; padding: 12px; margin-bottom: 16px; text-align: center;">
+            <div style="color: white; font-size: 18px; font-weight: bold;">
+                🌐 PRODUCTION
+            </div>
+            <div style="color: rgba(255,255,255,0.8); font-size: 12px; margin-top: 4px;">
+                Port 8502
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown("""
+        <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
+                    border-radius: 8px; padding: 12px; margin-bottom: 16px; text-align: center;">
+            <div style="color: white; font-size: 18px; font-weight: bold;">
+                💻 DEVELOPMENT
+            </div>
+            <div style="color: rgba(255,255,255,0.8); font-size: 12px; margin-top: 4px;">
+                Port 8501
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    
     st.title("🎨 Theme")
     theme = st.selectbox(
         "Mode",
@@ -40,12 +71,40 @@ with st.sidebar:
 # Apply theme
 apply_design_system(st.session_state.theme_mode)
 
-# Database indicator
+# Database mode indicator - PROMINENT
 db_name = os.path.basename(DB_PATH)
 if 'prod' in db_name.lower():
-    st.info(f"🌐 **Production Mode** - Viewing GitHub Actions data (`{db_name}`)")
+    st.markdown("""
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                border-radius: 10px; padding: 20px; margin-bottom: 24px; 
+                border: 2px solid #764ba2;">
+        <h2 style="margin: 0; color: white; font-size: 24px;">
+            🌐 PRODUCTION DASHBOARD
+        </h2>
+        <p style="margin: 8px 0 0 0; color: rgba(255,255,255,0.9); font-size: 16px;">
+            Viewing GitHub Actions data from scheduled scans
+        </p>
+        <p style="margin: 4px 0 0 0; color: rgba(255,255,255,0.7); font-size: 14px;">
+            Database: <code style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px;">{db_name}</code>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 else:
-    st.success(f"💻 **Development Mode** - Viewing local data (`{db_name}`)")
+    st.markdown("""
+    <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
+                border-radius: 10px; padding: 20px; margin-bottom: 24px; 
+                border: 2px solid #38ef7d;">
+        <h2 style="margin: 0; color: white; font-size: 24px;">
+            💻 DEVELOPMENT DASHBOARD
+        </h2>
+        <p style="margin: 8px 0 0 0; color: rgba(255,255,255,0.9); font-size: 16px;">
+            Viewing local testing data
+        </p>
+        <p style="margin: 4px 0 0 0; color: rgba(255,255,255,0.7); font-size: 14px;">
+            Database: <code style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px;">{db_name}</code>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Header
 st.title("🎯 MatchPulse")
