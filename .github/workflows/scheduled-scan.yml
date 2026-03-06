@@ -64,11 +64,12 @@ jobs:
           echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
           echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}" >> .env
       
-      # Step 6: Download resume embeddings from artifacts
+      # Step 6: Download resume embeddings from artifacts (cross-workflow)
       - name: Download resume embeddings
-        uses: actions/download-artifact@v4
+        uses: dawidd6/action-download-artifact@v6
         with:
           name: resume-embeddings
+          workflow: upload-embeddings.yml
           path: data/embeddings/
         continue-on-error: true
       
@@ -82,8 +83,15 @@ jobs:
             ls -lh data/embeddings/
           else
             echo "❌ Resume embeddings not found!"
-            echo "Please run the 'Upload Resume Embeddings' workflow first"
-            echo "To upload: Go to Actions → Upload Resume Embeddings → Run workflow"
+            echo ""
+            echo "This means the 'Upload Resume Embeddings' workflow hasn't run successfully yet."
+            echo ""
+            echo "Please:"
+            echo "  1. Go to Actions → Upload Resume Embeddings"
+            echo "  2. Click 'Run workflow'"
+            echo "  3. Wait for it to complete"
+            echo "  4. Then run this workflow again"
+            echo ""
             echo "exists=false" >> $GITHUB_OUTPUT
             exit 1
           fi
