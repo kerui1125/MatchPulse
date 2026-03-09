@@ -62,16 +62,29 @@ for RUN_ID in $RUN_IDS; do
         echo "  Checking run $RUN_ID (✓ success)..."
     fi
     
-    # 尝试下载这个 run 的 artifact（静默模式）
+    # 临时删除本地 match_pulse.db（如果存在）
+    if [ -f "match_pulse.db" ]; then
+        mv match_pulse.db match_pulse.db.backup
+    fi
+    
+    # 尝试下载这个 run 的 artifact
     if gh run download $RUN_ID --name matchpulse-database 2>/dev/null; then
         echo ""
         echo "✓ Found database in run $RUN_ID"
         
         # 检查文件是否存在
         if [ -f "match_pulse.db" ]; then
-            # 重命名
+            # 删除旧的 prod 数据库
             if [ -f "match_pulse_prod.db" ]; then
                 rm match_pulse_prod.db
+            fi
+            
+            # 重命名为 prod
+            mv match_pulse.db match_pulse_prod.db
+            
+            # 恢复本地数据库
+            if [ -f "match_pulse.db.backup" ]; then
+                mv match_pulse.db.backup match_pulse.db
             fi
             mv match_pulse.db match_pulse_prod.db
             

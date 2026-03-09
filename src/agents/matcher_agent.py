@@ -27,7 +27,7 @@ logger = setup_logging()
 
 # Configure Gemini LLM (required by CrewAI Agent, even though we don't use it for matching)
 llm = LLM(
-    model="gemini/gemini-2.5-flash",
+    model="gemini/gemini-3-flash-preview",
     api_key=os.getenv("GEMINI_API_KEY")
 )
 logger = setup_logging()
